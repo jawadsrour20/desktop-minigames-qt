@@ -1,0 +1,5 @@
+<map id="scoresmodel.h" name="scoresmodel.h">
+<area shape="rect" id="node1" title="ScoresModel class. Sets up the table view with the logged in user&#39;s scores and the global best scores..." alt="" coords="57,5,167,32"/>
+<area shape="rect" id="node2" href="$history_8cpp.html" title="contains History class definition" alt="" coords="5,80,91,107"/>
+<area shape="rect" id="node3" href="$scoresmodel_8cpp.html" title="contains ScoresModel class implementation" alt="" coords="115,80,237,107"/>
+</map>

@@ -1,0 +1,211 @@
+\hypertarget{class_scores_model}{}\doxysection{Scores\+Model Class Reference}
+\label{class_scores_model}\index{ScoresModel@{ScoresModel}}
+
+
+{\ttfamily \#include $<$scoresmodel.\+h$>$}
+
+
+
+Inheritance diagram for Scores\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{class_scores_model__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Scores\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{class_scores_model__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scores_model_a92f5c6fc9012e5eda5f7a5ffdb6ebe81}{Scores\+Model}} (QString $\ast$username=nullptr, QObject $\ast$parent=nullptr)
+\item 
+int \mbox{\hyperlink{class_scores_model_a30930884951e86862b3a8f92a774addb}{row\+Count}} (const QModel\+Index \&parent=QModel\+Index()) const override
+\begin{DoxyCompactList}\small\item\em Gets the number of rows for the history table. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_scores_model_a7080e260875c602f5a6ddd4e7dfee0d2}{column\+Count}} (const QModel\+Index \&parent=QModel\+Index()) const override
+\begin{DoxyCompactList}\small\item\em Gets the number of columns for the history table. \end{DoxyCompactList}\item 
+QVariant \mbox{\hyperlink{class_scores_model_a513bf3924900ee16cc5b3936ef4d3e42}{data}} (const QModel\+Index \&index, int role=Qt\+::\+Display\+Role) const override
+\begin{DoxyCompactList}\small\item\em Sets the history table\textquotesingle{}s data. \end{DoxyCompactList}\item 
+QVariant \mbox{\hyperlink{class_scores_model_a2fdcf21cdda92658d39d5338e4960c6a}{header\+Data}} (int section, Qt\+::\+Orientation orientation, int role) const override
+\begin{DoxyCompactList}\small\item\em Sets the headers of the history table. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+QString \mbox{\hyperlink{class_scores_model_adf52ec9a6b43f1d4e9cc129d35928b69}{logged\+In\+User}}
+\begin{DoxyCompactList}\small\item\em logged in user name \end{DoxyCompactList}\item 
+QString\+List $\ast$ \mbox{\hyperlink{class_scores_model_a2307ce3bded4401d7882b40d07c13d8f}{battleship\+User\+Scores\+List}}
+\begin{DoxyCompactList}\small\item\em pointer to battleship game scores list \end{DoxyCompactList}\item 
+QString\+List $\ast$ \mbox{\hyperlink{class_scores_model_aa40dec281644a49fe165c632f71a9074}{shooting\+User\+Scores\+List}}
+\begin{DoxyCompactList}\small\item\em pointer to shooting game scores list \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_scores_model_adffe63a7b013d1429b132c311cc1d877}{battleship\+User\+Best\+Score}}
+\begin{DoxyCompactList}\small\item\em user\textquotesingle{}s best score for battleship game \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_scores_model_aace7d46b09918d4eccb27e6594b3576e}{shooting\+User\+Best\+Score}}
+\begin{DoxyCompactList}\small\item\em user\textquotesingle{}s best score for shooting discs game \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_scores_model_a4241524ef3ef9a306627912880f272a1}{battleship\+Global\+Best\+Score}}
+\begin{DoxyCompactList}\small\item\em global best score for battleship game \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_scores_model_a957364845c2efdf58b276ad83b60986c}{shooting\+Global\+Best\+Score}}
+\begin{DoxyCompactList}\small\item\em global best score for shooting discs game \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_scores_model_a4f84eff54f1a61ec000b9eb6341d72f6}{row\+Counter}}
+\begin{DoxyCompactList}\small\item\em counter for number of rows of history table \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_scores_model_a92f5c6fc9012e5eda5f7a5ffdb6ebe81}\label{class_scores_model_a92f5c6fc9012e5eda5f7a5ffdb6ebe81}} 
+\index{ScoresModel@{ScoresModel}!ScoresModel@{ScoresModel}}
+\index{ScoresModel@{ScoresModel}!ScoresModel@{ScoresModel}}
+\doxysubsubsection{\texorpdfstring{ScoresModel()}{ScoresModel()}}
+{\footnotesize\ttfamily Scores\+Model\+::\+Scores\+Model (\begin{DoxyParamCaption}\item[{QString $\ast$}]{username = {\ttfamily nullptr},  }\item[{QObject $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_scores_model_a7080e260875c602f5a6ddd4e7dfee0d2}\label{class_scores_model_a7080e260875c602f5a6ddd4e7dfee0d2}} 
+\index{ScoresModel@{ScoresModel}!columnCount@{columnCount}}
+\index{columnCount@{columnCount}!ScoresModel@{ScoresModel}}
+\doxysubsubsection{\texorpdfstring{columnCount()}{columnCount()}}
+{\footnotesize\ttfamily int Scores\+Model\+::column\+Count (\begin{DoxyParamCaption}\item[{const QModel\+Index \&}]{parent = {\ttfamily QModelIndex()} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Gets the number of columns for the history table. 
+
+\begin{DoxyReturn}{Returns}
+int value of number of columns 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_scores_model_a513bf3924900ee16cc5b3936ef4d3e42}\label{class_scores_model_a513bf3924900ee16cc5b3936ef4d3e42}} 
+\index{ScoresModel@{ScoresModel}!data@{data}}
+\index{data@{data}!ScoresModel@{ScoresModel}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily QVariant Scores\+Model\+::data (\begin{DoxyParamCaption}\item[{const QModel\+Index \&}]{index,  }\item[{int}]{role = {\ttfamily Qt\+:\+:DisplayRole} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Sets the history table\textquotesingle{}s data. 
+
+\begin{DoxyReturn}{Returns}
+QVariant for the data of the table 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_scores_model_a2fdcf21cdda92658d39d5338e4960c6a}\label{class_scores_model_a2fdcf21cdda92658d39d5338e4960c6a}} 
+\index{ScoresModel@{ScoresModel}!headerData@{headerData}}
+\index{headerData@{headerData}!ScoresModel@{ScoresModel}}
+\doxysubsubsection{\texorpdfstring{headerData()}{headerData()}}
+{\footnotesize\ttfamily QVariant Scores\+Model\+::header\+Data (\begin{DoxyParamCaption}\item[{int}]{section,  }\item[{Qt\+::\+Orientation}]{orientation,  }\item[{int}]{role }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Sets the headers of the history table. 
+
+\begin{DoxyReturn}{Returns}
+QVariant for the header data of the table 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_scores_model_a30930884951e86862b3a8f92a774addb}\label{class_scores_model_a30930884951e86862b3a8f92a774addb}} 
+\index{ScoresModel@{ScoresModel}!rowCount@{rowCount}}
+\index{rowCount@{rowCount}!ScoresModel@{ScoresModel}}
+\doxysubsubsection{\texorpdfstring{rowCount()}{rowCount()}}
+{\footnotesize\ttfamily int Scores\+Model\+::row\+Count (\begin{DoxyParamCaption}\item[{const QModel\+Index \&}]{parent = {\ttfamily QModelIndex()} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Gets the number of rows for the history table. 
+
+\begin{DoxyReturn}{Returns}
+int value of number of rows 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_scores_model_a4241524ef3ef9a306627912880f272a1}\label{class_scores_model_a4241524ef3ef9a306627912880f272a1}} 
+\index{ScoresModel@{ScoresModel}!battleshipGlobalBestScore@{battleshipGlobalBestScore}}
+\index{battleshipGlobalBestScore@{battleshipGlobalBestScore}!ScoresModel@{ScoresModel}}
+\doxysubsubsection{\texorpdfstring{battleshipGlobalBestScore}{battleshipGlobalBestScore}}
+{\footnotesize\ttfamily int Scores\+Model\+::battleship\+Global\+Best\+Score\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+global best score for battleship game 
+
+\mbox{\Hypertarget{class_scores_model_adffe63a7b013d1429b132c311cc1d877}\label{class_scores_model_adffe63a7b013d1429b132c311cc1d877}} 
+\index{ScoresModel@{ScoresModel}!battleshipUserBestScore@{battleshipUserBestScore}}
+\index{battleshipUserBestScore@{battleshipUserBestScore}!ScoresModel@{ScoresModel}}
+\doxysubsubsection{\texorpdfstring{battleshipUserBestScore}{battleshipUserBestScore}}
+{\footnotesize\ttfamily int Scores\+Model\+::battleship\+User\+Best\+Score\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+user\textquotesingle{}s best score for battleship game 
+
+\mbox{\Hypertarget{class_scores_model_a2307ce3bded4401d7882b40d07c13d8f}\label{class_scores_model_a2307ce3bded4401d7882b40d07c13d8f}} 
+\index{ScoresModel@{ScoresModel}!battleshipUserScoresList@{battleshipUserScoresList}}
+\index{battleshipUserScoresList@{battleshipUserScoresList}!ScoresModel@{ScoresModel}}
+\doxysubsubsection{\texorpdfstring{battleshipUserScoresList}{battleshipUserScoresList}}
+{\footnotesize\ttfamily QString\+List$\ast$ Scores\+Model\+::battleship\+User\+Scores\+List\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to battleship game scores list 
+
+\mbox{\Hypertarget{class_scores_model_adf52ec9a6b43f1d4e9cc129d35928b69}\label{class_scores_model_adf52ec9a6b43f1d4e9cc129d35928b69}} 
+\index{ScoresModel@{ScoresModel}!loggedInUser@{loggedInUser}}
+\index{loggedInUser@{loggedInUser}!ScoresModel@{ScoresModel}}
+\doxysubsubsection{\texorpdfstring{loggedInUser}{loggedInUser}}
+{\footnotesize\ttfamily QString Scores\+Model\+::logged\+In\+User\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+logged in user name 
+
+\mbox{\Hypertarget{class_scores_model_a4f84eff54f1a61ec000b9eb6341d72f6}\label{class_scores_model_a4f84eff54f1a61ec000b9eb6341d72f6}} 
+\index{ScoresModel@{ScoresModel}!rowCounter@{rowCounter}}
+\index{rowCounter@{rowCounter}!ScoresModel@{ScoresModel}}
+\doxysubsubsection{\texorpdfstring{rowCounter}{rowCounter}}
+{\footnotesize\ttfamily int Scores\+Model\+::row\+Counter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+counter for number of rows of history table 
+
+\mbox{\Hypertarget{class_scores_model_a957364845c2efdf58b276ad83b60986c}\label{class_scores_model_a957364845c2efdf58b276ad83b60986c}} 
+\index{ScoresModel@{ScoresModel}!shootingGlobalBestScore@{shootingGlobalBestScore}}
+\index{shootingGlobalBestScore@{shootingGlobalBestScore}!ScoresModel@{ScoresModel}}
+\doxysubsubsection{\texorpdfstring{shootingGlobalBestScore}{shootingGlobalBestScore}}
+{\footnotesize\ttfamily int Scores\+Model\+::shooting\+Global\+Best\+Score\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+global best score for shooting discs game 
+
+\mbox{\Hypertarget{class_scores_model_aace7d46b09918d4eccb27e6594b3576e}\label{class_scores_model_aace7d46b09918d4eccb27e6594b3576e}} 
+\index{ScoresModel@{ScoresModel}!shootingUserBestScore@{shootingUserBestScore}}
+\index{shootingUserBestScore@{shootingUserBestScore}!ScoresModel@{ScoresModel}}
+\doxysubsubsection{\texorpdfstring{shootingUserBestScore}{shootingUserBestScore}}
+{\footnotesize\ttfamily int Scores\+Model\+::shooting\+User\+Best\+Score\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+user\textquotesingle{}s best score for shooting discs game 
+
+\mbox{\Hypertarget{class_scores_model_aa40dec281644a49fe165c632f71a9074}\label{class_scores_model_aa40dec281644a49fe165c632f71a9074}} 
+\index{ScoresModel@{ScoresModel}!shootingUserScoresList@{shootingUserScoresList}}
+\index{shootingUserScoresList@{shootingUserScoresList}!ScoresModel@{ScoresModel}}
+\doxysubsubsection{\texorpdfstring{shootingUserScoresList}{shootingUserScoresList}}
+{\footnotesize\ttfamily QString\+List$\ast$ Scores\+Model\+::shooting\+User\+Scores\+List\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to shooting game scores list 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{scoresmodel_8h}{scoresmodel.\+h}}\item 
+\mbox{\hyperlink{scoresmodel_8cpp}{scoresmodel.\+cpp}}\end{DoxyCompactItemize}

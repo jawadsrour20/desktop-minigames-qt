@@ -1,0 +1,54 @@
+\hypertarget{home_8h_source}{}\doxysection{home.\+h}
+\mbox{\hyperlink{home_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef HOME\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define HOME\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QWidget>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QtWidgets>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include<string>}}
+\DoxyCodeLine{7 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{20 \textcolor{keyword}{class }\mbox{\hyperlink{class_home}{Home}} : \textcolor{keyword}{public} QWidget}
+\DoxyCodeLine{21 \{}
+\DoxyCodeLine{22     Q\_OBJECT}
+\DoxyCodeLine{23 \textcolor{keyword}{public}:}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25     \textcolor{comment}{// constructor}}
+\DoxyCodeLine{26     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_home_a87ee339c844da110e56195a21a30a581}{Home}}( QStringList* userObject = \textcolor{keyword}{nullptr}, QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29 \textcolor{keyword}{private}:}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31     QString \mbox{\hyperlink{class_home_a84cc2aca683897ee784bc24098d6527a}{playerName}};}
+\DoxyCodeLine{32     QLabel* \mbox{\hyperlink{class_home_a887a338da22ca0dfa55c97e133699e73}{username}}; }
+\DoxyCodeLine{33     QLabel* \mbox{\hyperlink{class_home_af4c48195d2c01f050f9f9f93714895a5}{profilePicture}};}
+\DoxyCodeLine{34     QLabel* \mbox{\hyperlink{class_home_a9bc5c24d642a1e56ea0a667a885f73c8}{currentDate}};}
+\DoxyCodeLine{35     QLabel* \mbox{\hyperlink{class_home_ac847b9c3a27ef3dec3b55e9b5647491a}{countryName}};}
+\DoxyCodeLine{36     QLabel* \mbox{\hyperlink{class_home_a5795173559458e22b9d453f1fd19ea5f}{countryFlag}};}
+\DoxyCodeLine{37     QPushButton* \mbox{\hyperlink{class_home_acb89871a39ec14b0f03ef504b0f55b4a}{battleShipGame}};}
+\DoxyCodeLine{38     QPushButton* \mbox{\hyperlink{class_home_a1ff81d9b1512eb22c01ae16736190b0c}{shootingDiscsGame}};}
+\DoxyCodeLine{39     QPushButton* \mbox{\hyperlink{class_home_af1ff8753d1016de8c8223a94a7278d2e}{history}};}
+\DoxyCodeLine{40     QPushButton* \mbox{\hyperlink{class_home_a641146754822ae8ddf9b9c88fce894b1}{logout}};}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42     QStringList* \mbox{\hyperlink{class_home_ae968cb1d2d15c3583d838766716943d9}{loggedInUser}};}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44     QGridLayout* \mbox{\hyperlink{class_home_ad8b1d47430c69f9634c13f40607d7537}{gridLayout}};}
+\DoxyCodeLine{45     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_home_a6008b961353ec7bba474fa53483f63db}{setGridLayout}}();}
+\DoxyCodeLine{46     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_home_a97a4cde768905fe17c676b47f7cbfc15}{setColors}}();}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49 signals:}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_home_ac86d2359d698e192ae190cbf1ef442aa}{onPlayBattleshipGameClicked}}();}
+\DoxyCodeLine{54     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_home_a63401fceebd25b3a4912b2f85a598e3e}{onPlayShootingDiscsGameClicked}}();}
+\DoxyCodeLine{55     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_home_aacca15d7a5481638f3bbaa97a9bf64b9}{onHistoryClicked}}();}
+\DoxyCodeLine{56     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_home_aa9cd870b30fec091e5a49d7a6f35decf}{onLogoutClicked}}();}
+\DoxyCodeLine{57     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_home_a3dda94435e9e993eefa61be282702db4}{onGuestHistoryClicked}}();}
+\DoxyCodeLine{58 \};}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// HOME\_H}}
+
+\end{DoxyCode}

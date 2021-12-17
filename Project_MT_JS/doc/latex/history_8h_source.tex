@@ -1,0 +1,36 @@
+\hypertarget{history_8h_source}{}\doxysection{history.\+h}
+\mbox{\hyperlink{history_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef HISTORY\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define HISTORY\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QWidget>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QtWidgets>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <QTableView>}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{class_history}{History}} : \textcolor{keyword}{public} QWidget}
+\DoxyCodeLine{15 \{}
+\DoxyCodeLine{16     Q\_OBJECT}
+\DoxyCodeLine{17 \textcolor{keyword}{public}:}
+\DoxyCodeLine{18     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_history_af93b7def1758a0f1cc20caea8b1ea0d4}{History}}(QString* \mbox{\hyperlink{class_history_adfc5d2d5bd3c089f39983b5b5ca2d868}{loggedInUser}}=\textcolor{keyword}{nullptr}, QStringList* \mbox{\hyperlink{class_history_a446da92a2699cd32a7a09ff1e2f1a0b6}{loggedInUserObject}}=\textcolor{keyword}{nullptr}, QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{keyword}{private}:}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22     QStringList* \mbox{\hyperlink{class_history_a446da92a2699cd32a7a09ff1e2f1a0b6}{loggedInUserObject}}; }
+\DoxyCodeLine{23     QPushButton* \mbox{\hyperlink{class_history_a540f19a259adc219003806d324328269}{backButton}}; }
+\DoxyCodeLine{24     QString* \mbox{\hyperlink{class_history_adfc5d2d5bd3c089f39983b5b5ca2d868}{loggedInUser}}; }
+\DoxyCodeLine{25     QGridLayout* \mbox{\hyperlink{class_history_a5bcaf9a5c5ecc9325c28ccd154a22d9c}{gridLayout}}; }
+\DoxyCodeLine{26     QTableView* \mbox{\hyperlink{class_history_a714c7c8c438bc9feff42f6758c0aa7d8}{tableView}}; }
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29 signals:}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{33     \textcolor{comment}{// slot called when Back button is clicked}}
+\DoxyCodeLine{34     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_history_ac0f9c6af86f22222c55df4099b84cc2a}{onBackClicked}}();}
+\DoxyCodeLine{35 \};}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// HISTORY\_H}}
+
+\end{DoxyCode}

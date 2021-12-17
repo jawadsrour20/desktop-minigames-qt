@@ -1,0 +1,389 @@
+\hypertarget{class_register}{}\doxysection{Register Class Reference}
+\label{class_register}\index{Register@{Register}}
+
+
+{\ttfamily \#include $<$register.\+h$>$}
+
+
+
+Inheritance diagram for Register\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{class_register__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Register\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{class_register__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_register_aa7ebd675d2095ba33158136bde80dd49}{Register}} (QWidget $\ast$parent=nullptr)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_register_ac5523ba144ca43a366fbf442340e14ee}{on\+Register\+Clicked}} ()
+\begin{DoxyCompactList}\small\item\em Responds to a click on the Reigster button and validates the provided information If the provided information does not satisfy set coniditions, it displays a message to the user asking to change the information causing the registration error. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_register_a45db233f0a6ff0c9f1ba4434fb921795}{on\+Back\+Clicked}} ()
+\begin{DoxyCompactList}\small\item\em Responds to a click on the Back button and navigates user back to the main login page. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_register_a5557171a603e9cf2e7d6219854bd9a0d}{set\+Grid\+Layout}} ()
+\begin{DoxyCompactList}\small\item\em Sets the Grid\+Layout for the registration page. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_register_a68ad0323fecccca67e164f1c1a4100d4}{set\+Colors}} ()
+\begin{DoxyCompactList}\small\item\em Sets the colors for the registration page. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+QLabel $\ast$ \mbox{\hyperlink{class_register_a439d6ed8e4c8c04acf230ff87e683682}{rocket\+Picture}}
+\begin{DoxyCompactList}\small\item\em pointer to rocket picture \end{DoxyCompactList}\item 
+QLabel $\ast$ \mbox{\hyperlink{class_register_aac0f895da309f182d65adb6411d0d660}{username}}
+\begin{DoxyCompactList}\small\item\em pointer to user name label \end{DoxyCompactList}\item 
+QLabel $\ast$ \mbox{\hyperlink{class_register_afb6a6f60f3ffd7836a175bbf1568439d}{password}}
+\begin{DoxyCompactList}\small\item\em pointer to password label \end{DoxyCompactList}\item 
+QLabel $\ast$ \mbox{\hyperlink{class_register_ab001d44ad8d8851507d27feda680d19d}{first\+Name}}
+\begin{DoxyCompactList}\small\item\em pointer to first name label \end{DoxyCompactList}\item 
+QLabel $\ast$ \mbox{\hyperlink{class_register_a91cf328b92fde8ff8623154b9d60af77}{last\+Name}}
+\begin{DoxyCompactList}\small\item\em poniter to lat name label \end{DoxyCompactList}\item 
+QLabel $\ast$ \mbox{\hyperlink{class_register_a23989692aeafe764551f4761a633f6a5}{profile\+Picture}}
+\begin{DoxyCompactList}\small\item\em pointer to profile picture label \end{DoxyCompactList}\item 
+QLabel $\ast$ \mbox{\hyperlink{class_register_adffe4cd277a60bde47cdde5d7509012c}{phone\+Number}}
+\begin{DoxyCompactList}\small\item\em pointer to phone number label \end{DoxyCompactList}\item 
+QLabel $\ast$ \mbox{\hyperlink{class_register_a82badfe9238e4ca7b8a4dc3d60873c4c}{birth\+Date\+Label}}
+\begin{DoxyCompactList}\small\item\em pointer to birth date label \end{DoxyCompactList}\item 
+QLabel $\ast$ \mbox{\hyperlink{class_register_a761efac72c2c14238f4c3a493f6be8a7}{gender}}
+\begin{DoxyCompactList}\small\item\em pointer to gender label \end{DoxyCompactList}\item 
+QLine\+Edit $\ast$ \mbox{\hyperlink{class_register_a81d94114c24b51ea8e81bf37b11b0082}{username\+Field}}
+\begin{DoxyCompactList}\small\item\em pointer to input user name field \end{DoxyCompactList}\item 
+QLine\+Edit $\ast$ \mbox{\hyperlink{class_register_a914d5879f9f195dc8abf6fe364355fc9}{password\+Field}}
+\begin{DoxyCompactList}\small\item\em pointer to input password field \end{DoxyCompactList}\item 
+QLine\+Edit $\ast$ \mbox{\hyperlink{class_register_a573540ae412e2784070679333cfcd10b}{first\+Name\+Field}}
+\begin{DoxyCompactList}\small\item\em pointer to input first name field \end{DoxyCompactList}\item 
+QLine\+Edit $\ast$ \mbox{\hyperlink{class_register_a9eb03feeeb6050ee4663233b133e70d7}{last\+Name\+Field}}
+\begin{DoxyCompactList}\small\item\em pointer to input last name field \end{DoxyCompactList}\item 
+QLine\+Edit $\ast$ \mbox{\hyperlink{class_register_a814c730397a396fbcd2c56b60f7415a4}{profile\+Picture\+Field}}
+\begin{DoxyCompactList}\small\item\em pointer to input profile picture field \end{DoxyCompactList}\item 
+QLine\+Edit $\ast$ \mbox{\hyperlink{class_register_a9864e5e5a2d1314e259b24a0e1607674}{phone\+Number\+Field}}
+\begin{DoxyCompactList}\small\item\em pointer to input phone number field \end{DoxyCompactList}\item 
+QDate\+Edit $\ast$ \mbox{\hyperlink{class_register_a9512d8824b136fe081c394e9a11a2174}{birth\+Date}}
+\begin{DoxyCompactList}\small\item\em pointer to input birth date field \end{DoxyCompactList}\item 
+QCombo\+Box $\ast$ \mbox{\hyperlink{class_register_a6810a331770a3b5f6aabf06836239604}{gender\+Combo\+Box}}
+\begin{DoxyCompactList}\small\item\em pointer to gender combo box \end{DoxyCompactList}\item 
+QPush\+Button $\ast$ \mbox{\hyperlink{class_register_a09443cf020b206bd2db9418524712acb}{back\+Button}}
+\begin{DoxyCompactList}\small\item\em pointer to back button \end{DoxyCompactList}\item 
+QPush\+Button $\ast$ \mbox{\hyperlink{class_register_a0ce6f9dd1fea8339c36a3d4dbdcb855f}{register\+Button}}
+\begin{DoxyCompactList}\small\item\em pointer to register button \end{DoxyCompactList}\item 
+QGrid\+Layout $\ast$ \mbox{\hyperlink{class_register_a9aaa977a6966e125786631bf9d313fb5}{grid\+Layout}}
+\begin{DoxyCompactList}\small\item\em pointer to Grid\+Layout object \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_register_aa7ebd675d2095ba33158136bde80dd49}\label{class_register_aa7ebd675d2095ba33158136bde80dd49}} 
+\index{Register@{Register}!Register@{Register}}
+\index{Register@{Register}!Register@{Register}}
+\doxysubsubsection{\texorpdfstring{Register()}{Register()}}
+{\footnotesize\ttfamily Register\+::\+Register (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_register_aa7ebd675d2095ba33158136bde80dd49_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_register_a45db233f0a6ff0c9f1ba4434fb921795}\label{class_register_a45db233f0a6ff0c9f1ba4434fb921795}} 
+\index{Register@{Register}!onBackClicked@{onBackClicked}}
+\index{onBackClicked@{onBackClicked}!Register@{Register}}
+\doxysubsubsection{\texorpdfstring{onBackClicked}{onBackClicked}}
+{\footnotesize\ttfamily void Register\+::on\+Back\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Responds to a click on the Back button and navigates user back to the main login page. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{class_register_a45db233f0a6ff0c9f1ba4434fb921795_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_register_ac5523ba144ca43a366fbf442340e14ee}\label{class_register_ac5523ba144ca43a366fbf442340e14ee}} 
+\index{Register@{Register}!onRegisterClicked@{onRegisterClicked}}
+\index{onRegisterClicked@{onRegisterClicked}!Register@{Register}}
+\doxysubsubsection{\texorpdfstring{onRegisterClicked}{onRegisterClicked}}
+{\footnotesize\ttfamily void Register\+::on\+Register\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Responds to a click on the Reigster button and validates the provided information If the provided information does not satisfy set coniditions, it displays a message to the user asking to change the information causing the registration error. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_register_ac5523ba144ca43a366fbf442340e14ee_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_register_a68ad0323fecccca67e164f1c1a4100d4}\label{class_register_a68ad0323fecccca67e164f1c1a4100d4}} 
+\index{Register@{Register}!setColors@{setColors}}
+\index{setColors@{setColors}!Register@{Register}}
+\doxysubsubsection{\texorpdfstring{setColors()}{setColors()}}
+{\footnotesize\ttfamily void Register\+::set\+Colors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sets the colors for the registration page. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{class_register_a68ad0323fecccca67e164f1c1a4100d4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_register_a5557171a603e9cf2e7d6219854bd9a0d}\label{class_register_a5557171a603e9cf2e7d6219854bd9a0d}} 
+\index{Register@{Register}!setGridLayout@{setGridLayout}}
+\index{setGridLayout@{setGridLayout}!Register@{Register}}
+\doxysubsubsection{\texorpdfstring{setGridLayout()}{setGridLayout()}}
+{\footnotesize\ttfamily void Register\+::set\+Grid\+Layout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sets the Grid\+Layout for the registration page. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{class_register_a5557171a603e9cf2e7d6219854bd9a0d_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_register_a09443cf020b206bd2db9418524712acb}\label{class_register_a09443cf020b206bd2db9418524712acb}} 
+\index{Register@{Register}!backButton@{backButton}}
+\index{backButton@{backButton}!Register@{Register}}
+\doxysubsubsection{\texorpdfstring{backButton}{backButton}}
+{\footnotesize\ttfamily QPush\+Button$\ast$ Register\+::back\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to back button 
+
+\mbox{\Hypertarget{class_register_a9512d8824b136fe081c394e9a11a2174}\label{class_register_a9512d8824b136fe081c394e9a11a2174}} 
+\index{Register@{Register}!birthDate@{birthDate}}
+\index{birthDate@{birthDate}!Register@{Register}}
+\doxysubsubsection{\texorpdfstring{birthDate}{birthDate}}
+{\footnotesize\ttfamily QDate\+Edit$\ast$ Register\+::birth\+Date\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to input birth date field 
+
+\mbox{\Hypertarget{class_register_a82badfe9238e4ca7b8a4dc3d60873c4c}\label{class_register_a82badfe9238e4ca7b8a4dc3d60873c4c}} 
+\index{Register@{Register}!birthDateLabel@{birthDateLabel}}
+\index{birthDateLabel@{birthDateLabel}!Register@{Register}}
+\doxysubsubsection{\texorpdfstring{birthDateLabel}{birthDateLabel}}
+{\footnotesize\ttfamily QLabel$\ast$ Register\+::birth\+Date\+Label\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to birth date label 
+
+\mbox{\Hypertarget{class_register_ab001d44ad8d8851507d27feda680d19d}\label{class_register_ab001d44ad8d8851507d27feda680d19d}} 
+\index{Register@{Register}!firstName@{firstName}}
+\index{firstName@{firstName}!Register@{Register}}
+\doxysubsubsection{\texorpdfstring{firstName}{firstName}}
+{\footnotesize\ttfamily QLabel$\ast$ Register\+::first\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to first name label 
+
+\mbox{\Hypertarget{class_register_a573540ae412e2784070679333cfcd10b}\label{class_register_a573540ae412e2784070679333cfcd10b}} 
+\index{Register@{Register}!firstNameField@{firstNameField}}
+\index{firstNameField@{firstNameField}!Register@{Register}}
+\doxysubsubsection{\texorpdfstring{firstNameField}{firstNameField}}
+{\footnotesize\ttfamily QLine\+Edit$\ast$ Register\+::first\+Name\+Field\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to input first name field 
+
+\mbox{\Hypertarget{class_register_a761efac72c2c14238f4c3a493f6be8a7}\label{class_register_a761efac72c2c14238f4c3a493f6be8a7}} 
+\index{Register@{Register}!gender@{gender}}
+\index{gender@{gender}!Register@{Register}}
+\doxysubsubsection{\texorpdfstring{gender}{gender}}
+{\footnotesize\ttfamily QLabel$\ast$ Register\+::gender\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to gender label 
+
+\mbox{\Hypertarget{class_register_a6810a331770a3b5f6aabf06836239604}\label{class_register_a6810a331770a3b5f6aabf06836239604}} 
+\index{Register@{Register}!genderComboBox@{genderComboBox}}
+\index{genderComboBox@{genderComboBox}!Register@{Register}}
+\doxysubsubsection{\texorpdfstring{genderComboBox}{genderComboBox}}
+{\footnotesize\ttfamily QCombo\+Box$\ast$ Register\+::gender\+Combo\+Box\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to gender combo box 
+
+\mbox{\Hypertarget{class_register_a9aaa977a6966e125786631bf9d313fb5}\label{class_register_a9aaa977a6966e125786631bf9d313fb5}} 
+\index{Register@{Register}!gridLayout@{gridLayout}}
+\index{gridLayout@{gridLayout}!Register@{Register}}
+\doxysubsubsection{\texorpdfstring{gridLayout}{gridLayout}}
+{\footnotesize\ttfamily QGrid\+Layout$\ast$ Register\+::grid\+Layout\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to Grid\+Layout object 
+
+\mbox{\Hypertarget{class_register_a91cf328b92fde8ff8623154b9d60af77}\label{class_register_a91cf328b92fde8ff8623154b9d60af77}} 
+\index{Register@{Register}!lastName@{lastName}}
+\index{lastName@{lastName}!Register@{Register}}
+\doxysubsubsection{\texorpdfstring{lastName}{lastName}}
+{\footnotesize\ttfamily QLabel$\ast$ Register\+::last\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+poniter to lat name label 
+
+\mbox{\Hypertarget{class_register_a9eb03feeeb6050ee4663233b133e70d7}\label{class_register_a9eb03feeeb6050ee4663233b133e70d7}} 
+\index{Register@{Register}!lastNameField@{lastNameField}}
+\index{lastNameField@{lastNameField}!Register@{Register}}
+\doxysubsubsection{\texorpdfstring{lastNameField}{lastNameField}}
+{\footnotesize\ttfamily QLine\+Edit$\ast$ Register\+::last\+Name\+Field\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to input last name field 
+
+\mbox{\Hypertarget{class_register_afb6a6f60f3ffd7836a175bbf1568439d}\label{class_register_afb6a6f60f3ffd7836a175bbf1568439d}} 
+\index{Register@{Register}!password@{password}}
+\index{password@{password}!Register@{Register}}
+\doxysubsubsection{\texorpdfstring{password}{password}}
+{\footnotesize\ttfamily QLabel$\ast$ Register\+::password\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to password label 
+
+\mbox{\Hypertarget{class_register_a914d5879f9f195dc8abf6fe364355fc9}\label{class_register_a914d5879f9f195dc8abf6fe364355fc9}} 
+\index{Register@{Register}!passwordField@{passwordField}}
+\index{passwordField@{passwordField}!Register@{Register}}
+\doxysubsubsection{\texorpdfstring{passwordField}{passwordField}}
+{\footnotesize\ttfamily QLine\+Edit$\ast$ Register\+::password\+Field\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to input password field 
+
+\mbox{\Hypertarget{class_register_adffe4cd277a60bde47cdde5d7509012c}\label{class_register_adffe4cd277a60bde47cdde5d7509012c}} 
+\index{Register@{Register}!phoneNumber@{phoneNumber}}
+\index{phoneNumber@{phoneNumber}!Register@{Register}}
+\doxysubsubsection{\texorpdfstring{phoneNumber}{phoneNumber}}
+{\footnotesize\ttfamily QLabel$\ast$ Register\+::phone\+Number\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to phone number label 
+
+\mbox{\Hypertarget{class_register_a9864e5e5a2d1314e259b24a0e1607674}\label{class_register_a9864e5e5a2d1314e259b24a0e1607674}} 
+\index{Register@{Register}!phoneNumberField@{phoneNumberField}}
+\index{phoneNumberField@{phoneNumberField}!Register@{Register}}
+\doxysubsubsection{\texorpdfstring{phoneNumberField}{phoneNumberField}}
+{\footnotesize\ttfamily QLine\+Edit$\ast$ Register\+::phone\+Number\+Field\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to input phone number field 
+
+\mbox{\Hypertarget{class_register_a23989692aeafe764551f4761a633f6a5}\label{class_register_a23989692aeafe764551f4761a633f6a5}} 
+\index{Register@{Register}!profilePicture@{profilePicture}}
+\index{profilePicture@{profilePicture}!Register@{Register}}
+\doxysubsubsection{\texorpdfstring{profilePicture}{profilePicture}}
+{\footnotesize\ttfamily QLabel$\ast$ Register\+::profile\+Picture\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to profile picture label 
+
+\mbox{\Hypertarget{class_register_a814c730397a396fbcd2c56b60f7415a4}\label{class_register_a814c730397a396fbcd2c56b60f7415a4}} 
+\index{Register@{Register}!profilePictureField@{profilePictureField}}
+\index{profilePictureField@{profilePictureField}!Register@{Register}}
+\doxysubsubsection{\texorpdfstring{profilePictureField}{profilePictureField}}
+{\footnotesize\ttfamily QLine\+Edit$\ast$ Register\+::profile\+Picture\+Field\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to input profile picture field 
+
+\mbox{\Hypertarget{class_register_a0ce6f9dd1fea8339c36a3d4dbdcb855f}\label{class_register_a0ce6f9dd1fea8339c36a3d4dbdcb855f}} 
+\index{Register@{Register}!registerButton@{registerButton}}
+\index{registerButton@{registerButton}!Register@{Register}}
+\doxysubsubsection{\texorpdfstring{registerButton}{registerButton}}
+{\footnotesize\ttfamily QPush\+Button$\ast$ Register\+::register\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to register button 
+
+\mbox{\Hypertarget{class_register_a439d6ed8e4c8c04acf230ff87e683682}\label{class_register_a439d6ed8e4c8c04acf230ff87e683682}} 
+\index{Register@{Register}!rocketPicture@{rocketPicture}}
+\index{rocketPicture@{rocketPicture}!Register@{Register}}
+\doxysubsubsection{\texorpdfstring{rocketPicture}{rocketPicture}}
+{\footnotesize\ttfamily QLabel$\ast$ Register\+::rocket\+Picture\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to rocket picture 
+
+\mbox{\Hypertarget{class_register_aac0f895da309f182d65adb6411d0d660}\label{class_register_aac0f895da309f182d65adb6411d0d660}} 
+\index{Register@{Register}!username@{username}}
+\index{username@{username}!Register@{Register}}
+\doxysubsubsection{\texorpdfstring{username}{username}}
+{\footnotesize\ttfamily QLabel$\ast$ Register\+::username\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to user name label 
+
+\mbox{\Hypertarget{class_register_a81d94114c24b51ea8e81bf37b11b0082}\label{class_register_a81d94114c24b51ea8e81bf37b11b0082}} 
+\index{Register@{Register}!usernameField@{usernameField}}
+\index{usernameField@{usernameField}!Register@{Register}}
+\doxysubsubsection{\texorpdfstring{usernameField}{usernameField}}
+{\footnotesize\ttfamily QLine\+Edit$\ast$ Register\+::username\+Field\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to input user name field 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{register_8h}{register.\+h}}\item 
+\mbox{\hyperlink{register_8cpp}{register.\+cpp}}\end{DoxyCompactItemize}

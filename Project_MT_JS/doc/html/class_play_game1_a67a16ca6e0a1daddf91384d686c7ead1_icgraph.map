@@ -1,0 +1,4 @@
+<map id="PlayGame1::updateAttempts" name="PlayGame1::updateAttempts">
+<area shape="rect" id="node1" title="It is called when the value of attempts is changed. It displays the new value." alt="" coords="267,5,459,32"/>
+<area shape="rect" id="node2" href="$class_gride_square.html#ac6a6fa4b17ac9fad99d13214c677175c" title="Responds to mouse clicks, if the square contains a ship pop&#45;up question will appear...." alt="" coords="5,5,219,32"/>
+</map>

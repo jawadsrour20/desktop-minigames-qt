@@ -1,0 +1,146 @@
+\hypertarget{class_history}{}\doxysection{History Class Reference}
+\label{class_history}\index{History@{History}}
+
+
+{\ttfamily \#include $<$history.\+h$>$}
+
+
+
+Inheritance diagram for History\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{class_history__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for History\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{class_history__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_history_af93b7def1758a0f1cc20caea8b1ea0d4}{History}} (QString $\ast$\mbox{\hyperlink{class_history_adfc5d2d5bd3c089f39983b5b5ca2d868}{logged\+In\+User}}=nullptr, QString\+List $\ast$\mbox{\hyperlink{class_history_a446da92a2699cd32a7a09ff1e2f1a0b6}{logged\+In\+User\+Object}}=nullptr, QWidget $\ast$parent=nullptr)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_history_ac0f9c6af86f22222c55df4099b84cc2a}{on\+Back\+Clicked}} ()
+\begin{DoxyCompactList}\small\item\em SLOT responding to the signal issued by the Back button navigating the user back to the home-\/page. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+QString\+List $\ast$ \mbox{\hyperlink{class_history_a446da92a2699cd32a7a09ff1e2f1a0b6}{logged\+In\+User\+Object}}
+\begin{DoxyCompactList}\small\item\em pointer to the currently logged in user object \end{DoxyCompactList}\item 
+QPush\+Button $\ast$ \mbox{\hyperlink{class_history_a540f19a259adc219003806d324328269}{back\+Button}}
+\begin{DoxyCompactList}\small\item\em pointer to the Back button that navigates back to the homepage \end{DoxyCompactList}\item 
+QString $\ast$ \mbox{\hyperlink{class_history_adfc5d2d5bd3c089f39983b5b5ca2d868}{logged\+In\+User}}
+\begin{DoxyCompactList}\small\item\em pointer to the currently logged in user name \end{DoxyCompactList}\item 
+QGrid\+Layout $\ast$ \mbox{\hyperlink{class_history_a5bcaf9a5c5ecc9325c28ccd154a22d9c}{grid\+Layout}}
+\begin{DoxyCompactList}\small\item\em pointer to Grid\+Layout object for the page \end{DoxyCompactList}\item 
+QTable\+View $\ast$ \mbox{\hyperlink{class_history_a714c7c8c438bc9feff42f6758c0aa7d8}{table\+View}}
+\begin{DoxyCompactList}\small\item\em pointer to QTable\+View object for history stats table \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_history_af93b7def1758a0f1cc20caea8b1ea0d4}\label{class_history_af93b7def1758a0f1cc20caea8b1ea0d4}} 
+\index{History@{History}!History@{History}}
+\index{History@{History}!History@{History}}
+\doxysubsubsection{\texorpdfstring{History()}{History()}}
+{\footnotesize\ttfamily History\+::\+History (\begin{DoxyParamCaption}\item[{QString $\ast$}]{logged\+In\+User = {\ttfamily nullptr},  }\item[{QString\+List $\ast$}]{logged\+In\+User\+Object = {\ttfamily nullptr},  }\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{class_history_af93b7def1758a0f1cc20caea8b1ea0d4_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_history_ac0f9c6af86f22222c55df4099b84cc2a}\label{class_history_ac0f9c6af86f22222c55df4099b84cc2a}} 
+\index{History@{History}!onBackClicked@{onBackClicked}}
+\index{onBackClicked@{onBackClicked}!History@{History}}
+\doxysubsubsection{\texorpdfstring{onBackClicked}{onBackClicked}}
+{\footnotesize\ttfamily void History\+::on\+Back\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+SLOT responding to the signal issued by the Back button navigating the user back to the home-\/page. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{class_history_ac0f9c6af86f22222c55df4099b84cc2a_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_history_a540f19a259adc219003806d324328269}\label{class_history_a540f19a259adc219003806d324328269}} 
+\index{History@{History}!backButton@{backButton}}
+\index{backButton@{backButton}!History@{History}}
+\doxysubsubsection{\texorpdfstring{backButton}{backButton}}
+{\footnotesize\ttfamily QPush\+Button$\ast$ History\+::back\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to the Back button that navigates back to the homepage 
+
+\mbox{\Hypertarget{class_history_a5bcaf9a5c5ecc9325c28ccd154a22d9c}\label{class_history_a5bcaf9a5c5ecc9325c28ccd154a22d9c}} 
+\index{History@{History}!gridLayout@{gridLayout}}
+\index{gridLayout@{gridLayout}!History@{History}}
+\doxysubsubsection{\texorpdfstring{gridLayout}{gridLayout}}
+{\footnotesize\ttfamily QGrid\+Layout$\ast$ History\+::grid\+Layout\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to Grid\+Layout object for the page 
+
+\mbox{\Hypertarget{class_history_adfc5d2d5bd3c089f39983b5b5ca2d868}\label{class_history_adfc5d2d5bd3c089f39983b5b5ca2d868}} 
+\index{History@{History}!loggedInUser@{loggedInUser}}
+\index{loggedInUser@{loggedInUser}!History@{History}}
+\doxysubsubsection{\texorpdfstring{loggedInUser}{loggedInUser}}
+{\footnotesize\ttfamily QString$\ast$ History\+::logged\+In\+User\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to the currently logged in user name 
+
+\mbox{\Hypertarget{class_history_a446da92a2699cd32a7a09ff1e2f1a0b6}\label{class_history_a446da92a2699cd32a7a09ff1e2f1a0b6}} 
+\index{History@{History}!loggedInUserObject@{loggedInUserObject}}
+\index{loggedInUserObject@{loggedInUserObject}!History@{History}}
+\doxysubsubsection{\texorpdfstring{loggedInUserObject}{loggedInUserObject}}
+{\footnotesize\ttfamily QString\+List$\ast$ History\+::logged\+In\+User\+Object\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to the currently logged in user object 
+
+\mbox{\Hypertarget{class_history_a714c7c8c438bc9feff42f6758c0aa7d8}\label{class_history_a714c7c8c438bc9feff42f6758c0aa7d8}} 
+\index{History@{History}!tableView@{tableView}}
+\index{tableView@{tableView}!History@{History}}
+\doxysubsubsection{\texorpdfstring{tableView}{tableView}}
+{\footnotesize\ttfamily QTable\+View$\ast$ History\+::table\+View\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to QTable\+View object for history stats table 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{history_8h}{history.\+h}}\item 
+\mbox{\hyperlink{history_8cpp}{history.\+cpp}}\end{DoxyCompactItemize}

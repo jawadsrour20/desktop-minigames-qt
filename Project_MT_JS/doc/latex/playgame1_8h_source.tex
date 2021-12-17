@@ -1,0 +1,61 @@
+\hypertarget{playgame1_8h_source}{}\doxysection{playgame1.\+h}
+\mbox{\hyperlink{playgame1_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef PLAYGAME1\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define PLAYGAME1\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QWidget>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QString>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <QGraphicsItem>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <QGraphicsScene>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <QGraphicsView>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <QGraphicsPixmapItem>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <QGraphicsSimpleTextItem>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <random>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <QList>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <QMediaPlayer>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{gridesquare_8h}{gridesquare.h}}"{}}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{using namespace  }std;}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{26 \textcolor{keyword}{class }\mbox{\hyperlink{class_play_game1}{PlayGame1}} :  \textcolor{keyword}{public} QGraphicsScene \{}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 \textcolor{keyword}{public}:}
+\DoxyCodeLine{29     \textcolor{comment}{//constructor}}
+\DoxyCodeLine{30     \mbox{\hyperlink{class_play_game1_a03300eeb1a73cfa6a46efd59e2eefd57}{PlayGame1}}();}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32     \textcolor{comment}{//functions}}
+\DoxyCodeLine{33     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_play_game1_a8fa29ae15828fffbd77ce497fe3c8b01}{drawGrid}}();}
+\DoxyCodeLine{34     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_play_game1_a1fdfe38590f3cba6188eba27ee121a20}{addPlayerShips}}();}
+\DoxyCodeLine{35     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_play_game1_a191b7fc2437d1c41cdb5ffed90b23610}{addEnemyShips}}();}
+\DoxyCodeLine{36     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_play_game1_ae61973f59da097f43e6b912f3306f366}{addFlags}}();}
+\DoxyCodeLine{37     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_play_game1_a281c8c00fa0545811f5e1c11ab996c05}{enemyAttack}}();}
+\DoxyCodeLine{38     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_play_game1_a73e79e539e71c161c9ba1ddf63b067cd}{displayScore}}();}
+\DoxyCodeLine{39     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_play_game1_a45baeee33d9030329a325a9c3912c036}{displayAttempts}}();}
+\DoxyCodeLine{40     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_play_game1_abb5f95efbfb85e9dbd3bf06cdc9d6037}{updateScore}}();}
+\DoxyCodeLine{41     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_play_game1_a67a16ca6e0a1daddf91384d686c7ead1}{updateAttempts}}();}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43     \textcolor{comment}{//attributes}}
+\DoxyCodeLine{44     QGraphicsPixmapItem *\mbox{\hyperlink{class_play_game1_a3ef7ee4d7b781cce3003d9f0f084d90d}{bigShip}};  }
+\DoxyCodeLine{45     QGraphicsPixmapItem *\mbox{\hyperlink{class_play_game1_aab4bc02890883697d73fc48bcc7d9edc}{mediumShip}};}
+\DoxyCodeLine{46     QGraphicsPixmapItem *\mbox{\hyperlink{class_play_game1_af1e6cf4b157ffca4c38f84a0722efbc2}{mediumShip2}};}
+\DoxyCodeLine{47     QGraphicsPixmapItem *\mbox{\hyperlink{class_play_game1_a1896d20037c5f25bfc9fb066f22c962e}{smallShip1}};}
+\DoxyCodeLine{48     QGraphicsPixmapItem *\mbox{\hyperlink{class_play_game1_abafaf9b044f1831751e5dbaced7656a4}{smallShip2}};}
+\DoxyCodeLine{49     QGraphicsPixmapItem *\mbox{\hyperlink{class_play_game1_a8e6c0f984a993451286987080f0fa2d4}{smallShip3}};}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 \textcolor{keyword}{private}:}
+\DoxyCodeLine{52     \textcolor{comment}{//private attributes}}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54     QList<GrideSquare*> \mbox{\hyperlink{class_play_game1_a771359ef8aba5400fac511c163953afb}{enemySquares}}; }
+\DoxyCodeLine{55     QList<GrideSquare*> \mbox{\hyperlink{class_play_game1_a63566e5a36308fe64c74337e8599ecfc}{playerSquares}}; }
+\DoxyCodeLine{56     QGraphicsTextItem* \mbox{\hyperlink{class_play_game1_a8c6686e392dca862e1edc893e0894612}{scoreText}}; }
+\DoxyCodeLine{57     QGraphicsTextItem* \mbox{\hyperlink{class_play_game1_abdfa4300e8d730f96f13b0f119872e6c}{scoreValue}}; }
+\DoxyCodeLine{58     QGraphicsTextItem* \mbox{\hyperlink{class_play_game1_ad9885cb7f0f8b2a9fb5488f22cbecc97}{attemptsText}}; }
+\DoxyCodeLine{59     QGraphicsTextItem* \mbox{\hyperlink{class_play_game1_a71b92862e57a090906855a30af00d1c6}{attemptsValue}}; }
+\DoxyCodeLine{60     QMediaPlayer* \mbox{\hyperlink{class_play_game1_ad7a4ba2e6a4bd2a926aeb9d7a7907643}{music}}; }
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62 \};}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// PLAYGAME1\_H}}
+
+\end{DoxyCode}

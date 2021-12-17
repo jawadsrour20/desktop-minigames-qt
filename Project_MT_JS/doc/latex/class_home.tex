@@ -1,0 +1,361 @@
+\hypertarget{class_home}{}\doxysection{Home Class Reference}
+\label{class_home}\index{Home@{Home}}
+
+
+{\ttfamily \#include $<$home.\+h$>$}
+
+
+
+Inheritance diagram for Home\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{class_home__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Home\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{class_home__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_home_a87ee339c844da110e56195a21a30a581}{Home}} (QString\+List $\ast$user\+Object=nullptr, QWidget $\ast$parent=nullptr)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_home_ac86d2359d698e192ae190cbf1ef442aa}{on\+Play\+Battleship\+Game\+Clicked}} ()
+\begin{DoxyCompactList}\small\item\em responds to a button clicked signal and navigates the user to the \mbox{\hyperlink{class_battle_ship}{Battle\+Ship}} game \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_home_a63401fceebd25b3a4912b2f85a598e3e}{on\+Play\+Shooting\+Discs\+Game\+Clicked}} ()
+\begin{DoxyCompactList}\small\item\em responds to a button clicked signal and navigates the user to the Shooting Discs game \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_home_aacca15d7a5481638f3bbaa97a9bf64b9}{on\+History\+Clicked}} ()
+\begin{DoxyCompactList}\small\item\em responds to a button clicked signal and navigates the user to the \mbox{\hyperlink{class_history}{History}} page \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_home_aa9cd870b30fec091e5a49d7a6f35decf}{on\+Logout\+Clicked}} ()
+\begin{DoxyCompactList}\small\item\em Logs the user out of their account. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_home_a3dda94435e9e993eefa61be282702db4}{on\+Guest\+History\+Clicked}} ()
+\begin{DoxyCompactList}\small\item\em responds to a history button clicked signalfor a guest user and displays a message for them \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_home_a6008b961353ec7bba474fa53483f63db}{set\+Grid\+Layout}} ()
+\begin{DoxyCompactList}\small\item\em Sets the Grid\+Layout for the home-\/page. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_home_a97a4cde768905fe17c676b47f7cbfc15}{set\+Colors}} ()
+\begin{DoxyCompactList}\small\item\em Sets the colors for the home-\/page. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+QString \mbox{\hyperlink{class_home_a84cc2aca683897ee784bc24098d6527a}{player\+Name}}
+\begin{DoxyCompactList}\small\item\em string of the player name \end{DoxyCompactList}\item 
+QLabel $\ast$ \mbox{\hyperlink{class_home_a887a338da22ca0dfa55c97e133699e73}{username}}
+\begin{DoxyCompactList}\small\item\em pointer to the logged-\/in user name \end{DoxyCompactList}\item 
+QLabel $\ast$ \mbox{\hyperlink{class_home_af4c48195d2c01f050f9f9f93714895a5}{profile\+Picture}}
+\begin{DoxyCompactList}\small\item\em pointer to string of user profile picture url \end{DoxyCompactList}\item 
+QLabel $\ast$ \mbox{\hyperlink{class_home_a9bc5c24d642a1e56ea0a667a885f73c8}{current\+Date}}
+\begin{DoxyCompactList}\small\item\em pointer to current date string object \end{DoxyCompactList}\item 
+QLabel $\ast$ \mbox{\hyperlink{class_home_ac847b9c3a27ef3dec3b55e9b5647491a}{country\+Name}}
+\begin{DoxyCompactList}\small\item\em pointer to country name \end{DoxyCompactList}\item 
+QLabel $\ast$ \mbox{\hyperlink{class_home_a5795173559458e22b9d453f1fd19ea5f}{country\+Flag}}
+\begin{DoxyCompactList}\small\item\em pointer to country flag \end{DoxyCompactList}\item 
+QPush\+Button $\ast$ \mbox{\hyperlink{class_home_acb89871a39ec14b0f03ef504b0f55b4a}{battle\+Ship\+Game}}
+\begin{DoxyCompactList}\small\item\em pointer to Battleship game button \end{DoxyCompactList}\item 
+QPush\+Button $\ast$ \mbox{\hyperlink{class_home_a1ff81d9b1512eb22c01ae16736190b0c}{shooting\+Discs\+Game}}
+\begin{DoxyCompactList}\small\item\em pointer to Shooting Discs Game button \end{DoxyCompactList}\item 
+QPush\+Button $\ast$ \mbox{\hyperlink{class_home_af1ff8753d1016de8c8223a94a7278d2e}{history}}
+\begin{DoxyCompactList}\small\item\em pointer to history page button \end{DoxyCompactList}\item 
+QPush\+Button $\ast$ \mbox{\hyperlink{class_home_a641146754822ae8ddf9b9c88fce894b1}{logout}}
+\begin{DoxyCompactList}\small\item\em pointer to logout button \end{DoxyCompactList}\item 
+QString\+List $\ast$ \mbox{\hyperlink{class_home_ae968cb1d2d15c3583d838766716943d9}{logged\+In\+User}}
+\begin{DoxyCompactList}\small\item\em pointer to loggedin user object \end{DoxyCompactList}\item 
+QGrid\+Layout $\ast$ \mbox{\hyperlink{class_home_ad8b1d47430c69f9634c13f40607d7537}{grid\+Layout}}
+\begin{DoxyCompactList}\small\item\em pointer to Grid\+Layout object for the home page \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_home_a87ee339c844da110e56195a21a30a581}\label{class_home_a87ee339c844da110e56195a21a30a581}} 
+\index{Home@{Home}!Home@{Home}}
+\index{Home@{Home}!Home@{Home}}
+\doxysubsubsection{\texorpdfstring{Home()}{Home()}}
+{\footnotesize\ttfamily Home\+::\+Home (\begin{DoxyParamCaption}\item[{QString\+List $\ast$}]{user\+Object = {\ttfamily nullptr},  }\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_home_a87ee339c844da110e56195a21a30a581_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_home_a3dda94435e9e993eefa61be282702db4}\label{class_home_a3dda94435e9e993eefa61be282702db4}} 
+\index{Home@{Home}!onGuestHistoryClicked@{onGuestHistoryClicked}}
+\index{onGuestHistoryClicked@{onGuestHistoryClicked}!Home@{Home}}
+\doxysubsubsection{\texorpdfstring{onGuestHistoryClicked}{onGuestHistoryClicked}}
+{\footnotesize\ttfamily void Home\+::on\+Guest\+History\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+responds to a history button clicked signalfor a guest user and displays a message for them 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{class_home_a3dda94435e9e993eefa61be282702db4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_home_aacca15d7a5481638f3bbaa97a9bf64b9}\label{class_home_aacca15d7a5481638f3bbaa97a9bf64b9}} 
+\index{Home@{Home}!onHistoryClicked@{onHistoryClicked}}
+\index{onHistoryClicked@{onHistoryClicked}!Home@{Home}}
+\doxysubsubsection{\texorpdfstring{onHistoryClicked}{onHistoryClicked}}
+{\footnotesize\ttfamily void Home\+::on\+History\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+responds to a button clicked signal and navigates the user to the \mbox{\hyperlink{class_history}{History}} page 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{class_home_aacca15d7a5481638f3bbaa97a9bf64b9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_home_aa9cd870b30fec091e5a49d7a6f35decf}\label{class_home_aa9cd870b30fec091e5a49d7a6f35decf}} 
+\index{Home@{Home}!onLogoutClicked@{onLogoutClicked}}
+\index{onLogoutClicked@{onLogoutClicked}!Home@{Home}}
+\doxysubsubsection{\texorpdfstring{onLogoutClicked}{onLogoutClicked}}
+{\footnotesize\ttfamily void Home\+::on\+Logout\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Logs the user out of their account. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{class_home_aa9cd870b30fec091e5a49d7a6f35decf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_home_ac86d2359d698e192ae190cbf1ef442aa}\label{class_home_ac86d2359d698e192ae190cbf1ef442aa}} 
+\index{Home@{Home}!onPlayBattleshipGameClicked@{onPlayBattleshipGameClicked}}
+\index{onPlayBattleshipGameClicked@{onPlayBattleshipGameClicked}!Home@{Home}}
+\doxysubsubsection{\texorpdfstring{onPlayBattleshipGameClicked}{onPlayBattleshipGameClicked}}
+{\footnotesize\ttfamily void Home\+::on\+Play\+Battleship\+Game\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+responds to a button clicked signal and navigates the user to the \mbox{\hyperlink{class_battle_ship}{Battle\+Ship}} game 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_home_ac86d2359d698e192ae190cbf1ef442aa_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{class_home_ac86d2359d698e192ae190cbf1ef442aa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_home_a63401fceebd25b3a4912b2f85a598e3e}\label{class_home_a63401fceebd25b3a4912b2f85a598e3e}} 
+\index{Home@{Home}!onPlayShootingDiscsGameClicked@{onPlayShootingDiscsGameClicked}}
+\index{onPlayShootingDiscsGameClicked@{onPlayShootingDiscsGameClicked}!Home@{Home}}
+\doxysubsubsection{\texorpdfstring{onPlayShootingDiscsGameClicked}{onPlayShootingDiscsGameClicked}}
+{\footnotesize\ttfamily void Home\+::on\+Play\+Shooting\+Discs\+Game\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+responds to a button clicked signal and navigates the user to the Shooting Discs game 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_home_a63401fceebd25b3a4912b2f85a598e3e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_home_a97a4cde768905fe17c676b47f7cbfc15}\label{class_home_a97a4cde768905fe17c676b47f7cbfc15}} 
+\index{Home@{Home}!setColors@{setColors}}
+\index{setColors@{setColors}!Home@{Home}}
+\doxysubsubsection{\texorpdfstring{setColors()}{setColors()}}
+{\footnotesize\ttfamily void Home\+::set\+Colors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sets the colors for the home-\/page. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{class_home_a97a4cde768905fe17c676b47f7cbfc15_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_home_a6008b961353ec7bba474fa53483f63db}\label{class_home_a6008b961353ec7bba474fa53483f63db}} 
+\index{Home@{Home}!setGridLayout@{setGridLayout}}
+\index{setGridLayout@{setGridLayout}!Home@{Home}}
+\doxysubsubsection{\texorpdfstring{setGridLayout()}{setGridLayout()}}
+{\footnotesize\ttfamily void Home\+::set\+Grid\+Layout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sets the Grid\+Layout for the home-\/page. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{class_home_a6008b961353ec7bba474fa53483f63db_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_home_acb89871a39ec14b0f03ef504b0f55b4a}\label{class_home_acb89871a39ec14b0f03ef504b0f55b4a}} 
+\index{Home@{Home}!battleShipGame@{battleShipGame}}
+\index{battleShipGame@{battleShipGame}!Home@{Home}}
+\doxysubsubsection{\texorpdfstring{battleShipGame}{battleShipGame}}
+{\footnotesize\ttfamily QPush\+Button$\ast$ Home\+::battle\+Ship\+Game\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to Battleship game button 
+
+\mbox{\Hypertarget{class_home_a5795173559458e22b9d453f1fd19ea5f}\label{class_home_a5795173559458e22b9d453f1fd19ea5f}} 
+\index{Home@{Home}!countryFlag@{countryFlag}}
+\index{countryFlag@{countryFlag}!Home@{Home}}
+\doxysubsubsection{\texorpdfstring{countryFlag}{countryFlag}}
+{\footnotesize\ttfamily QLabel$\ast$ Home\+::country\+Flag\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to country flag 
+
+\mbox{\Hypertarget{class_home_ac847b9c3a27ef3dec3b55e9b5647491a}\label{class_home_ac847b9c3a27ef3dec3b55e9b5647491a}} 
+\index{Home@{Home}!countryName@{countryName}}
+\index{countryName@{countryName}!Home@{Home}}
+\doxysubsubsection{\texorpdfstring{countryName}{countryName}}
+{\footnotesize\ttfamily QLabel$\ast$ Home\+::country\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to country name 
+
+\mbox{\Hypertarget{class_home_a9bc5c24d642a1e56ea0a667a885f73c8}\label{class_home_a9bc5c24d642a1e56ea0a667a885f73c8}} 
+\index{Home@{Home}!currentDate@{currentDate}}
+\index{currentDate@{currentDate}!Home@{Home}}
+\doxysubsubsection{\texorpdfstring{currentDate}{currentDate}}
+{\footnotesize\ttfamily QLabel$\ast$ Home\+::current\+Date\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to current date string object 
+
+\mbox{\Hypertarget{class_home_ad8b1d47430c69f9634c13f40607d7537}\label{class_home_ad8b1d47430c69f9634c13f40607d7537}} 
+\index{Home@{Home}!gridLayout@{gridLayout}}
+\index{gridLayout@{gridLayout}!Home@{Home}}
+\doxysubsubsection{\texorpdfstring{gridLayout}{gridLayout}}
+{\footnotesize\ttfamily QGrid\+Layout$\ast$ Home\+::grid\+Layout\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to Grid\+Layout object for the home page 
+
+\mbox{\Hypertarget{class_home_af1ff8753d1016de8c8223a94a7278d2e}\label{class_home_af1ff8753d1016de8c8223a94a7278d2e}} 
+\index{Home@{Home}!history@{history}}
+\index{history@{history}!Home@{Home}}
+\doxysubsubsection{\texorpdfstring{history}{history}}
+{\footnotesize\ttfamily QPush\+Button$\ast$ Home\+::history\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to history page button 
+
+\mbox{\Hypertarget{class_home_ae968cb1d2d15c3583d838766716943d9}\label{class_home_ae968cb1d2d15c3583d838766716943d9}} 
+\index{Home@{Home}!loggedInUser@{loggedInUser}}
+\index{loggedInUser@{loggedInUser}!Home@{Home}}
+\doxysubsubsection{\texorpdfstring{loggedInUser}{loggedInUser}}
+{\footnotesize\ttfamily QString\+List$\ast$ Home\+::logged\+In\+User\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to loggedin user object 
+
+\mbox{\Hypertarget{class_home_a641146754822ae8ddf9b9c88fce894b1}\label{class_home_a641146754822ae8ddf9b9c88fce894b1}} 
+\index{Home@{Home}!logout@{logout}}
+\index{logout@{logout}!Home@{Home}}
+\doxysubsubsection{\texorpdfstring{logout}{logout}}
+{\footnotesize\ttfamily QPush\+Button$\ast$ Home\+::logout\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to logout button 
+
+\mbox{\Hypertarget{class_home_a84cc2aca683897ee784bc24098d6527a}\label{class_home_a84cc2aca683897ee784bc24098d6527a}} 
+\index{Home@{Home}!playerName@{playerName}}
+\index{playerName@{playerName}!Home@{Home}}
+\doxysubsubsection{\texorpdfstring{playerName}{playerName}}
+{\footnotesize\ttfamily QString Home\+::player\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+string of the player name 
+
+\mbox{\Hypertarget{class_home_af4c48195d2c01f050f9f9f93714895a5}\label{class_home_af4c48195d2c01f050f9f9f93714895a5}} 
+\index{Home@{Home}!profilePicture@{profilePicture}}
+\index{profilePicture@{profilePicture}!Home@{Home}}
+\doxysubsubsection{\texorpdfstring{profilePicture}{profilePicture}}
+{\footnotesize\ttfamily QLabel$\ast$ Home\+::profile\+Picture\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to string of user profile picture url 
+
+\mbox{\Hypertarget{class_home_a1ff81d9b1512eb22c01ae16736190b0c}\label{class_home_a1ff81d9b1512eb22c01ae16736190b0c}} 
+\index{Home@{Home}!shootingDiscsGame@{shootingDiscsGame}}
+\index{shootingDiscsGame@{shootingDiscsGame}!Home@{Home}}
+\doxysubsubsection{\texorpdfstring{shootingDiscsGame}{shootingDiscsGame}}
+{\footnotesize\ttfamily QPush\+Button$\ast$ Home\+::shooting\+Discs\+Game\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to Shooting Discs Game button 
+
+\mbox{\Hypertarget{class_home_a887a338da22ca0dfa55c97e133699e73}\label{class_home_a887a338da22ca0dfa55c97e133699e73}} 
+\index{Home@{Home}!username@{username}}
+\index{username@{username}!Home@{Home}}
+\doxysubsubsection{\texorpdfstring{username}{username}}
+{\footnotesize\ttfamily QLabel$\ast$ Home\+::username\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to the logged-\/in user name 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{home_8h}{home.\+h}}\item 
+\mbox{\hyperlink{home_8cpp}{home.\+cpp}}\end{DoxyCompactItemize}

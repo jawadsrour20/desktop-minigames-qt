@@ -1,0 +1,10 @@
+<map id="targetDisc::missed" name="targetDisc::missed">
+<area shape="rect" id="node1" title=" " alt="" coords="647,111,779,138"/>
+<area shape="rect" id="node2" href="$class_shooting_discs_scene.html#ad708d88c69818392324c5a81cd844a16" title="adds new targets for the blue shooter" alt="" coords="418,5,586,47"/>
+<area shape="rect" id="node5" href="$class_shooting_discs_scene.html#aa21cf2baad475d2b4c6e3be7ed02fdbf" title="adds new targets for the green shooter" alt="" coords="413,71,591,112"/>
+<area shape="rect" id="node6" href="$class_shooting_discs_scene.html#ac258434909ecdd6ef2335470dd11539c" title="adds new targets for the red shooter" alt="" coords="419,136,585,177"/>
+<area shape="rect" id="node7" href="$classtarget_disc.html#a9fca13a1dd0dae2f486899171335aa46" title="updates the position of the target discs." alt="" coords="405,201,599,243"/>
+<area shape="rect" id="node3" href="$class_shooting_discs_scene.html#a1597eb1bcefba8b026ee7fff49dd78de" title="sets up the actual shooting discs game when Start button is clicked" alt="" coords="205,71,357,112"/>
+<area shape="rect" id="node4" href="$class_shooting_discs_scene.html#a68acb6a2e2b7620ff7cee112fb97e468" title=" " alt="" coords="5,71,157,112"/>
+<area shape="rect" id="node8" href="$classtarget_disc.html#a4f82159e5c24ef16741b3e42a57c3d09" title=" " alt="" coords="207,209,356,235"/>
+</map>

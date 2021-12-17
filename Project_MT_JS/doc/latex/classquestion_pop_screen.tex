@@ -1,0 +1,592 @@
+\hypertarget{classquestion_pop_screen}{}\doxysection{question\+Pop\+Screen Class Reference}
+\label{classquestion_pop_screen}\index{questionPopScreen@{questionPopScreen}}
+
+
+{\ttfamily \#include $<$questionpopscreen.\+h$>$}
+
+
+
+Inheritance diagram for question\+Pop\+Screen\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{classquestion_pop_screen__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for question\+Pop\+Screen\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classquestion_pop_screen__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classquestion_pop_screen_af636c64d7601af3d10e0e8ff06888dfe}{question\+Pop\+Screen}} (QWidget $\ast$parent=nullptr)
+\item 
+void \mbox{\hyperlink{classquestion_pop_screen_a53e80779ed2d842e993ce6edab845262}{set\+Grid\+Layout}} ()
+\begin{DoxyCompactList}\small\item\em Adds all the items to the layout of the widget. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classquestion_pop_screen_afb71a70f95e894079ed35b73237fa3e5}{set\+Colors}} ()
+\begin{DoxyCompactList}\small\item\em Sets the style\+Sheet from the buttons and text. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classquestion_pop_screen_a653a1dd29f8dd80cc7a57a6a700d3325}{select\+Question}} ()
+\begin{DoxyCompactList}\small\item\em selects a question randomly from the question list. If the user specifies a topic for the question using the drop down menu, the questions will be selected randomly from the group belonging to the specific topic. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classquestion_pop_screen_a609f55fe667c283394e3ffd1f86437d2}{connect\+Slots}} ()
+\begin{DoxyCompactList}\small\item\em Connects the 4 buttons of the answers to their corresponding signals depending on whether the button holds the correct answer or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classquestion_pop_screen_a216bc0f39294a835c3d4e1f747df309d}{disconnect\+Slots}} ()
+\begin{DoxyCompactList}\small\item\em Disconnects the 4 buttons of the answers from their previous signals to be able to connect them to new signals, If the button where not connected, this function returns void. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classquestion_pop_screen_a2ffc4602f023d573c2e567ed1bdaa549}{prepare\+Screen}} (\mbox{\hyperlink{class_gride_square}{Gride\+Square}} $\ast$\mbox{\hyperlink{classquestion_pop_screen_a52074fc4cbf105e34936122429c62d9b}{square\+To\+Hit}})
+\begin{DoxyCompactList}\small\item\em This function prepares the components of the widget by calling the other functions from this class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+QLabel $\ast$ \mbox{\hyperlink{classquestion_pop_screen_a4c053833c77ea8fe38be88cb2be09495}{question}}
+\item 
+QCombo\+Box $\ast$ \mbox{\hyperlink{classquestion_pop_screen_a561fffe9e2cbdda8acee744964661fb2}{choose\+Topic}}
+\begin{DoxyCompactList}\small\item\em the question itself \end{DoxyCompactList}\item 
+QPush\+Button $\ast$ \mbox{\hyperlink{classquestion_pop_screen_a6d5342aaa905d3ff59033d5d2c469d85}{apply}}
+\begin{DoxyCompactList}\small\item\em the menu of choices of the topic for the questions \end{DoxyCompactList}\item 
+QPush\+Button $\ast$ \mbox{\hyperlink{classquestion_pop_screen_a7188016586d3bfa4f521e177b29ee43a}{answer1}}
+\begin{DoxyCompactList}\small\item\em apply button used after changing the topic \end{DoxyCompactList}\item 
+QPush\+Button $\ast$ \mbox{\hyperlink{classquestion_pop_screen_adbef7ba039943fa448b80e6f5d3262e2}{answer2}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_button}{Button}} for first option. \end{DoxyCompactList}\item 
+QPush\+Button $\ast$ \mbox{\hyperlink{classquestion_pop_screen_a2edc4a5e2f5f8bccfb6dc4ff61d216aa}{answer3}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_button}{Button}} for second option. \end{DoxyCompactList}\item 
+QPush\+Button $\ast$ \mbox{\hyperlink{classquestion_pop_screen_a3ade7c11e682a37b739c72fb681640b6}{answer4}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_button}{Button}} for third option. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classquestion_pop_screen_ae9c5f3f2a4b78db9c8799372fa46eee9}{flag1}} =0
+\begin{DoxyCompactList}\small\item\em button for forth option \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classquestion_pop_screen_a193009a7f5b906852449d8b119992267}{old\+Flag1}} =-\/1
+\begin{DoxyCompactList}\small\item\em this flag indicates the currect value (correct/incorrect) of the answer hold by the button \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classquestion_pop_screen_a97baac8efe1abdaf9389d3c57a37c39d}{flag2}} =0
+\begin{DoxyCompactList}\small\item\em this flag indicates the previous value (correct/incorrect) of the answer, which allows us to disconnect the button from the previous signal \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classquestion_pop_screen_a373985605ab79321ebd35ae53919035d}{old\+Flag2}} =-\/1
+\item 
+int \mbox{\hyperlink{classquestion_pop_screen_aa9db7fdcaca4b44e3f03c6d98b0a845d}{flag3}} =0
+\item 
+int \mbox{\hyperlink{classquestion_pop_screen_a39cc04439b1e30983e55cd35dd88c0b3}{old\+Flag3}} =-\/1
+\item 
+int \mbox{\hyperlink{classquestion_pop_screen_a68cce72ce63d346be2d1fc7459880da2}{flag4}} =0
+\item 
+int \mbox{\hyperlink{classquestion_pop_screen_a90ca7b77db069f56cd4135f62bf73920}{old\+Flag4}} =-\/1
+\item 
+int \mbox{\hyperlink{classquestion_pop_screen_a1e1595100b15bc570f52a9ab15182e6b}{flag\+Construct}} =-\/1
+\item 
+\mbox{\hyperlink{class_gride_square}{Gride\+Square}} $\ast$ \mbox{\hyperlink{classquestion_pop_screen_a52074fc4cbf105e34936122429c62d9b}{square\+To\+Hit}}
+\item 
+QGrid\+Layout $\ast$ \mbox{\hyperlink{classquestion_pop_screen_a3f9a836f846cb621060608e8d3a8e106}{grid\+Layout}}
+\begin{DoxyCompactList}\small\item\em This is the square that called the pop-\/up question. \end{DoxyCompactList}\item 
+QVBox\+Layout $\ast$ \mbox{\hyperlink{classquestion_pop_screen_a613ab3169da6e321a9247fa8ec804668}{vertical\+Layout}}
+\begin{DoxyCompactList}\small\item\em A sub-\/layout of the widget. \end{DoxyCompactList}\item 
+QList$<$ int $>$ \mbox{\hyperlink{classquestion_pop_screen_a79e775b81920975b02f96c6256edff95}{asked\+Questions}}
+\begin{DoxyCompactList}\small\item\em the main layout of the widget \end{DoxyCompactList}\item 
+QMedia\+Player $\ast$ \mbox{\hyperlink{classquestion_pop_screen_aa4a29a056c85ea8c9a6e9d8395fe6e32}{music}}
+\begin{DoxyCompactList}\small\item\em list that holds the line numbers of the asked question. This is to avaoid asking the same question multiple times \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{classquestion_pop_screen_afbb2f04ac80c569d55795719e1982226}{topic}} =\char`\"{}Not specified\char`\"{}
+\begin{DoxyCompactList}\small\item\em music file of the explotion \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classquestion_pop_screen_a45588f93dda46171453db623f9902d59}{clicked\+On\+Wrong\+Ans}} ()
+\begin{DoxyCompactList}\small\item\em topic of the questions \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classquestion_pop_screen_a551a9de8941b15f1a5942c90b4828ec0}{clicked\+On\+Right\+Ans}} ()
+\begin{DoxyCompactList}\small\item\em Called when user selects the right answer, it increases the score, play the firing sound, and shows the image of the hit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classquestion_pop_screen_a1aea0f76fd9ca7bfe2985d3077b135f9}{change\+Topic}} ()
+\begin{DoxyCompactList}\small\item\em Called when user changes the topic of the question. This function calls select\+Question function after updating the topic. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classquestion_pop_screen_af636c64d7601af3d10e0e8ff06888dfe}\label{classquestion_pop_screen_af636c64d7601af3d10e0e8ff06888dfe}} 
+\index{questionPopScreen@{questionPopScreen}!questionPopScreen@{questionPopScreen}}
+\index{questionPopScreen@{questionPopScreen}!questionPopScreen@{questionPopScreen}}
+\doxysubsubsection{\texorpdfstring{questionPopScreen()}{questionPopScreen()}}
+{\footnotesize\ttfamily question\+Pop\+Screen\+::question\+Pop\+Screen (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classquestion_pop_screen_a1aea0f76fd9ca7bfe2985d3077b135f9}\label{classquestion_pop_screen_a1aea0f76fd9ca7bfe2985d3077b135f9}} 
+\index{questionPopScreen@{questionPopScreen}!changeTopic@{changeTopic}}
+\index{changeTopic@{changeTopic}!questionPopScreen@{questionPopScreen}}
+\doxysubsubsection{\texorpdfstring{changeTopic}{changeTopic}}
+{\footnotesize\ttfamily void question\+Pop\+Screen\+::change\+Topic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Called when user changes the topic of the question. This function calls select\+Question function after updating the topic. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & input argument \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return value 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{classquestion_pop_screen_a1aea0f76fd9ca7bfe2985d3077b135f9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classquestion_pop_screen_a1aea0f76fd9ca7bfe2985d3077b135f9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classquestion_pop_screen_a551a9de8941b15f1a5942c90b4828ec0}\label{classquestion_pop_screen_a551a9de8941b15f1a5942c90b4828ec0}} 
+\index{questionPopScreen@{questionPopScreen}!clickedOnRightAns@{clickedOnRightAns}}
+\index{clickedOnRightAns@{clickedOnRightAns}!questionPopScreen@{questionPopScreen}}
+\doxysubsubsection{\texorpdfstring{clickedOnRightAns}{clickedOnRightAns}}
+{\footnotesize\ttfamily void question\+Pop\+Screen\+::clicked\+On\+Right\+Ans (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Called when user selects the right answer, it increases the score, play the firing sound, and shows the image of the hit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & input argument \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return value 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classquestion_pop_screen_a551a9de8941b15f1a5942c90b4828ec0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classquestion_pop_screen_a551a9de8941b15f1a5942c90b4828ec0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classquestion_pop_screen_a45588f93dda46171453db623f9902d59}\label{classquestion_pop_screen_a45588f93dda46171453db623f9902d59}} 
+\index{questionPopScreen@{questionPopScreen}!clickedOnWrongAns@{clickedOnWrongAns}}
+\index{clickedOnWrongAns@{clickedOnWrongAns}!questionPopScreen@{questionPopScreen}}
+\doxysubsubsection{\texorpdfstring{clickedOnWrongAns}{clickedOnWrongAns}}
+{\footnotesize\ttfamily void question\+Pop\+Screen\+::clicked\+On\+Wrong\+Ans (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+topic of the questions 
+
+Called when user selects a wrong answers. It calls the function that allows the enemy to fire from the \mbox{\hyperlink{class_play_game1}{Play\+Game1}} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & input argument \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return value 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classquestion_pop_screen_a45588f93dda46171453db623f9902d59_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classquestion_pop_screen_a45588f93dda46171453db623f9902d59_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classquestion_pop_screen_a609f55fe667c283394e3ffd1f86437d2}\label{classquestion_pop_screen_a609f55fe667c283394e3ffd1f86437d2}} 
+\index{questionPopScreen@{questionPopScreen}!connectSlots@{connectSlots}}
+\index{connectSlots@{connectSlots}!questionPopScreen@{questionPopScreen}}
+\doxysubsubsection{\texorpdfstring{connectSlots()}{connectSlots()}}
+{\footnotesize\ttfamily void question\+Pop\+Screen\+::connect\+Slots (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Connects the 4 buttons of the answers to their corresponding signals depending on whether the button holds the correct answer or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & input argument \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return value 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classquestion_pop_screen_a609f55fe667c283394e3ffd1f86437d2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classquestion_pop_screen_a609f55fe667c283394e3ffd1f86437d2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classquestion_pop_screen_a216bc0f39294a835c3d4e1f747df309d}\label{classquestion_pop_screen_a216bc0f39294a835c3d4e1f747df309d}} 
+\index{questionPopScreen@{questionPopScreen}!disconnectSlots@{disconnectSlots}}
+\index{disconnectSlots@{disconnectSlots}!questionPopScreen@{questionPopScreen}}
+\doxysubsubsection{\texorpdfstring{disconnectSlots()}{disconnectSlots()}}
+{\footnotesize\ttfamily void question\+Pop\+Screen\+::disconnect\+Slots (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Disconnects the 4 buttons of the answers from their previous signals to be able to connect them to new signals, If the button where not connected, this function returns void. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & input argument \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return value 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classquestion_pop_screen_a216bc0f39294a835c3d4e1f747df309d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classquestion_pop_screen_a216bc0f39294a835c3d4e1f747df309d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classquestion_pop_screen_a2ffc4602f023d573c2e567ed1bdaa549}\label{classquestion_pop_screen_a2ffc4602f023d573c2e567ed1bdaa549}} 
+\index{questionPopScreen@{questionPopScreen}!prepareScreen@{prepareScreen}}
+\index{prepareScreen@{prepareScreen}!questionPopScreen@{questionPopScreen}}
+\doxysubsubsection{\texorpdfstring{prepareScreen()}{prepareScreen()}}
+{\footnotesize\ttfamily void question\+Pop\+Screen\+::prepare\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gride_square}{Gride\+Square}} $\ast$}]{square\+To\+HitI }\end{DoxyParamCaption})}
+
+
+
+This function prepares the components of the widget by calling the other functions from this class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & input argument \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return value 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classquestion_pop_screen_a2ffc4602f023d573c2e567ed1bdaa549_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classquestion_pop_screen_a2ffc4602f023d573c2e567ed1bdaa549_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classquestion_pop_screen_a653a1dd29f8dd80cc7a57a6a700d3325}\label{classquestion_pop_screen_a653a1dd29f8dd80cc7a57a6a700d3325}} 
+\index{questionPopScreen@{questionPopScreen}!selectQuestion@{selectQuestion}}
+\index{selectQuestion@{selectQuestion}!questionPopScreen@{questionPopScreen}}
+\doxysubsubsection{\texorpdfstring{selectQuestion()}{selectQuestion()}}
+{\footnotesize\ttfamily void question\+Pop\+Screen\+::select\+Question (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+selects a question randomly from the question list. If the user specifies a topic for the question using the drop down menu, the questions will be selected randomly from the group belonging to the specific topic. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & input argument \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return value 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classquestion_pop_screen_a653a1dd29f8dd80cc7a57a6a700d3325_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classquestion_pop_screen_afb71a70f95e894079ed35b73237fa3e5}\label{classquestion_pop_screen_afb71a70f95e894079ed35b73237fa3e5}} 
+\index{questionPopScreen@{questionPopScreen}!setColors@{setColors}}
+\index{setColors@{setColors}!questionPopScreen@{questionPopScreen}}
+\doxysubsubsection{\texorpdfstring{setColors()}{setColors()}}
+{\footnotesize\ttfamily void question\+Pop\+Screen\+::set\+Colors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets the style\+Sheet from the buttons and text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & input argument \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return value 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classquestion_pop_screen_afb71a70f95e894079ed35b73237fa3e5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classquestion_pop_screen_a53e80779ed2d842e993ce6edab845262}\label{classquestion_pop_screen_a53e80779ed2d842e993ce6edab845262}} 
+\index{questionPopScreen@{questionPopScreen}!setGridLayout@{setGridLayout}}
+\index{setGridLayout@{setGridLayout}!questionPopScreen@{questionPopScreen}}
+\doxysubsubsection{\texorpdfstring{setGridLayout()}{setGridLayout()}}
+{\footnotesize\ttfamily void question\+Pop\+Screen\+::set\+Grid\+Layout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Adds all the items to the layout of the widget. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & input argument \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return value 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classquestion_pop_screen_a53e80779ed2d842e993ce6edab845262_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classquestion_pop_screen_a7188016586d3bfa4f521e177b29ee43a}\label{classquestion_pop_screen_a7188016586d3bfa4f521e177b29ee43a}} 
+\index{questionPopScreen@{questionPopScreen}!answer1@{answer1}}
+\index{answer1@{answer1}!questionPopScreen@{questionPopScreen}}
+\doxysubsubsection{\texorpdfstring{answer1}{answer1}}
+{\footnotesize\ttfamily QPush\+Button$\ast$ question\+Pop\+Screen\+::answer1}
+
+
+
+apply button used after changing the topic 
+
+\mbox{\Hypertarget{classquestion_pop_screen_adbef7ba039943fa448b80e6f5d3262e2}\label{classquestion_pop_screen_adbef7ba039943fa448b80e6f5d3262e2}} 
+\index{questionPopScreen@{questionPopScreen}!answer2@{answer2}}
+\index{answer2@{answer2}!questionPopScreen@{questionPopScreen}}
+\doxysubsubsection{\texorpdfstring{answer2}{answer2}}
+{\footnotesize\ttfamily QPush\+Button$\ast$ question\+Pop\+Screen\+::answer2}
+
+
+
+\mbox{\hyperlink{class_button}{Button}} for first option. 
+
+\mbox{\Hypertarget{classquestion_pop_screen_a2edc4a5e2f5f8bccfb6dc4ff61d216aa}\label{classquestion_pop_screen_a2edc4a5e2f5f8bccfb6dc4ff61d216aa}} 
+\index{questionPopScreen@{questionPopScreen}!answer3@{answer3}}
+\index{answer3@{answer3}!questionPopScreen@{questionPopScreen}}
+\doxysubsubsection{\texorpdfstring{answer3}{answer3}}
+{\footnotesize\ttfamily QPush\+Button$\ast$ question\+Pop\+Screen\+::answer3}
+
+
+
+\mbox{\hyperlink{class_button}{Button}} for second option. 
+
+\mbox{\Hypertarget{classquestion_pop_screen_a3ade7c11e682a37b739c72fb681640b6}\label{classquestion_pop_screen_a3ade7c11e682a37b739c72fb681640b6}} 
+\index{questionPopScreen@{questionPopScreen}!answer4@{answer4}}
+\index{answer4@{answer4}!questionPopScreen@{questionPopScreen}}
+\doxysubsubsection{\texorpdfstring{answer4}{answer4}}
+{\footnotesize\ttfamily QPush\+Button$\ast$ question\+Pop\+Screen\+::answer4}
+
+
+
+\mbox{\hyperlink{class_button}{Button}} for third option. 
+
+\mbox{\Hypertarget{classquestion_pop_screen_a6d5342aaa905d3ff59033d5d2c469d85}\label{classquestion_pop_screen_a6d5342aaa905d3ff59033d5d2c469d85}} 
+\index{questionPopScreen@{questionPopScreen}!apply@{apply}}
+\index{apply@{apply}!questionPopScreen@{questionPopScreen}}
+\doxysubsubsection{\texorpdfstring{apply}{apply}}
+{\footnotesize\ttfamily QPush\+Button$\ast$ question\+Pop\+Screen\+::apply}
+
+
+
+the menu of choices of the topic for the questions 
+
+\mbox{\Hypertarget{classquestion_pop_screen_a79e775b81920975b02f96c6256edff95}\label{classquestion_pop_screen_a79e775b81920975b02f96c6256edff95}} 
+\index{questionPopScreen@{questionPopScreen}!askedQuestions@{askedQuestions}}
+\index{askedQuestions@{askedQuestions}!questionPopScreen@{questionPopScreen}}
+\doxysubsubsection{\texorpdfstring{askedQuestions}{askedQuestions}}
+{\footnotesize\ttfamily QList$<$int$>$ question\+Pop\+Screen\+::asked\+Questions}
+
+
+
+the main layout of the widget 
+
+\mbox{\Hypertarget{classquestion_pop_screen_a561fffe9e2cbdda8acee744964661fb2}\label{classquestion_pop_screen_a561fffe9e2cbdda8acee744964661fb2}} 
+\index{questionPopScreen@{questionPopScreen}!chooseTopic@{chooseTopic}}
+\index{chooseTopic@{chooseTopic}!questionPopScreen@{questionPopScreen}}
+\doxysubsubsection{\texorpdfstring{chooseTopic}{chooseTopic}}
+{\footnotesize\ttfamily QCombo\+Box$\ast$ question\+Pop\+Screen\+::choose\+Topic}
+
+
+
+the question itself 
+
+\mbox{\Hypertarget{classquestion_pop_screen_ae9c5f3f2a4b78db9c8799372fa46eee9}\label{classquestion_pop_screen_ae9c5f3f2a4b78db9c8799372fa46eee9}} 
+\index{questionPopScreen@{questionPopScreen}!flag1@{flag1}}
+\index{flag1@{flag1}!questionPopScreen@{questionPopScreen}}
+\doxysubsubsection{\texorpdfstring{flag1}{flag1}}
+{\footnotesize\ttfamily int question\+Pop\+Screen\+::flag1 =0}
+
+
+
+button for forth option 
+
+\mbox{\Hypertarget{classquestion_pop_screen_a97baac8efe1abdaf9389d3c57a37c39d}\label{classquestion_pop_screen_a97baac8efe1abdaf9389d3c57a37c39d}} 
+\index{questionPopScreen@{questionPopScreen}!flag2@{flag2}}
+\index{flag2@{flag2}!questionPopScreen@{questionPopScreen}}
+\doxysubsubsection{\texorpdfstring{flag2}{flag2}}
+{\footnotesize\ttfamily int question\+Pop\+Screen\+::flag2 =0}
+
+
+
+this flag indicates the previous value (correct/incorrect) of the answer, which allows us to disconnect the button from the previous signal 
+
+\mbox{\Hypertarget{classquestion_pop_screen_aa9db7fdcaca4b44e3f03c6d98b0a845d}\label{classquestion_pop_screen_aa9db7fdcaca4b44e3f03c6d98b0a845d}} 
+\index{questionPopScreen@{questionPopScreen}!flag3@{flag3}}
+\index{flag3@{flag3}!questionPopScreen@{questionPopScreen}}
+\doxysubsubsection{\texorpdfstring{flag3}{flag3}}
+{\footnotesize\ttfamily int question\+Pop\+Screen\+::flag3 =0}
+
+\mbox{\Hypertarget{classquestion_pop_screen_a68cce72ce63d346be2d1fc7459880da2}\label{classquestion_pop_screen_a68cce72ce63d346be2d1fc7459880da2}} 
+\index{questionPopScreen@{questionPopScreen}!flag4@{flag4}}
+\index{flag4@{flag4}!questionPopScreen@{questionPopScreen}}
+\doxysubsubsection{\texorpdfstring{flag4}{flag4}}
+{\footnotesize\ttfamily int question\+Pop\+Screen\+::flag4 =0}
+
+\mbox{\Hypertarget{classquestion_pop_screen_a1e1595100b15bc570f52a9ab15182e6b}\label{classquestion_pop_screen_a1e1595100b15bc570f52a9ab15182e6b}} 
+\index{questionPopScreen@{questionPopScreen}!flagConstruct@{flagConstruct}}
+\index{flagConstruct@{flagConstruct}!questionPopScreen@{questionPopScreen}}
+\doxysubsubsection{\texorpdfstring{flagConstruct}{flagConstruct}}
+{\footnotesize\ttfamily int question\+Pop\+Screen\+::flag\+Construct =-\/1}
+
+\mbox{\Hypertarget{classquestion_pop_screen_a3f9a836f846cb621060608e8d3a8e106}\label{classquestion_pop_screen_a3f9a836f846cb621060608e8d3a8e106}} 
+\index{questionPopScreen@{questionPopScreen}!gridLayout@{gridLayout}}
+\index{gridLayout@{gridLayout}!questionPopScreen@{questionPopScreen}}
+\doxysubsubsection{\texorpdfstring{gridLayout}{gridLayout}}
+{\footnotesize\ttfamily QGrid\+Layout$\ast$ question\+Pop\+Screen\+::grid\+Layout}
+
+
+
+This is the square that called the pop-\/up question. 
+
+\mbox{\Hypertarget{classquestion_pop_screen_aa4a29a056c85ea8c9a6e9d8395fe6e32}\label{classquestion_pop_screen_aa4a29a056c85ea8c9a6e9d8395fe6e32}} 
+\index{questionPopScreen@{questionPopScreen}!music@{music}}
+\index{music@{music}!questionPopScreen@{questionPopScreen}}
+\doxysubsubsection{\texorpdfstring{music}{music}}
+{\footnotesize\ttfamily QMedia\+Player$\ast$ question\+Pop\+Screen\+::music}
+
+
+
+list that holds the line numbers of the asked question. This is to avaoid asking the same question multiple times 
+
+\mbox{\Hypertarget{classquestion_pop_screen_a193009a7f5b906852449d8b119992267}\label{classquestion_pop_screen_a193009a7f5b906852449d8b119992267}} 
+\index{questionPopScreen@{questionPopScreen}!oldFlag1@{oldFlag1}}
+\index{oldFlag1@{oldFlag1}!questionPopScreen@{questionPopScreen}}
+\doxysubsubsection{\texorpdfstring{oldFlag1}{oldFlag1}}
+{\footnotesize\ttfamily int question\+Pop\+Screen\+::old\+Flag1 =-\/1}
+
+
+
+this flag indicates the currect value (correct/incorrect) of the answer hold by the button 
+
+\mbox{\Hypertarget{classquestion_pop_screen_a373985605ab79321ebd35ae53919035d}\label{classquestion_pop_screen_a373985605ab79321ebd35ae53919035d}} 
+\index{questionPopScreen@{questionPopScreen}!oldFlag2@{oldFlag2}}
+\index{oldFlag2@{oldFlag2}!questionPopScreen@{questionPopScreen}}
+\doxysubsubsection{\texorpdfstring{oldFlag2}{oldFlag2}}
+{\footnotesize\ttfamily int question\+Pop\+Screen\+::old\+Flag2 =-\/1}
+
+\mbox{\Hypertarget{classquestion_pop_screen_a39cc04439b1e30983e55cd35dd88c0b3}\label{classquestion_pop_screen_a39cc04439b1e30983e55cd35dd88c0b3}} 
+\index{questionPopScreen@{questionPopScreen}!oldFlag3@{oldFlag3}}
+\index{oldFlag3@{oldFlag3}!questionPopScreen@{questionPopScreen}}
+\doxysubsubsection{\texorpdfstring{oldFlag3}{oldFlag3}}
+{\footnotesize\ttfamily int question\+Pop\+Screen\+::old\+Flag3 =-\/1}
+
+\mbox{\Hypertarget{classquestion_pop_screen_a90ca7b77db069f56cd4135f62bf73920}\label{classquestion_pop_screen_a90ca7b77db069f56cd4135f62bf73920}} 
+\index{questionPopScreen@{questionPopScreen}!oldFlag4@{oldFlag4}}
+\index{oldFlag4@{oldFlag4}!questionPopScreen@{questionPopScreen}}
+\doxysubsubsection{\texorpdfstring{oldFlag4}{oldFlag4}}
+{\footnotesize\ttfamily int question\+Pop\+Screen\+::old\+Flag4 =-\/1}
+
+\mbox{\Hypertarget{classquestion_pop_screen_a4c053833c77ea8fe38be88cb2be09495}\label{classquestion_pop_screen_a4c053833c77ea8fe38be88cb2be09495}} 
+\index{questionPopScreen@{questionPopScreen}!question@{question}}
+\index{question@{question}!questionPopScreen@{questionPopScreen}}
+\doxysubsubsection{\texorpdfstring{question}{question}}
+{\footnotesize\ttfamily QLabel$\ast$ question\+Pop\+Screen\+::question}
+
+\mbox{\Hypertarget{classquestion_pop_screen_a52074fc4cbf105e34936122429c62d9b}\label{classquestion_pop_screen_a52074fc4cbf105e34936122429c62d9b}} 
+\index{questionPopScreen@{questionPopScreen}!squareToHit@{squareToHit}}
+\index{squareToHit@{squareToHit}!questionPopScreen@{questionPopScreen}}
+\doxysubsubsection{\texorpdfstring{squareToHit}{squareToHit}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gride_square}{Gride\+Square}}$\ast$ question\+Pop\+Screen\+::square\+To\+Hit}
+
+\mbox{\Hypertarget{classquestion_pop_screen_afbb2f04ac80c569d55795719e1982226}\label{classquestion_pop_screen_afbb2f04ac80c569d55795719e1982226}} 
+\index{questionPopScreen@{questionPopScreen}!topic@{topic}}
+\index{topic@{topic}!questionPopScreen@{questionPopScreen}}
+\doxysubsubsection{\texorpdfstring{topic}{topic}}
+{\footnotesize\ttfamily QString question\+Pop\+Screen\+::topic =\char`\"{}Not specified\char`\"{}}
+
+
+
+music file of the explotion 
+
+\mbox{\Hypertarget{classquestion_pop_screen_a613ab3169da6e321a9247fa8ec804668}\label{classquestion_pop_screen_a613ab3169da6e321a9247fa8ec804668}} 
+\index{questionPopScreen@{questionPopScreen}!verticalLayout@{verticalLayout}}
+\index{verticalLayout@{verticalLayout}!questionPopScreen@{questionPopScreen}}
+\doxysubsubsection{\texorpdfstring{verticalLayout}{verticalLayout}}
+{\footnotesize\ttfamily QVBox\+Layout$\ast$ question\+Pop\+Screen\+::vertical\+Layout}
+
+
+
+A sub-\/layout of the widget. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{questionpopscreen_8h}{questionpopscreen.\+h}}\item 
+\mbox{\hyperlink{questionpopscreen_8cpp}{questionpopscreen.\+cpp}}\end{DoxyCompactItemize}

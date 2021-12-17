@@ -1,0 +1,4 @@
+<map id="BattleShip::endPage" name="BattleShip::endPage">
+<area shape="rect" id="node1" title="Display ending page, which shows the score and a button to go back to home page." alt="" coords="5,5,149,32"/>
+<area shape="rect" id="node2" href="$class_battle_ship.html#ab355edc10b704fe21097780f3400db2a" title="Takes user back to the inital home page (page shown after logging in)" alt="" coords="197,5,357,32"/>
+</map>

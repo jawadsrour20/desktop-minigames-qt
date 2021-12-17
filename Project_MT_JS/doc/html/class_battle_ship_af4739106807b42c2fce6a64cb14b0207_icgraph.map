@@ -1,0 +1,4 @@
+<map id="BattleShip::gameOver" name="BattleShip::gameOver">
+<area shape="rect" id="node1" title="Prints that the game is over when the number of attempts is 0 or when all player&#39;s ships are destrote..." alt="" coords="267,5,419,32"/>
+<area shape="rect" id="node2" href="$class_gride_square.html#ac6a6fa4b17ac9fad99d13214c677175c" title="Responds to mouse clicks, if the square contains a ship pop&#45;up question will appear...." alt="" coords="5,5,219,32"/>
+</map>

@@ -1,0 +1,31 @@
+\hypertarget{targetdisc_8h_source}{}\doxysection{targetdisc.\+h}
+\mbox{\hyperlink{targetdisc_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef TARGETDISC\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define TARGETDISC\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QGraphicsPixmapItem>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QObject>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <QWidget>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <QTimer>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <QGraphicsScene>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <QDebug>}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{classtarget_disc}{targetDisc}} : \textcolor{keyword}{public} QObject, \textcolor{keyword}{public} QGraphicsPixmapItem}
+\DoxyCodeLine{17 \{}
+\DoxyCodeLine{18     Q\_OBJECT}
+\DoxyCodeLine{19 \textcolor{keyword}{public}:}
+\DoxyCodeLine{20     \mbox{\hyperlink{classtarget_disc_a4f82159e5c24ef16741b3e42a57c3d09}{targetDisc}}(QObject *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{21     QTimer* \mbox{\hyperlink{classtarget_disc_aac2caa3f8825b2099b95ce5e273c0459}{timer}};}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 signals:}
+\DoxyCodeLine{24     \textcolor{keywordtype}{void} \mbox{\hyperlink{classtarget_disc_a497c441852d31b21ab5687f787111282}{missed}}();}
+\DoxyCodeLine{25     \textcolor{keywordtype}{void} \mbox{\hyperlink{classtarget_disc_aa619d1287959db08ce3e66d161defcea}{hit}}();}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 \textcolor{keyword}{public} slots:}
+\DoxyCodeLine{28     \textcolor{keywordtype}{void} \mbox{\hyperlink{classtarget_disc_a9fca13a1dd0dae2f486899171335aa46}{updateDiscTargetCurrentPosition}}();}
+\DoxyCodeLine{29 \};}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// TARGETDISC\_H}}
+
+\end{DoxyCode}

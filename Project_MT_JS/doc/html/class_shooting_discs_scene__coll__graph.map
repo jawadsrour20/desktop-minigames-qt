@@ -1,0 +1,10 @@
+<map id="ShootingDiscsScene" name="ShootingDiscsScene">
+<area shape="rect" id="node1" title=" " alt="" coords="251,448,471,1083"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,205,129,283"/>
+<area shape="rect" id="node3" href="$class_button.html" title=" " alt="" coords="154,132,362,356"/>
+<area shape="rect" id="node4" title=" " alt="" coords="431,5,501,83"/>
+<area shape="rect" id="node6" href="$class_disc_shooter.html" title=" " alt="" coords="386,183,546,305"/>
+<area shape="rect" id="node8" href="$classtarget_disc.html" title=" " alt="" coords="571,183,780,305"/>
+<area shape="rect" id="node5" title=" " alt="" coords="189,5,327,83"/>
+<area shape="rect" id="node7" title=" " alt="" coords="561,5,717,83"/>
+</map>

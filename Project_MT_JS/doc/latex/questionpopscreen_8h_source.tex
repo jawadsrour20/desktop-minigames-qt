@@ -1,0 +1,74 @@
+\hypertarget{questionpopscreen_8h_source}{}\doxysection{questionpopscreen.\+h}
+\mbox{\hyperlink{questionpopscreen_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef QUESTIONPOPSCREEN\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define QUESTIONPOPSCREEN\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QWidget>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include<QtWidgets>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <random>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include<unistd.h>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include<QGraphicsPixmapItem>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include<QMediaPlayer>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{gridesquare_8h}{gridesquare.h}}"{}}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{23 \textcolor{keyword}{class }\mbox{\hyperlink{classquestion_pop_screen}{questionPopScreen}} : \textcolor{keyword}{public} QWidget \{}
+\DoxyCodeLine{24     Q\_OBJECT}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 \textcolor{keyword}{public}:}
+\DoxyCodeLine{27     \textcolor{comment}{//constructor}}
+\DoxyCodeLine{28     \textcolor{keyword}{explicit} \mbox{\hyperlink{classquestion_pop_screen_af636c64d7601af3d10e0e8ff06888dfe}{questionPopScreen}}(QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30     \textcolor{comment}{//functions}}
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} \mbox{\hyperlink{classquestion_pop_screen_a53e80779ed2d842e993ce6edab845262}{setGridLayout}}();}
+\DoxyCodeLine{32     \textcolor{keywordtype}{void} \mbox{\hyperlink{classquestion_pop_screen_afb71a70f95e894079ed35b73237fa3e5}{setColors}}();}
+\DoxyCodeLine{33     \textcolor{keywordtype}{void} \mbox{\hyperlink{classquestion_pop_screen_a653a1dd29f8dd80cc7a57a6a700d3325}{selectQuestion}}();}
+\DoxyCodeLine{34     \textcolor{keywordtype}{void} \mbox{\hyperlink{classquestion_pop_screen_a609f55fe667c283394e3ffd1f86437d2}{connectSlots}}();}
+\DoxyCodeLine{35     \textcolor{keywordtype}{void} \mbox{\hyperlink{classquestion_pop_screen_a216bc0f39294a835c3d4e1f747df309d}{disconnectSlots}}();}
+\DoxyCodeLine{36     \textcolor{keywordtype}{void} \mbox{\hyperlink{classquestion_pop_screen_a2ffc4602f023d573c2e567ed1bdaa549}{prepareScreen}}(\mbox{\hyperlink{class_gride_square}{GrideSquare}}* \mbox{\hyperlink{classquestion_pop_screen_a52074fc4cbf105e34936122429c62d9b}{squareToHit}});}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39     \textcolor{comment}{//attributes}}
+\DoxyCodeLine{40     QLabel* \mbox{\hyperlink{classquestion_pop_screen_a4c053833c77ea8fe38be88cb2be09495}{question}}; }
+\DoxyCodeLine{41     QComboBox* \mbox{\hyperlink{classquestion_pop_screen_a561fffe9e2cbdda8acee744964661fb2}{chooseTopic}}; }
+\DoxyCodeLine{42     QPushButton* \mbox{\hyperlink{classquestion_pop_screen_a6d5342aaa905d3ff59033d5d2c469d85}{apply}}; }
+\DoxyCodeLine{43     QPushButton* \mbox{\hyperlink{classquestion_pop_screen_a7188016586d3bfa4f521e177b29ee43a}{answer1}}; }
+\DoxyCodeLine{44     QPushButton* \mbox{\hyperlink{classquestion_pop_screen_adbef7ba039943fa448b80e6f5d3262e2}{answer2}}; }
+\DoxyCodeLine{45     QPushButton* \mbox{\hyperlink{classquestion_pop_screen_a2edc4a5e2f5f8bccfb6dc4ff61d216aa}{answer3}}; }
+\DoxyCodeLine{46     QPushButton* \mbox{\hyperlink{classquestion_pop_screen_a3ade7c11e682a37b739c72fb681640b6}{answer4}}; }
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48     \textcolor{comment}{//for each answer button we have 2 flags. they are used to connect and disconnect buttons from the signals}}
+\DoxyCodeLine{49     \textcolor{keywordtype}{int} \mbox{\hyperlink{classquestion_pop_screen_ae9c5f3f2a4b78db9c8799372fa46eee9}{flag1}}=0;  }
+\DoxyCodeLine{50     \textcolor{keywordtype}{int} \mbox{\hyperlink{classquestion_pop_screen_a193009a7f5b906852449d8b119992267}{oldFlag1}}=-\/1; }
+\DoxyCodeLine{51     \textcolor{keywordtype}{int} \mbox{\hyperlink{classquestion_pop_screen_a97baac8efe1abdaf9389d3c57a37c39d}{flag2}}=0;}
+\DoxyCodeLine{52     \textcolor{keywordtype}{int} \mbox{\hyperlink{classquestion_pop_screen_a373985605ab79321ebd35ae53919035d}{oldFlag2}}=-\/1;}
+\DoxyCodeLine{53     \textcolor{keywordtype}{int} \mbox{\hyperlink{classquestion_pop_screen_aa9db7fdcaca4b44e3f03c6d98b0a845d}{flag3}}=0;}
+\DoxyCodeLine{54     \textcolor{keywordtype}{int} \mbox{\hyperlink{classquestion_pop_screen_a39cc04439b1e30983e55cd35dd88c0b3}{oldFlag3}}=-\/1;}
+\DoxyCodeLine{55     \textcolor{keywordtype}{int} \mbox{\hyperlink{classquestion_pop_screen_a68cce72ce63d346be2d1fc7459880da2}{flag4}}=0;}
+\DoxyCodeLine{56     \textcolor{keywordtype}{int} \mbox{\hyperlink{classquestion_pop_screen_a90ca7b77db069f56cd4135f62bf73920}{oldFlag4}}=-\/1;}
+\DoxyCodeLine{57     \textcolor{keywordtype}{int} \mbox{\hyperlink{classquestion_pop_screen_a1e1595100b15bc570f52a9ab15182e6b}{flagConstruct}}=-\/1;}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59     \mbox{\hyperlink{class_gride_square}{GrideSquare}}* \mbox{\hyperlink{classquestion_pop_screen_a52074fc4cbf105e34936122429c62d9b}{squareToHit}}; }
+\DoxyCodeLine{60     QGridLayout* \mbox{\hyperlink{classquestion_pop_screen_a3f9a836f846cb621060608e8d3a8e106}{gridLayout}};  }
+\DoxyCodeLine{61     QVBoxLayout *\mbox{\hyperlink{classquestion_pop_screen_a613ab3169da6e321a9247fa8ec804668}{verticalLayout}}; }
+\DoxyCodeLine{62     QList<int> \mbox{\hyperlink{classquestion_pop_screen_a79e775b81920975b02f96c6256edff95}{askedQuestions}}; }
+\DoxyCodeLine{63     QMediaPlayer* \mbox{\hyperlink{classquestion_pop_screen_aa4a29a056c85ea8c9a6e9d8395fe6e32}{music}};  }
+\DoxyCodeLine{64     QString \mbox{\hyperlink{classquestion_pop_screen_afbb2f04ac80c569d55795719e1982226}{topic}}=\textcolor{stringliteral}{"{}Not specified"{}}; }
+\DoxyCodeLine{65 }
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67 signals:}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69 \textcolor{comment}{// slots must be defined under the slots keyword}}
+\DoxyCodeLine{70 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72     \textcolor{keywordtype}{void} \mbox{\hyperlink{classquestion_pop_screen_a45588f93dda46171453db623f9902d59}{clickedOnWrongAns}}();}
+\DoxyCodeLine{73     \textcolor{keywordtype}{void} \mbox{\hyperlink{classquestion_pop_screen_a551a9de8941b15f1a5942c90b4828ec0}{clickedOnRightAns}}();}
+\DoxyCodeLine{74     \textcolor{keywordtype}{void} \mbox{\hyperlink{classquestion_pop_screen_a1aea0f76fd9ca7bfe2985d3077b135f9}{changeTopic}}();}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76 \};}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// QUESTIONPOPSCREEN\_H}}
+
+\end{DoxyCode}

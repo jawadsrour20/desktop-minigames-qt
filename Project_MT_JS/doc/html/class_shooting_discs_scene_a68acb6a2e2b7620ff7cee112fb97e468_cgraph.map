@@ -1,0 +1,17 @@
+<map id="ShootingDiscsScene::ShootingDiscsScene" name="ShootingDiscsScene::ShootingDiscsScene">
+<area shape="rect" id="node1" title=" " alt="" coords="5,174,157,215"/>
+<area shape="rect" id="node2" href="$class_shooting_discs_scene.html#a90149257a08cffe5ffd9c99694f4959e" title="quits the shooting discs game when Quit button is clicked" alt="" coords="1049,145,1199,186"/>
+<area shape="rect" id="node3" href="$class_shooting_discs_scene.html#a1597eb1bcefba8b026ee7fff49dd78de" title="sets up the actual shooting discs game when Start button is clicked" alt="" coords="221,174,373,215"/>
+<area shape="rect" id="node15" href="$class_shooting_discs_scene.html#a37a5929f61c4a9a3119ca2453ac2bc96" title="sets the background for the menu page of shooting discs game" alt="" coords="205,239,388,281"/>
+<area shape="rect" id="node4" href="$class_shooting_discs_scene.html#ad708d88c69818392324c5a81cd844a16" title="adds new targets for the blue shooter" alt="" coords="441,239,609,281"/>
+<area shape="rect" id="node10" href="$class_shooting_discs_scene.html#aa21cf2baad475d2b4c6e3be7ed02fdbf" title="adds new targets for the green shooter" alt="" coords="436,305,615,346"/>
+<area shape="rect" id="node11" href="$class_shooting_discs_scene.html#ac258434909ecdd6ef2335470dd11539c" title="adds new targets for the red shooter" alt="" coords="443,370,608,411"/>
+<area shape="rect" id="node12" href="$class_shooting_discs_scene.html#a5b293bc6b4d4c350a38a2043064fb1b5" title="shoots a beam from the blue shooter" alt="" coords="453,43,598,85"/>
+<area shape="rect" id="node13" href="$class_shooting_discs_scene.html#aaec9f94a04eccbc549a18fb1f767e29e" title="shoots a beam from the green shooter" alt="" coords="453,109,598,150"/>
+<area shape="rect" id="node14" href="$class_shooting_discs_scene.html#ac99911169b9ffea93653ddff549eb43b" title="shoots a beam from the red shooter" alt="" coords="453,174,598,215"/>
+<area shape="rect" id="node5" href="$class_shooting_discs_scene.html#a6be88877e65edf9ffdf485b631aae4ca" title="modifies the score when a target disc is successfully hit and calls updateScore() and updateMultiplie..." alt="" coords="663,239,808,281"/>
+<area shape="rect" id="node8" href="$class_shooting_discs_scene.html#a41ff3723044d6ecac4940a24fd0b8196" title="removes a heart when a target disc is missed. Issues a call to gameover() if no hearts remain" alt="" coords="663,305,808,346"/>
+<area shape="rect" id="node6" href="$class_shooting_discs_scene.html#a07c1e235acb8faac6ec357d4a668060f" title="updates the multiplier and speed of disc targets based on the current score" alt="" coords="856,239,1001,281"/>
+<area shape="rect" id="node7" href="$class_shooting_discs_scene.html#a84fd6b10dde808d8a7584664c06e9fba" title="updates the displayed score on the UI" alt="" coords="856,174,1001,215"/>
+<area shape="rect" id="node9" href="$class_shooting_discs_scene.html#ac8f50bae0a2df07939d9ba004503ae18" title="saves the user&#39;s score when the game is over and allows user to go back to home page" alt="" coords="856,305,1001,346"/>
+</map>

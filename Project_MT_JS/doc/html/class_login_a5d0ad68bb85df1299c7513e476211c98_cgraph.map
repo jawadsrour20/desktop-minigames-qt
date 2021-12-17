@@ -1,0 +1,8 @@
+<map id="Login::Login" name="Login::Login">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,100,133"/>
+<area shape="rect" id="node2" href="$class_login.html#a3afd9517052d34568b4532640610f1c9" title="Responds to a click on the Login button and navigates user to the homepage if the login was successfu..." alt="" coords="170,5,323,32"/>
+<area shape="rect" id="node3" href="$class_login.html#ac30e38a08f6fddc54f586f67298f10b2" title="Responds to a click on the Play as Guest button and navigates user to the home page as a guest user." alt="" coords="148,56,345,83"/>
+<area shape="rect" id="node4" href="$class_login.html#a0587ec13318125a9c057e720bba36e33" title="Responds to a click on the Register button and navigates user to the registration page." alt="" coords="161,107,332,133"/>
+<area shape="rect" id="node5" href="$class_login.html#add341bd446ae0b3bf627921e48af0538" title="Sets the colors for the login&#45;page." alt="" coords="187,157,306,184"/>
+<area shape="rect" id="node6" href="$class_login.html#ae03255a81cf4f934ca90668fc72f9d92" title="Sets the GridLayout for the login&#45;page." alt="" coords="174,208,319,235"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="questionPopScreen::setColors" name="questionPopScreen::setColors">
+<area shape="rect" id="node1" title="Sets the styleSheet from the buttons and text." alt="" coords="460,5,605,47"/>
+<area shape="rect" id="node2" href="$classquestion_pop_screen.html#a2ffc4602f023d573c2e567ed1bdaa549" title="This function prepares the components of the widget by calling the other functions from this class." alt="" coords="267,5,412,47"/>
+<area shape="rect" id="node3" href="$class_gride_square.html#ac6a6fa4b17ac9fad99d13214c677175c" title="Responds to mouse clicks, if the square contains a ship pop&#45;up question will appear...." alt="" coords="5,13,219,39"/>
+</map>

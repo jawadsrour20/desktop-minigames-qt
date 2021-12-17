@@ -1,0 +1,4 @@
+<map id="questionPopScreen::clickedOnWrongAns" name="questionPopScreen::clickedOnWrongAns">
+<area shape="rect" id="node1" title="topic of the questions" alt="" coords="5,5,151,47"/>
+<area shape="rect" id="node2" href="$class_play_game1.html#a281c8c00fa0545811f5e1c11ab996c05" title="This function is called when the player answers the question incorrectly, it allows the enemy to sele..." alt="" coords="199,13,375,39"/>
+</map>

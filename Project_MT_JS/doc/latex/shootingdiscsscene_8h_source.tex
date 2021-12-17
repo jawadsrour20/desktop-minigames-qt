@@ -1,0 +1,97 @@
+\hypertarget{shootingdiscsscene_8h_source}{}\doxysection{shootingdiscsscene.\+h}
+\mbox{\hyperlink{shootingdiscsscene_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef SHOOTINGDISCSSCENE\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define SHOOTINGDISCSSCENE\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QGraphicsScene>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QObject>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <QWidget>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <QtWidgets>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <QString>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <QGraphicsItem>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <QGraphicsScene>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <QGraphicsView>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <QGraphicsPixmapItem>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <QGraphicsSimpleTextItem>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <random>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <QList>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <QMediaPlayer>}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <QGraphicsView>}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <QShortcut>}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include <QKeySequence>}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{button_8h}{button.h}}"{}}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{discshooter_8h}{discshooter.h}}"{}}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{targetdisc_8h}{targetdisc.h}}"{}}}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#define SCREEN\_HEIGHT 800}}
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#define SCREEN\_WIDTH 600}}
+\DoxyCodeLine{32 \textcolor{keyword}{class }\mbox{\hyperlink{class_shooting_discs_scene}{ShootingDiscsScene}} : \textcolor{keyword}{public} QGraphicsScene}
+\DoxyCodeLine{33 \{}
+\DoxyCodeLine{34     Q\_OBJECT}
+\DoxyCodeLine{35 \textcolor{keyword}{public}:}
+\DoxyCodeLine{36     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_shooting_discs_scene_a68acb6a2e2b7620ff7cee112fb97e468}{ShootingDiscsScene}}(QString* \mbox{\hyperlink{class_shooting_discs_scene_a53ec7da7cc6ee50b3d19f56c2325fd81}{loggedInUser}}=\textcolor{keyword}{nullptr}, QStringList* \mbox{\hyperlink{class_shooting_discs_scene_ac574b8ea09a7e2fcc27574c547691e2c}{loggedInUserObject}}=\textcolor{keyword}{nullptr}, QObject *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39 \textcolor{keyword}{private}:}
+\DoxyCodeLine{40     QStringList* \mbox{\hyperlink{class_shooting_discs_scene_ac574b8ea09a7e2fcc27574c547691e2c}{loggedInUserObject}};}
+\DoxyCodeLine{41     QGraphicsPixmapItem* \mbox{\hyperlink{class_shooting_discs_scene_acb05229559115cbc09e78991f4cb076e}{menuPageBackground}};}
+\DoxyCodeLine{42     \mbox{\hyperlink{class_button}{Button}}* \mbox{\hyperlink{class_shooting_discs_scene_abb049624f4a984493ed4d7b8639106de}{startGame}};}
+\DoxyCodeLine{43     \mbox{\hyperlink{class_button}{Button}}* \mbox{\hyperlink{class_shooting_discs_scene_a32ef156d7808e26922c0d9f33bf24621}{quitGame}};}
+\DoxyCodeLine{44     QString* \mbox{\hyperlink{class_shooting_discs_scene_a53ec7da7cc6ee50b3d19f56c2325fd81}{loggedInUser}};}
+\DoxyCodeLine{45     \mbox{\hyperlink{class_disc_shooter}{DiscShooter}}* \mbox{\hyperlink{class_shooting_discs_scene_afaa1100cc23f381d786091187a06d7f1}{redShooter}};}
+\DoxyCodeLine{46     \mbox{\hyperlink{class_disc_shooter}{DiscShooter}}* \mbox{\hyperlink{class_shooting_discs_scene_acbf2ebf4c83e8836b8931d529fb4f2a4}{greenShooter}};}
+\DoxyCodeLine{47     \mbox{\hyperlink{class_disc_shooter}{DiscShooter}}* \mbox{\hyperlink{class_shooting_discs_scene_aa9a678b019cc53b6b9d0b57ed3064f19}{blueShooter}};}
+\DoxyCodeLine{48     QGraphicsPixmapItem* \mbox{\hyperlink{class_shooting_discs_scene_a0a5b9fc67fb6036da46f6ade435e28e8}{heart1}};}
+\DoxyCodeLine{49     QGraphicsPixmapItem* \mbox{\hyperlink{class_shooting_discs_scene_a032c616b881a5b11985d08cfd1766384}{heart2}};}
+\DoxyCodeLine{50     QGraphicsPixmapItem* \mbox{\hyperlink{class_shooting_discs_scene_acacddba7a3db9c645817cfcfd0d093af}{heart3}};}
+\DoxyCodeLine{51     QGraphicsTextItem* \mbox{\hyperlink{class_shooting_discs_scene_a9d048b075694b9fa3ac527ab1bada7f5}{scoreLabel}};}
+\DoxyCodeLine{52     QGraphicsPixmapItem* \mbox{\hyperlink{class_shooting_discs_scene_ad528616040ce7e1e142da72a341dfb27}{multiplier}};}
+\DoxyCodeLine{53     QGraphicsPixmapItem* \mbox{\hyperlink{class_shooting_discs_scene_a692b5e3aa59985ab9f6fe1f51615f36e}{redBeam}};}
+\DoxyCodeLine{54     QGraphicsPixmapItem* \mbox{\hyperlink{class_shooting_discs_scene_a8701b69d40fafb3e60414b6a705feb3e}{greenBeam}};}
+\DoxyCodeLine{55     QGraphicsPixmapItem* \mbox{\hyperlink{class_shooting_discs_scene_a504e9f21dcc33ffb59e62f102b7ba4cc}{blueBeam}};}
+\DoxyCodeLine{56     QGraphicsTextItem* \mbox{\hyperlink{class_shooting_discs_scene_a9acf6591bd214b0b7d45322985d1484f}{scoreValue}};}
+\DoxyCodeLine{57     QTimer* \mbox{\hyperlink{class_shooting_discs_scene_a65c1c5255d557071b69a265fe8a5f2e4}{redShooterTimer}};}
+\DoxyCodeLine{58     QTimer* \mbox{\hyperlink{class_shooting_discs_scene_af961f46120a1672795615dc435c39d8d}{greenShooterTimer}};}
+\DoxyCodeLine{59     QTimer* \mbox{\hyperlink{class_shooting_discs_scene_a92d5de78cfe3aeda6a918ecf342ede6d}{blueShooterTimer}};}
+\DoxyCodeLine{60     QTimer* \mbox{\hyperlink{class_shooting_discs_scene_ac2d8f9ea9ae0f132acf62fb0f51164ef}{redTargetDiscsCreationTimer}};}
+\DoxyCodeLine{61     QTimer* \mbox{\hyperlink{class_shooting_discs_scene_ac97b88cb1f2d35c2292b7f373b7d113d}{greenTargetDiscsCreationTimer}};}
+\DoxyCodeLine{62     QTimer* \mbox{\hyperlink{class_shooting_discs_scene_a65ba947d89e8539f2201f00afbebcaf6}{blueTargetDiscsCreationTimer}};}
+\DoxyCodeLine{63     QMediaPlayer* \mbox{\hyperlink{class_shooting_discs_scene_a8921a03b0d4c0fbd56dce096bdf311ec}{shootingSound}};}
+\DoxyCodeLine{64     QMediaPlayer* \mbox{\hyperlink{class_shooting_discs_scene_ad369f7b49caba1146524fcf6878a76ec}{menuMusic}};}
+\DoxyCodeLine{65     QMediaPlayer* \mbox{\hyperlink{class_shooting_discs_scene_a824c7f1b8c0fc8b5a9842767b7311d2a}{backgroundMusic}};}
+\DoxyCodeLine{66     \mbox{\hyperlink{classtarget_disc}{targetDisc}}* \mbox{\hyperlink{class_shooting_discs_scene_ab31d80c280d93d1ca476d4ac25b896ad}{redDiscTarget}};}
+\DoxyCodeLine{67     \mbox{\hyperlink{classtarget_disc}{targetDisc}}* \mbox{\hyperlink{class_shooting_discs_scene_a3663fe83187678171e043455c736c61a}{greenDiscTarget}};}
+\DoxyCodeLine{68     \mbox{\hyperlink{classtarget_disc}{targetDisc}}* \mbox{\hyperlink{class_shooting_discs_scene_aba715c5dd5b1c48d72c14d2bd09cc56f}{blueDiscTarget}};}
+\DoxyCodeLine{69     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_shooting_discs_scene_a4842a625cac17116411152e33d59d71c}{score}} = 0; }
+\DoxyCodeLine{70     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_shooting_discs_scene_a55e73ff190353e5eea281b3e62d58d8a}{remainingHearts}} = 3; }
+\DoxyCodeLine{71     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_shooting_discs_scene_a923d4176e07f49009d538ecff8fd9cc3}{currentSpeed}} = 800;}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting_discs_scene_a37a5929f61c4a9a3119ca2453ac2bc96}{setMenuPageBackground}}();}
+\DoxyCodeLine{75     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting_discs_scene_ac1c6bac5cbac824f5ca7844a1d9211f0}{setStartGameBackground}}();}
+\DoxyCodeLine{76     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting_discs_scene_ac99911169b9ffea93653ddff549eb43b}{onShootRed}}();}
+\DoxyCodeLine{77     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting_discs_scene_aaec9f94a04eccbc549a18fb1f767e29e}{onShootGreen}}();}
+\DoxyCodeLine{78     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting_discs_scene_a5b293bc6b4d4c350a38a2043064fb1b5}{onShootBlue}}();}
+\DoxyCodeLine{79     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting_discs_scene_a41ff3723044d6ecac4940a24fd0b8196}{onMissed}}();}
+\DoxyCodeLine{80     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting_discs_scene_a6be88877e65edf9ffdf485b631aae4ca}{onHit}}(\textcolor{keywordtype}{char} sender);}
+\DoxyCodeLine{81     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting_discs_scene_a84fd6b10dde808d8a7584664c06e9fba}{updateScore}}();}
+\DoxyCodeLine{82     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting_discs_scene_a07c1e235acb8faac6ec357d4a668060f}{updateMultiplier}}();}
+\DoxyCodeLine{83     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting_discs_scene_ac8f50bae0a2df07939d9ba004503ae18}{gameOver}}();}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{85 }
+\DoxyCodeLine{86 signals:}
+\DoxyCodeLine{87     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting_discs_scene_a40b27c7fc2111b1f40cfa32223231d43}{hideView}}();}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{89 \textcolor{keyword}{public} slots:}
+\DoxyCodeLine{90     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting_discs_scene_a1597eb1bcefba8b026ee7fff49dd78de}{onStartGameClicked}}();}
+\DoxyCodeLine{91     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting_discs_scene_a90149257a08cffe5ffd9c99694f4959e}{onQuitGameClicked}}();}
+\DoxyCodeLine{92     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting_discs_scene_ac258434909ecdd6ef2335470dd11539c}{addNewRedDiscTarget}}();}
+\DoxyCodeLine{93     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting_discs_scene_aa21cf2baad475d2b4c6e3be7ed02fdbf}{addNewGreenDiscTarget}}();}
+\DoxyCodeLine{94     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting_discs_scene_ad708d88c69818392324c5a81cd844a16}{addNewBlueDiscTarget}}();}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{96 \};}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// SHOOTINGDISCSSCENE\_H}}
+
+\end{DoxyCode}

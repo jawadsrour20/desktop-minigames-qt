@@ -1,0 +1,154 @@
+\hypertarget{class_button}{}\doxysection{Button Class Reference}
+\label{class_button}\index{Button@{Button}}
+
+
+{\ttfamily \#include $<$button.\+h$>$}
+
+
+
+Inheritance diagram for Button\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{class_button__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Button\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{class_button__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_button_a9e7ab4152cb1e7e3beb7f2842f32670c}{clicked}} ()
+\item 
+void \mbox{\hyperlink{class_button_ae28deca131650b40d19cb9a38ed07caa}{pressed}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_button_a69976e5c00874a3807b642f249c1c776}{Button}} (QString name, QGraphics\+Item $\ast$parent=NULL)
+\item 
+void \mbox{\hyperlink{class_button_a17d8eb0c904605b223bbc00c75655315}{mouse\+Press\+Event}} (QGraphics\+Scene\+Mouse\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em funtion invoked on mouse press, each button takes user to a different page \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_button_a633a9684818bc5d300a622a00064f09c}{hover\+Enter\+Event}} (QGraphics\+Scene\+Hover\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em changes the color of the button when a hovering in event occurs \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_button_a1689a97690d9469ce8350d24db0d7485}{hover\+Leave\+Event}} (QGraphics\+Scene\+Hover\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em changes the color of the button back to original when a hovering out event occurs \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+QGraphics\+Text\+Item $\ast$ \mbox{\hyperlink{class_button_a0d566bacc8c1befef9d09b839b6e76e6}{text}}
+\begin{DoxyCompactList}\small\item\em label of the button \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_button_a69976e5c00874a3807b642f249c1c776}\label{class_button_a69976e5c00874a3807b642f249c1c776}} 
+\index{Button@{Button}!Button@{Button}}
+\index{Button@{Button}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{Button()}{Button()}}
+{\footnotesize\ttfamily Button\+::\+Button (\begin{DoxyParamCaption}\item[{QString}]{name,  }\item[{QGraphics\+Item $\ast$}]{parent = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_button_a9e7ab4152cb1e7e3beb7f2842f32670c}\label{class_button_a9e7ab4152cb1e7e3beb7f2842f32670c}} 
+\index{Button@{Button}!clicked@{clicked}}
+\index{clicked@{clicked}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{clicked}{clicked}}
+{\footnotesize\ttfamily void Button\+::clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{class_button_a9e7ab4152cb1e7e3beb7f2842f32670c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_button_a633a9684818bc5d300a622a00064f09c}\label{class_button_a633a9684818bc5d300a622a00064f09c}} 
+\index{Button@{Button}!hoverEnterEvent@{hoverEnterEvent}}
+\index{hoverEnterEvent@{hoverEnterEvent}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{hoverEnterEvent()}{hoverEnterEvent()}}
+{\footnotesize\ttfamily void Button\+::hover\+Enter\+Event (\begin{DoxyParamCaption}\item[{QGraphics\+Scene\+Hover\+Event $\ast$}]{event }\end{DoxyParamCaption})}
+
+
+
+changes the color of the button when a hovering in event occurs 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event,which} & is the hovering of the mourse over the button \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_button_a1689a97690d9469ce8350d24db0d7485}\label{class_button_a1689a97690d9469ce8350d24db0d7485}} 
+\index{Button@{Button}!hoverLeaveEvent@{hoverLeaveEvent}}
+\index{hoverLeaveEvent@{hoverLeaveEvent}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{hoverLeaveEvent()}{hoverLeaveEvent()}}
+{\footnotesize\ttfamily void Button\+::hover\+Leave\+Event (\begin{DoxyParamCaption}\item[{QGraphics\+Scene\+Hover\+Event $\ast$}]{event }\end{DoxyParamCaption})}
+
+
+
+changes the color of the button back to original when a hovering out event occurs 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event,which} & is the hovering of the mourse away from the button \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_button_a17d8eb0c904605b223bbc00c75655315}\label{class_button_a17d8eb0c904605b223bbc00c75655315}} 
+\index{Button@{Button}!mousePressEvent@{mousePressEvent}}
+\index{mousePressEvent@{mousePressEvent}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{mousePressEvent()}{mousePressEvent()}}
+{\footnotesize\ttfamily void Button\+::mouse\+Press\+Event (\begin{DoxyParamCaption}\item[{QGraphics\+Scene\+Mouse\+Event $\ast$}]{event }\end{DoxyParamCaption})}
+
+
+
+funtion invoked on mouse press, each button takes user to a different page 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event,which} & is the mouse click \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_button_ae28deca131650b40d19cb9a38ed07caa}\label{class_button_ae28deca131650b40d19cb9a38ed07caa}} 
+\index{Button@{Button}!pressed@{pressed}}
+\index{pressed@{pressed}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{pressed}{pressed}}
+{\footnotesize\ttfamily void Button\+::pressed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_button_a0d566bacc8c1befef9d09b839b6e76e6}\label{class_button_a0d566bacc8c1befef9d09b839b6e76e6}} 
+\index{Button@{Button}!text@{text}}
+\index{text@{text}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{text}{text}}
+{\footnotesize\ttfamily QGraphics\+Text\+Item$\ast$ Button\+::text\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+label of the button 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{button_8h}{button.\+h}}\item 
+\mbox{\hyperlink{button_8cpp}{button.\+cpp}}\end{DoxyCompactItemize}

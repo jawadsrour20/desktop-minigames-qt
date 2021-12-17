@@ -1,0 +1,4 @@
+<map id="Button::clicked" name="Button::clicked">
+<area shape="rect" id="node1" title=" " alt="" coords="229,5,339,32"/>
+<area shape="rect" id="node2" href="$class_button.html#a17d8eb0c904605b223bbc00c75655315" title="funtion invoked on mouse press, each button takes user to a different page" alt="" coords="5,5,181,32"/>
+</map>

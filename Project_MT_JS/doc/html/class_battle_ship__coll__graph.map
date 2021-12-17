@@ -1,0 +1,12 @@
+<map id="BattleShip" name="BattleShip">
+<area shape="rect" id="node1" title=" " alt="" coords="298,1131,473,1340"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,749,120,826"/>
+<area shape="rect" id="node3" href="$class_home.html" title=" " alt="" coords="145,587,386,987"/>
+<area shape="rect" id="node4" title=" " alt="" coords="289,249,362,327"/>
+<area shape="rect" id="node7" href="$classquestion_pop_screen.html" title=" " alt="" coords="410,595,606,980"/>
+<area shape="rect" id="node5" href="$class_play_game1.html" title=" " alt="" coords="631,507,799,1068"/>
+<area shape="rect" id="node6" title=" " alt="" coords="653,249,777,327"/>
+<area shape="rect" id="node8" href="$class_gride_square.html" title=" " alt="" coords="407,132,609,444"/>
+<area shape="rect" id="node9" title=" " alt="" coords="409,5,479,83"/>
+<area shape="rect" id="node10" title=" " alt="" coords="504,5,643,83"/>
+</map>

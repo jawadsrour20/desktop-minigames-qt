@@ -1,0 +1,46 @@
+\hypertarget{login_8h_source}{}\doxysection{login.\+h}
+\mbox{\hyperlink{login_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef LOGIN\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define LOGIN\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QWidget>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QtWidgets>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{class_login}{Login}} : \textcolor{keyword}{public} QWidget}
+\DoxyCodeLine{15 \{}
+\DoxyCodeLine{16     Q\_OBJECT}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{keyword}{public}:}
+\DoxyCodeLine{19     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_login_a5d0ad68bb85df1299c7513e476211c98}{Login}}(QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{keyword}{private}:}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24     QLabel* \mbox{\hyperlink{class_login_a62e6b5053652399a247773d77047907a}{rocketPicture}};}
+\DoxyCodeLine{25     QLabel* \mbox{\hyperlink{class_login_a87a74d5fbdd10a032f74161700c28c80}{username}};}
+\DoxyCodeLine{26     QLabel* \mbox{\hyperlink{class_login_ad30e7634d8f576cbd6c6f5a63fb05588}{password}};}
+\DoxyCodeLine{27     QLineEdit* \mbox{\hyperlink{class_login_a3e49d1a0db1462a399b397d0ccdaf33f}{usernameField}};}
+\DoxyCodeLine{28     QLineEdit* \mbox{\hyperlink{class_login_a0231474e05352d8159f631d096d8686b}{passwordField}};}
+\DoxyCodeLine{29     QPushButton* \mbox{\hyperlink{class_login_ab27132da6b95740aa22da500c8e7f460}{loginButton}};}
+\DoxyCodeLine{30     QPushButton* \mbox{\hyperlink{class_login_a6cac7f826c2b39d2708f72bdac4fa677}{registerButton}};}
+\DoxyCodeLine{31     QPushButton* \mbox{\hyperlink{class_login_a4dc68e4656209a058a6cc146006484fd}{playAsGuestButton}};}
+\DoxyCodeLine{32     QGridLayout* \mbox{\hyperlink{class_login_a799b910fe71662e3c5dcc5208b1526f6}{gridLayout}};}
+\DoxyCodeLine{33     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_login_ae03255a81cf4f934ca90668fc72f9d92}{setGridLayout}}();}
+\DoxyCodeLine{34     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_login_add341bd446ae0b3bf627921e48af0538}{setColors}}();}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 signals:}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38 \textcolor{comment}{// slots must be defined under the slots keyword}}
+\DoxyCodeLine{39 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_login_a3afd9517052d34568b4532640610f1c9}{onLoginClicked}}();}
+\DoxyCodeLine{42     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_login_a0587ec13318125a9c057e720bba36e33}{onRegisterClicked}}();}
+\DoxyCodeLine{43     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_login_ac30e38a08f6fddc54f586f67298f10b2}{onPlayAsGuestClicked}}();}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46 \};}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// LOGIN\_H}}
+
+\end{DoxyCode}

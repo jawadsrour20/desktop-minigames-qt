@@ -1,0 +1,10 @@
+<map id="questionpopscreen.h" name="questionpopscreen.h">
+<area shape="rect" id="node1" title="questionPopScreen class." alt="" coords="386,5,531,32"/>
+<area shape="rect" id="node2" href="$battleship_8h.html" title="BattleShip class." alt="" coords="372,80,463,107"/>
+<area shape="rect" id="node8" href="$questionpopscreen_8cpp.html" title="this is the implemetation of the pop&#45;up question widget" alt="" coords="616,155,776,181"/>
+<area shape="rect" id="node3" href="$battleship_8cpp.html" title="this is the implemetation of the view of the game" alt="" coords="5,155,109,181"/>
+<area shape="rect" id="node4" href="$gridesquare_8cpp.html" title="this is the implemetation of the squares" alt="" coords="133,155,251,181"/>
+<area shape="rect" id="node5" href="$home_8cpp.html" title="contains Home class definition" alt="" coords="275,155,355,181"/>
+<area shape="rect" id="node6" href="$main_8cpp.html" title=" " alt="" coords="379,155,455,181"/>
+<area shape="rect" id="node7" href="$playgame1_8cpp.html" title="this is the implemetation of the scene of the game" alt="" coords="480,155,592,181"/>
+</map>

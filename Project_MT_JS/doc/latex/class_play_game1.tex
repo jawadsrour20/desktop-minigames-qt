@@ -1,0 +1,442 @@
+\hypertarget{class_play_game1}{}\doxysection{Play\+Game1 Class Reference}
+\label{class_play_game1}\index{PlayGame1@{PlayGame1}}
+
+
+{\ttfamily \#include $<$playgame1.\+h$>$}
+
+
+
+Inheritance diagram for Play\+Game1\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_play_game1__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Play\+Game1\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_play_game1__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_play_game1_a03300eeb1a73cfa6a46efd59e2eefd57}{Play\+Game1}} ()
+\item 
+void \mbox{\hyperlink{class_play_game1_a8fa29ae15828fffbd77ce497fe3c8b01}{draw\+Grid}} ()
+\begin{DoxyCompactList}\small\item\em Draws the grid by adding instances of Grid\+Square class in two 4X4 matrices, one for player and one for enemy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_play_game1_a1fdfe38590f3cba6188eba27ee121a20}{add\+Player\+Ships}} ()
+\begin{DoxyCompactList}\small\item\em adds the ships of the player to the player grid. The positions are always the same \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_play_game1_a191b7fc2437d1c41cdb5ffed90b23610}{add\+Enemy\+Ships}} ()
+\begin{DoxyCompactList}\small\item\em adds the ships of the enemy to the enemy grid in a random way. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_play_game1_ae61973f59da097f43e6b912f3306f366}{add\+Flags}} ()
+\begin{DoxyCompactList}\small\item\em sets the data attribute flag for each square in the enemy grid to either 0 or 1, o means that there is no ship on that square, 1 means that there is. Hides enemy ships from the grid after that. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_play_game1_a281c8c00fa0545811f5e1c11ab996c05}{enemy\+Attack}} ()
+\begin{DoxyCompactList}\small\item\em This function is called when the player answers the question incorrectly, it allows the enemy to select a random square from the player\textquotesingle{}s grid and fire at it. It may miss or hit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_play_game1_a73e79e539e71c161c9ba1ddf63b067cd}{display\+Score}} ()
+\begin{DoxyCompactList}\small\item\em Displays the initial score on the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_play_game1_a45baeee33d9030329a325a9c3912c036}{display\+Attempts}} ()
+\begin{DoxyCompactList}\small\item\em Displays the initial number of attempts on the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_play_game1_abb5f95efbfb85e9dbd3bf06cdc9d6037}{update\+Score}} ()
+\begin{DoxyCompactList}\small\item\em It is called when the value of score is changed. It displays the new value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_play_game1_a67a16ca6e0a1daddf91384d686c7ead1}{update\+Attempts}} ()
+\begin{DoxyCompactList}\small\item\em It is called when the value of attempts is changed. It displays the new value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+QGraphics\+Pixmap\+Item $\ast$ \mbox{\hyperlink{class_play_game1_a3ef7ee4d7b781cce3003d9f0f084d90d}{big\+Ship}}
+\item 
+QGraphics\+Pixmap\+Item $\ast$ \mbox{\hyperlink{class_play_game1_aab4bc02890883697d73fc48bcc7d9edc}{medium\+Ship}}
+\begin{DoxyCompactList}\small\item\em these are all the enemy ships, they are set as attributes because we need to access them in other functions \end{DoxyCompactList}\item 
+QGraphics\+Pixmap\+Item $\ast$ \mbox{\hyperlink{class_play_game1_af1e6cf4b157ffca4c38f84a0722efbc2}{medium\+Ship2}}
+\item 
+QGraphics\+Pixmap\+Item $\ast$ \mbox{\hyperlink{class_play_game1_a1896d20037c5f25bfc9fb066f22c962e}{small\+Ship1}}
+\item 
+QGraphics\+Pixmap\+Item $\ast$ \mbox{\hyperlink{class_play_game1_abafaf9b044f1831751e5dbaced7656a4}{small\+Ship2}}
+\item 
+QGraphics\+Pixmap\+Item $\ast$ \mbox{\hyperlink{class_play_game1_a8e6c0f984a993451286987080f0fa2d4}{small\+Ship3}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+QList$<$ \mbox{\hyperlink{class_gride_square}{Gride\+Square}} $\ast$ $>$ \mbox{\hyperlink{class_play_game1_a771359ef8aba5400fac511c163953afb}{enemy\+Squares}}
+\item 
+QList$<$ \mbox{\hyperlink{class_gride_square}{Gride\+Square}} $\ast$ $>$ \mbox{\hyperlink{class_play_game1_a63566e5a36308fe64c74337e8599ecfc}{player\+Squares}}
+\begin{DoxyCompactList}\small\item\em this list contains all the squares that form the enemy grid \end{DoxyCompactList}\item 
+QGraphics\+Text\+Item $\ast$ \mbox{\hyperlink{class_play_game1_a8c6686e392dca862e1edc893e0894612}{score\+Text}}
+\begin{DoxyCompactList}\small\item\em this list contains all the squares that form the player grid \end{DoxyCompactList}\item 
+QGraphics\+Text\+Item $\ast$ \mbox{\hyperlink{class_play_game1_abdfa4300e8d730f96f13b0f119872e6c}{score\+Value}}
+\begin{DoxyCompactList}\small\item\em this text contains the word \char`\"{}score\char`\"{} that will be added to the scene, we need it as an attributes because it is needed in more than one function \end{DoxyCompactList}\item 
+QGraphics\+Text\+Item $\ast$ \mbox{\hyperlink{class_play_game1_ad9885cb7f0f8b2a9fb5488f22cbecc97}{attempts\+Text}}
+\begin{DoxyCompactList}\small\item\em this text contains the values of the score and will be updated and added to the scene, we need it as an attributes because it is needed in more than one function \end{DoxyCompactList}\item 
+QGraphics\+Text\+Item $\ast$ \mbox{\hyperlink{class_play_game1_a71b92862e57a090906855a30af00d1c6}{attempts\+Value}}
+\begin{DoxyCompactList}\small\item\em this text contains the word \char`\"{}attempts\char`\"{} that will be added to the scene, we need it as an attributes because it is needed in more than one function \end{DoxyCompactList}\item 
+QMedia\+Player $\ast$ \mbox{\hyperlink{class_play_game1_ad7a4ba2e6a4bd2a926aeb9d7a7907643}{music}}
+\begin{DoxyCompactList}\small\item\em this text contains the values of the attempts and will be updated and added to the scene, we need it as an attributes because it is needed in more than one function \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_play_game1_a03300eeb1a73cfa6a46efd59e2eefd57}\label{class_play_game1_a03300eeb1a73cfa6a46efd59e2eefd57}} 
+\index{PlayGame1@{PlayGame1}!PlayGame1@{PlayGame1}}
+\index{PlayGame1@{PlayGame1}!PlayGame1@{PlayGame1}}
+\doxysubsubsection{\texorpdfstring{PlayGame1()}{PlayGame1()}}
+{\footnotesize\ttfamily Play\+Game1\+::\+Play\+Game1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_play_game1_a191b7fc2437d1c41cdb5ffed90b23610}\label{class_play_game1_a191b7fc2437d1c41cdb5ffed90b23610}} 
+\index{PlayGame1@{PlayGame1}!addEnemyShips@{addEnemyShips}}
+\index{addEnemyShips@{addEnemyShips}!PlayGame1@{PlayGame1}}
+\doxysubsubsection{\texorpdfstring{addEnemyShips()}{addEnemyShips()}}
+{\footnotesize\ttfamily void Play\+Game1\+::add\+Enemy\+Ships (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+adds the ships of the enemy to the enemy grid in a random way. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & input argument \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return value 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_play_game1_a191b7fc2437d1c41cdb5ffed90b23610_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_play_game1_ae61973f59da097f43e6b912f3306f366}\label{class_play_game1_ae61973f59da097f43e6b912f3306f366}} 
+\index{PlayGame1@{PlayGame1}!addFlags@{addFlags}}
+\index{addFlags@{addFlags}!PlayGame1@{PlayGame1}}
+\doxysubsubsection{\texorpdfstring{addFlags()}{addFlags()}}
+{\footnotesize\ttfamily void Play\+Game1\+::add\+Flags (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+sets the data attribute flag for each square in the enemy grid to either 0 or 1, o means that there is no ship on that square, 1 means that there is. Hides enemy ships from the grid after that. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & input argument \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return value 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_play_game1_ae61973f59da097f43e6b912f3306f366_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_play_game1_a1fdfe38590f3cba6188eba27ee121a20}\label{class_play_game1_a1fdfe38590f3cba6188eba27ee121a20}} 
+\index{PlayGame1@{PlayGame1}!addPlayerShips@{addPlayerShips}}
+\index{addPlayerShips@{addPlayerShips}!PlayGame1@{PlayGame1}}
+\doxysubsubsection{\texorpdfstring{addPlayerShips()}{addPlayerShips()}}
+{\footnotesize\ttfamily void Play\+Game1\+::add\+Player\+Ships (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+adds the ships of the player to the player grid. The positions are always the same 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & input argument \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return value 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_play_game1_a1fdfe38590f3cba6188eba27ee121a20_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_play_game1_a45baeee33d9030329a325a9c3912c036}\label{class_play_game1_a45baeee33d9030329a325a9c3912c036}} 
+\index{PlayGame1@{PlayGame1}!displayAttempts@{displayAttempts}}
+\index{displayAttempts@{displayAttempts}!PlayGame1@{PlayGame1}}
+\doxysubsubsection{\texorpdfstring{displayAttempts()}{displayAttempts()}}
+{\footnotesize\ttfamily void Play\+Game1\+::display\+Attempts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Displays the initial number of attempts on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & input argument \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return value 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_play_game1_a45baeee33d9030329a325a9c3912c036_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_play_game1_a73e79e539e71c161c9ba1ddf63b067cd}\label{class_play_game1_a73e79e539e71c161c9ba1ddf63b067cd}} 
+\index{PlayGame1@{PlayGame1}!displayScore@{displayScore}}
+\index{displayScore@{displayScore}!PlayGame1@{PlayGame1}}
+\doxysubsubsection{\texorpdfstring{displayScore()}{displayScore()}}
+{\footnotesize\ttfamily void Play\+Game1\+::display\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Displays the initial score on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & input argument \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return value 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_play_game1_a73e79e539e71c161c9ba1ddf63b067cd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_play_game1_a8fa29ae15828fffbd77ce497fe3c8b01}\label{class_play_game1_a8fa29ae15828fffbd77ce497fe3c8b01}} 
+\index{PlayGame1@{PlayGame1}!drawGrid@{drawGrid}}
+\index{drawGrid@{drawGrid}!PlayGame1@{PlayGame1}}
+\doxysubsubsection{\texorpdfstring{drawGrid()}{drawGrid()}}
+{\footnotesize\ttfamily void Play\+Game1\+::draw\+Grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the grid by adding instances of Grid\+Square class in two 4X4 matrices, one for player and one for enemy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & input argument \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return value 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_play_game1_a8fa29ae15828fffbd77ce497fe3c8b01_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_play_game1_a281c8c00fa0545811f5e1c11ab996c05}\label{class_play_game1_a281c8c00fa0545811f5e1c11ab996c05}} 
+\index{PlayGame1@{PlayGame1}!enemyAttack@{enemyAttack}}
+\index{enemyAttack@{enemyAttack}!PlayGame1@{PlayGame1}}
+\doxysubsubsection{\texorpdfstring{enemyAttack()}{enemyAttack()}}
+{\footnotesize\ttfamily void Play\+Game1\+::enemy\+Attack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function is called when the player answers the question incorrectly, it allows the enemy to select a random square from the player\textquotesingle{}s grid and fire at it. It may miss or hit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & input argument \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return value 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_play_game1_a281c8c00fa0545811f5e1c11ab996c05_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_play_game1_a67a16ca6e0a1daddf91384d686c7ead1}\label{class_play_game1_a67a16ca6e0a1daddf91384d686c7ead1}} 
+\index{PlayGame1@{PlayGame1}!updateAttempts@{updateAttempts}}
+\index{updateAttempts@{updateAttempts}!PlayGame1@{PlayGame1}}
+\doxysubsubsection{\texorpdfstring{updateAttempts()}{updateAttempts()}}
+{\footnotesize\ttfamily void Play\+Game1\+::update\+Attempts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+It is called when the value of attempts is changed. It displays the new value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & input argument \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return value 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_play_game1_a67a16ca6e0a1daddf91384d686c7ead1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_play_game1_abb5f95efbfb85e9dbd3bf06cdc9d6037}\label{class_play_game1_abb5f95efbfb85e9dbd3bf06cdc9d6037}} 
+\index{PlayGame1@{PlayGame1}!updateScore@{updateScore}}
+\index{updateScore@{updateScore}!PlayGame1@{PlayGame1}}
+\doxysubsubsection{\texorpdfstring{updateScore()}{updateScore()}}
+{\footnotesize\ttfamily void Play\+Game1\+::update\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+It is called when the value of score is changed. It displays the new value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & input argument \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return value 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_play_game1_abb5f95efbfb85e9dbd3bf06cdc9d6037_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_play_game1_ad9885cb7f0f8b2a9fb5488f22cbecc97}\label{class_play_game1_ad9885cb7f0f8b2a9fb5488f22cbecc97}} 
+\index{PlayGame1@{PlayGame1}!attemptsText@{attemptsText}}
+\index{attemptsText@{attemptsText}!PlayGame1@{PlayGame1}}
+\doxysubsubsection{\texorpdfstring{attemptsText}{attemptsText}}
+{\footnotesize\ttfamily QGraphics\+Text\+Item$\ast$ Play\+Game1\+::attempts\+Text\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+this text contains the values of the score and will be updated and added to the scene, we need it as an attributes because it is needed in more than one function 
+
+\mbox{\Hypertarget{class_play_game1_a71b92862e57a090906855a30af00d1c6}\label{class_play_game1_a71b92862e57a090906855a30af00d1c6}} 
+\index{PlayGame1@{PlayGame1}!attemptsValue@{attemptsValue}}
+\index{attemptsValue@{attemptsValue}!PlayGame1@{PlayGame1}}
+\doxysubsubsection{\texorpdfstring{attemptsValue}{attemptsValue}}
+{\footnotesize\ttfamily QGraphics\+Text\+Item$\ast$ Play\+Game1\+::attempts\+Value\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+this text contains the word \char`\"{}attempts\char`\"{} that will be added to the scene, we need it as an attributes because it is needed in more than one function 
+
+\mbox{\Hypertarget{class_play_game1_a3ef7ee4d7b781cce3003d9f0f084d90d}\label{class_play_game1_a3ef7ee4d7b781cce3003d9f0f084d90d}} 
+\index{PlayGame1@{PlayGame1}!bigShip@{bigShip}}
+\index{bigShip@{bigShip}!PlayGame1@{PlayGame1}}
+\doxysubsubsection{\texorpdfstring{bigShip}{bigShip}}
+{\footnotesize\ttfamily QGraphics\+Pixmap\+Item$\ast$ Play\+Game1\+::big\+Ship}
+
+\mbox{\Hypertarget{class_play_game1_a771359ef8aba5400fac511c163953afb}\label{class_play_game1_a771359ef8aba5400fac511c163953afb}} 
+\index{PlayGame1@{PlayGame1}!enemySquares@{enemySquares}}
+\index{enemySquares@{enemySquares}!PlayGame1@{PlayGame1}}
+\doxysubsubsection{\texorpdfstring{enemySquares}{enemySquares}}
+{\footnotesize\ttfamily QList$<$\mbox{\hyperlink{class_gride_square}{Gride\+Square}}$\ast$$>$ Play\+Game1\+::enemy\+Squares\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_play_game1_aab4bc02890883697d73fc48bcc7d9edc}\label{class_play_game1_aab4bc02890883697d73fc48bcc7d9edc}} 
+\index{PlayGame1@{PlayGame1}!mediumShip@{mediumShip}}
+\index{mediumShip@{mediumShip}!PlayGame1@{PlayGame1}}
+\doxysubsubsection{\texorpdfstring{mediumShip}{mediumShip}}
+{\footnotesize\ttfamily QGraphics\+Pixmap\+Item$\ast$ Play\+Game1\+::medium\+Ship}
+
+
+
+these are all the enemy ships, they are set as attributes because we need to access them in other functions 
+
+\mbox{\Hypertarget{class_play_game1_af1e6cf4b157ffca4c38f84a0722efbc2}\label{class_play_game1_af1e6cf4b157ffca4c38f84a0722efbc2}} 
+\index{PlayGame1@{PlayGame1}!mediumShip2@{mediumShip2}}
+\index{mediumShip2@{mediumShip2}!PlayGame1@{PlayGame1}}
+\doxysubsubsection{\texorpdfstring{mediumShip2}{mediumShip2}}
+{\footnotesize\ttfamily QGraphics\+Pixmap\+Item$\ast$ Play\+Game1\+::medium\+Ship2}
+
+\mbox{\Hypertarget{class_play_game1_ad7a4ba2e6a4bd2a926aeb9d7a7907643}\label{class_play_game1_ad7a4ba2e6a4bd2a926aeb9d7a7907643}} 
+\index{PlayGame1@{PlayGame1}!music@{music}}
+\index{music@{music}!PlayGame1@{PlayGame1}}
+\doxysubsubsection{\texorpdfstring{music}{music}}
+{\footnotesize\ttfamily QMedia\+Player$\ast$ Play\+Game1\+::music\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+this text contains the values of the attempts and will be updated and added to the scene, we need it as an attributes because it is needed in more than one function 
+
+\mbox{\Hypertarget{class_play_game1_a63566e5a36308fe64c74337e8599ecfc}\label{class_play_game1_a63566e5a36308fe64c74337e8599ecfc}} 
+\index{PlayGame1@{PlayGame1}!playerSquares@{playerSquares}}
+\index{playerSquares@{playerSquares}!PlayGame1@{PlayGame1}}
+\doxysubsubsection{\texorpdfstring{playerSquares}{playerSquares}}
+{\footnotesize\ttfamily QList$<$\mbox{\hyperlink{class_gride_square}{Gride\+Square}}$\ast$$>$ Play\+Game1\+::player\+Squares\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+this list contains all the squares that form the enemy grid 
+
+\mbox{\Hypertarget{class_play_game1_a8c6686e392dca862e1edc893e0894612}\label{class_play_game1_a8c6686e392dca862e1edc893e0894612}} 
+\index{PlayGame1@{PlayGame1}!scoreText@{scoreText}}
+\index{scoreText@{scoreText}!PlayGame1@{PlayGame1}}
+\doxysubsubsection{\texorpdfstring{scoreText}{scoreText}}
+{\footnotesize\ttfamily QGraphics\+Text\+Item$\ast$ Play\+Game1\+::score\+Text\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+this list contains all the squares that form the player grid 
+
+\mbox{\Hypertarget{class_play_game1_abdfa4300e8d730f96f13b0f119872e6c}\label{class_play_game1_abdfa4300e8d730f96f13b0f119872e6c}} 
+\index{PlayGame1@{PlayGame1}!scoreValue@{scoreValue}}
+\index{scoreValue@{scoreValue}!PlayGame1@{PlayGame1}}
+\doxysubsubsection{\texorpdfstring{scoreValue}{scoreValue}}
+{\footnotesize\ttfamily QGraphics\+Text\+Item$\ast$ Play\+Game1\+::score\+Value\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+this text contains the word \char`\"{}score\char`\"{} that will be added to the scene, we need it as an attributes because it is needed in more than one function 
+
+\mbox{\Hypertarget{class_play_game1_a1896d20037c5f25bfc9fb066f22c962e}\label{class_play_game1_a1896d20037c5f25bfc9fb066f22c962e}} 
+\index{PlayGame1@{PlayGame1}!smallShip1@{smallShip1}}
+\index{smallShip1@{smallShip1}!PlayGame1@{PlayGame1}}
+\doxysubsubsection{\texorpdfstring{smallShip1}{smallShip1}}
+{\footnotesize\ttfamily QGraphics\+Pixmap\+Item$\ast$ Play\+Game1\+::small\+Ship1}
+
+\mbox{\Hypertarget{class_play_game1_abafaf9b044f1831751e5dbaced7656a4}\label{class_play_game1_abafaf9b044f1831751e5dbaced7656a4}} 
+\index{PlayGame1@{PlayGame1}!smallShip2@{smallShip2}}
+\index{smallShip2@{smallShip2}!PlayGame1@{PlayGame1}}
+\doxysubsubsection{\texorpdfstring{smallShip2}{smallShip2}}
+{\footnotesize\ttfamily QGraphics\+Pixmap\+Item$\ast$ Play\+Game1\+::small\+Ship2}
+
+\mbox{\Hypertarget{class_play_game1_a8e6c0f984a993451286987080f0fa2d4}\label{class_play_game1_a8e6c0f984a993451286987080f0fa2d4}} 
+\index{PlayGame1@{PlayGame1}!smallShip3@{smallShip3}}
+\index{smallShip3@{smallShip3}!PlayGame1@{PlayGame1}}
+\doxysubsubsection{\texorpdfstring{smallShip3}{smallShip3}}
+{\footnotesize\ttfamily QGraphics\+Pixmap\+Item$\ast$ Play\+Game1\+::small\+Ship3}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{playgame1_8h}{playgame1.\+h}}\item 
+\mbox{\hyperlink{playgame1_8cpp}{playgame1.\+cpp}}\end{DoxyCompactItemize}

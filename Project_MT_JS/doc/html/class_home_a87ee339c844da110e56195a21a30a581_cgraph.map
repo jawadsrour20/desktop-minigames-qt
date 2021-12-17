@@ -1,0 +1,20 @@
+<map id="Home::Home" name="Home::Home">
+<area shape="rect" id="node1" title=" " alt="" coords="5,165,105,192"/>
+<area shape="rect" id="node2" href="$class_home.html#a3dda94435e9e993eefa61be282702db4" title="responds to a history button clicked signalfor a guest user and displays a message for them" alt="" coords="153,5,353,32"/>
+<area shape="rect" id="node3" href="$class_home.html#aacca15d7a5481638f3bbaa97a9bf64b9" title="responds to a button clicked signal and navigates the user to the History page" alt="" coords="171,56,336,83"/>
+<area shape="rect" id="node4" href="$class_home.html#aa9cd870b30fec091e5a49d7a6f35decf" title="Logs the user out of their account." alt="" coords="171,107,335,133"/>
+<area shape="rect" id="node5" href="$class_home.html#ac86d2359d698e192ae190cbf1ef442aa" title="responds to a button clicked signal and navigates the user to the BattleShip game" alt="" coords="153,158,353,199"/>
+<area shape="rect" id="node16" href="$class_home.html#a63401fceebd25b3a4912b2f85a598e3e" title="responds to a button clicked signal and navigates the user to the Shooting Discs game" alt="" coords="158,223,349,265"/>
+<area shape="rect" id="node17" href="$class_home.html#a97a4cde768905fe17c676b47f7cbfc15" title="Sets the colors for the home&#45;page." alt="" coords="193,289,314,316"/>
+<area shape="rect" id="node18" href="$class_home.html#a6008b961353ec7bba474fa53483f63db" title="Sets the GridLayout for the home&#45;page." alt="" coords="179,340,327,367"/>
+<area shape="rect" id="node6" href="$class_battle_ship.html#acf5f498271f67b854be831b2b30f38bb" title="Displays the main menu." alt="" coords="401,165,595,192"/>
+<area shape="rect" id="node7" href="$class_battle_ship.html#aff7e0e0b5831fa738904dd244b8ab801" title="Takes user to the page that explains the game." alt="" coords="644,140,801,167"/>
+<area shape="rect" id="node8" href="$class_battle_ship.html#ab355edc10b704fe21097780f3400db2a" title="Takes user back to the inital home page (page shown after logging in)" alt="" coords="643,191,803,217"/>
+<area shape="rect" id="node9" href="$class_battle_ship.html#a5ee23766959e20ed88f12156e65bae65" title="Prepares the game by calling all the functions responsible of setting the background,..." alt="" coords="647,241,799,268"/>
+<area shape="rect" id="node10" href="$class_play_game1.html#a191b7fc2437d1c41cdb5ffed90b23610" title="adds the ships of the enemy to the enemy grid in a random way." alt="" coords="851,115,1047,141"/>
+<area shape="rect" id="node11" href="$class_play_game1.html#ae61973f59da097f43e6b912f3306f366" title="sets the data attribute flag for each square in the enemy grid to either 0 or 1, o means that there i..." alt="" coords="872,165,1025,192"/>
+<area shape="rect" id="node12" href="$class_play_game1.html#a1fdfe38590f3cba6188eba27ee121a20" title="adds the ships of the player to the player grid. The positions are always the same" alt="" coords="853,216,1045,243"/>
+<area shape="rect" id="node13" href="$class_play_game1.html#a45baeee33d9030329a325a9c3912c036" title="Displays the initial number of attempts on the screen." alt="" coords="852,267,1045,293"/>
+<area shape="rect" id="node14" href="$class_play_game1.html#a73e79e539e71c161c9ba1ddf63b067cd" title="Displays the initial score on the screen." alt="" coords="861,317,1037,344"/>
+<area shape="rect" id="node15" href="$class_play_game1.html#a8fa29ae15828fffbd77ce497fe3c8b01" title="Draws the grid by adding instances of GridSquare class in two 4X4 matrices, one for player and one fo..." alt="" coords="872,368,1025,395"/>
+</map>

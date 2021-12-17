@@ -1,0 +1,821 @@
+\hypertarget{class_shooting_discs_scene}{}\doxysection{Shooting\+Discs\+Scene Class Reference}
+\label{class_shooting_discs_scene}\index{ShootingDiscsScene@{ShootingDiscsScene}}
+
+
+{\ttfamily \#include $<$shootingdiscsscene.\+h$>$}
+
+
+
+Inheritance diagram for Shooting\+Discs\+Scene\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_shooting_discs_scene__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Shooting\+Discs\+Scene\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shooting_discs_scene__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_shooting_discs_scene_a1597eb1bcefba8b026ee7fff49dd78de}{on\+Start\+Game\+Clicked}} ()
+\begin{DoxyCompactList}\small\item\em sets up the actual shooting discs game when Start button is clicked \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shooting_discs_scene_a90149257a08cffe5ffd9c99694f4959e}{on\+Quit\+Game\+Clicked}} ()
+\begin{DoxyCompactList}\small\item\em quits the shooting discs game when Quit button is clicked \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shooting_discs_scene_ac258434909ecdd6ef2335470dd11539c}{add\+New\+Red\+Disc\+Target}} ()
+\begin{DoxyCompactList}\small\item\em adds new targets for the red shooter \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shooting_discs_scene_aa21cf2baad475d2b4c6e3be7ed02fdbf}{add\+New\+Green\+Disc\+Target}} ()
+\begin{DoxyCompactList}\small\item\em adds new targets for the green shooter \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shooting_discs_scene_ad708d88c69818392324c5a81cd844a16}{add\+New\+Blue\+Disc\+Target}} ()
+\begin{DoxyCompactList}\small\item\em adds new targets for the blue shooter \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_shooting_discs_scene_a40b27c7fc2111b1f40cfa32223231d43}{hide\+View}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shooting_discs_scene_a68acb6a2e2b7620ff7cee112fb97e468}{Shooting\+Discs\+Scene}} (QString $\ast$\mbox{\hyperlink{class_shooting_discs_scene_a53ec7da7cc6ee50b3d19f56c2325fd81}{logged\+In\+User}}=nullptr, QString\+List $\ast$\mbox{\hyperlink{class_shooting_discs_scene_ac574b8ea09a7e2fcc27574c547691e2c}{logged\+In\+User\+Object}}=nullptr, QObject $\ast$parent=nullptr)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_shooting_discs_scene_a37a5929f61c4a9a3119ca2453ac2bc96}{set\+Menu\+Page\+Background}} ()
+\begin{DoxyCompactList}\small\item\em sets the background for the menu page of shooting discs game \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shooting_discs_scene_ac1c6bac5cbac824f5ca7844a1d9211f0}{set\+Start\+Game\+Background}} ()
+\item 
+void \mbox{\hyperlink{class_shooting_discs_scene_ac99911169b9ffea93653ddff549eb43b}{on\+Shoot\+Red}} ()
+\begin{DoxyCompactList}\small\item\em shoots a beam from the red shooter \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shooting_discs_scene_aaec9f94a04eccbc549a18fb1f767e29e}{on\+Shoot\+Green}} ()
+\begin{DoxyCompactList}\small\item\em shoots a beam from the green shooter \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shooting_discs_scene_a5b293bc6b4d4c350a38a2043064fb1b5}{on\+Shoot\+Blue}} ()
+\begin{DoxyCompactList}\small\item\em shoots a beam from the blue shooter \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shooting_discs_scene_a41ff3723044d6ecac4940a24fd0b8196}{on\+Missed}} ()
+\begin{DoxyCompactList}\small\item\em removes a heart when a target disc is missed. Issues a call to gameover() if no hearts remain \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shooting_discs_scene_a6be88877e65edf9ffdf485b631aae4ca}{on\+Hit}} (char sender)
+\begin{DoxyCompactList}\small\item\em modifies the score when a target disc is successfully hit and calls \mbox{\hyperlink{class_shooting_discs_scene_a84fd6b10dde808d8a7584664c06e9fba}{update\+Score()}} and \mbox{\hyperlink{class_shooting_discs_scene_a07c1e235acb8faac6ec357d4a668060f}{update\+Multiplier()}} methods \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shooting_discs_scene_a84fd6b10dde808d8a7584664c06e9fba}{update\+Score}} ()
+\begin{DoxyCompactList}\small\item\em updates the displayed score on the UI \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shooting_discs_scene_a07c1e235acb8faac6ec357d4a668060f}{update\+Multiplier}} ()
+\begin{DoxyCompactList}\small\item\em updates the multiplier and speed of disc targets based on the current score \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shooting_discs_scene_ac8f50bae0a2df07939d9ba004503ae18}{game\+Over}} ()
+\begin{DoxyCompactList}\small\item\em saves the user\textquotesingle{}s score when the game is over and allows user to go back to home page \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+QString\+List $\ast$ \mbox{\hyperlink{class_shooting_discs_scene_ac574b8ea09a7e2fcc27574c547691e2c}{logged\+In\+User\+Object}}
+\begin{DoxyCompactList}\small\item\em pointer to currently logged in user object \end{DoxyCompactList}\item 
+QGraphics\+Pixmap\+Item $\ast$ \mbox{\hyperlink{class_shooting_discs_scene_acb05229559115cbc09e78991f4cb076e}{menu\+Page\+Background}}
+\begin{DoxyCompactList}\small\item\em pointer to menu page background \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_button}{Button}} $\ast$ \mbox{\hyperlink{class_shooting_discs_scene_abb049624f4a984493ed4d7b8639106de}{start\+Game}}
+\begin{DoxyCompactList}\small\item\em pointer to start game button \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_button}{Button}} $\ast$ \mbox{\hyperlink{class_shooting_discs_scene_a32ef156d7808e26922c0d9f33bf24621}{quit\+Game}}
+\begin{DoxyCompactList}\small\item\em pointer to quit game button \end{DoxyCompactList}\item 
+QString $\ast$ \mbox{\hyperlink{class_shooting_discs_scene_a53ec7da7cc6ee50b3d19f56c2325fd81}{logged\+In\+User}}
+\begin{DoxyCompactList}\small\item\em pointer to logged in user name \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_disc_shooter}{Disc\+Shooter}} $\ast$ \mbox{\hyperlink{class_shooting_discs_scene_afaa1100cc23f381d786091187a06d7f1}{red\+Shooter}}
+\begin{DoxyCompactList}\small\item\em pointer to red shooter object \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_disc_shooter}{Disc\+Shooter}} $\ast$ \mbox{\hyperlink{class_shooting_discs_scene_acbf2ebf4c83e8836b8931d529fb4f2a4}{green\+Shooter}}
+\begin{DoxyCompactList}\small\item\em pointer to green shooter object \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_disc_shooter}{Disc\+Shooter}} $\ast$ \mbox{\hyperlink{class_shooting_discs_scene_aa9a678b019cc53b6b9d0b57ed3064f19}{blue\+Shooter}}
+\begin{DoxyCompactList}\small\item\em pointer to blue shooter object \end{DoxyCompactList}\item 
+QGraphics\+Pixmap\+Item $\ast$ \mbox{\hyperlink{class_shooting_discs_scene_a0a5b9fc67fb6036da46f6ade435e28e8}{heart1}}
+\begin{DoxyCompactList}\small\item\em pointer to heart1 \end{DoxyCompactList}\item 
+QGraphics\+Pixmap\+Item $\ast$ \mbox{\hyperlink{class_shooting_discs_scene_a032c616b881a5b11985d08cfd1766384}{heart2}}
+\begin{DoxyCompactList}\small\item\em pointer to heart2 \end{DoxyCompactList}\item 
+QGraphics\+Pixmap\+Item $\ast$ \mbox{\hyperlink{class_shooting_discs_scene_acacddba7a3db9c645817cfcfd0d093af}{heart3}}
+\begin{DoxyCompactList}\small\item\em pointer to heart 3 \end{DoxyCompactList}\item 
+QGraphics\+Text\+Item $\ast$ \mbox{\hyperlink{class_shooting_discs_scene_a9d048b075694b9fa3ac527ab1bada7f5}{score\+Label}}
+\begin{DoxyCompactList}\small\item\em pointer to score labe \end{DoxyCompactList}\item 
+QGraphics\+Pixmap\+Item $\ast$ \mbox{\hyperlink{class_shooting_discs_scene_ad528616040ce7e1e142da72a341dfb27}{multiplier}}
+\begin{DoxyCompactList}\small\item\em multiplier \end{DoxyCompactList}\item 
+QGraphics\+Pixmap\+Item $\ast$ \mbox{\hyperlink{class_shooting_discs_scene_a692b5e3aa59985ab9f6fe1f51615f36e}{red\+Beam}}
+\begin{DoxyCompactList}\small\item\em red shooter beam \end{DoxyCompactList}\item 
+QGraphics\+Pixmap\+Item $\ast$ \mbox{\hyperlink{class_shooting_discs_scene_a8701b69d40fafb3e60414b6a705feb3e}{green\+Beam}}
+\begin{DoxyCompactList}\small\item\em green shooter beam \end{DoxyCompactList}\item 
+QGraphics\+Pixmap\+Item $\ast$ \mbox{\hyperlink{class_shooting_discs_scene_a504e9f21dcc33ffb59e62f102b7ba4cc}{blue\+Beam}}
+\begin{DoxyCompactList}\small\item\em blue shooter beam \end{DoxyCompactList}\item 
+QGraphics\+Text\+Item $\ast$ \mbox{\hyperlink{class_shooting_discs_scene_a9acf6591bd214b0b7d45322985d1484f}{score\+Value}}
+\begin{DoxyCompactList}\small\item\em score value \end{DoxyCompactList}\item 
+QTimer $\ast$ \mbox{\hyperlink{class_shooting_discs_scene_a65c1c5255d557071b69a265fe8a5f2e4}{red\+Shooter\+Timer}}
+\begin{DoxyCompactList}\small\item\em red shooter timer \end{DoxyCompactList}\item 
+QTimer $\ast$ \mbox{\hyperlink{class_shooting_discs_scene_af961f46120a1672795615dc435c39d8d}{green\+Shooter\+Timer}}
+\begin{DoxyCompactList}\small\item\em green shooter timer \end{DoxyCompactList}\item 
+QTimer $\ast$ \mbox{\hyperlink{class_shooting_discs_scene_a92d5de78cfe3aeda6a918ecf342ede6d}{blue\+Shooter\+Timer}}
+\begin{DoxyCompactList}\small\item\em blue shooter timer \end{DoxyCompactList}\item 
+QTimer $\ast$ \mbox{\hyperlink{class_shooting_discs_scene_ac2d8f9ea9ae0f132acf62fb0f51164ef}{red\+Target\+Discs\+Creation\+Timer}}
+\begin{DoxyCompactList}\small\item\em red target discs creation timer \end{DoxyCompactList}\item 
+QTimer $\ast$ \mbox{\hyperlink{class_shooting_discs_scene_ac97b88cb1f2d35c2292b7f373b7d113d}{green\+Target\+Discs\+Creation\+Timer}}
+\begin{DoxyCompactList}\small\item\em green target discs creation timer \end{DoxyCompactList}\item 
+QTimer $\ast$ \mbox{\hyperlink{class_shooting_discs_scene_a65ba947d89e8539f2201f00afbebcaf6}{blue\+Target\+Discs\+Creation\+Timer}}
+\begin{DoxyCompactList}\small\item\em blue target discs creation timer \end{DoxyCompactList}\item 
+QMedia\+Player $\ast$ \mbox{\hyperlink{class_shooting_discs_scene_a8921a03b0d4c0fbd56dce096bdf311ec}{shooting\+Sound}}
+\begin{DoxyCompactList}\small\item\em shooting sound \end{DoxyCompactList}\item 
+QMedia\+Player $\ast$ \mbox{\hyperlink{class_shooting_discs_scene_ad369f7b49caba1146524fcf6878a76ec}{menu\+Music}}
+\begin{DoxyCompactList}\small\item\em background music \end{DoxyCompactList}\item 
+QMedia\+Player $\ast$ \mbox{\hyperlink{class_shooting_discs_scene_a824c7f1b8c0fc8b5a9842767b7311d2a}{background\+Music}}
+\begin{DoxyCompactList}\small\item\em background music \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classtarget_disc}{target\+Disc}} $\ast$ \mbox{\hyperlink{class_shooting_discs_scene_ab31d80c280d93d1ca476d4ac25b896ad}{red\+Disc\+Target}}
+\begin{DoxyCompactList}\small\item\em red disc target object pointer \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classtarget_disc}{target\+Disc}} $\ast$ \mbox{\hyperlink{class_shooting_discs_scene_a3663fe83187678171e043455c736c61a}{green\+Disc\+Target}}
+\begin{DoxyCompactList}\small\item\em green disc target object pointer \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classtarget_disc}{target\+Disc}} $\ast$ \mbox{\hyperlink{class_shooting_discs_scene_aba715c5dd5b1c48d72c14d2bd09cc56f}{blue\+Disc\+Target}}
+\begin{DoxyCompactList}\small\item\em blue disc target object pointer \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_shooting_discs_scene_a4842a625cac17116411152e33d59d71c}{score}} = 0
+\begin{DoxyCompactList}\small\item\em int score value \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_shooting_discs_scene_a55e73ff190353e5eea281b3e62d58d8a}{remaining\+Hearts}} = 3
+\begin{DoxyCompactList}\small\item\em int remaining hearts number \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_shooting_discs_scene_a923d4176e07f49009d538ecff8fd9cc3}{current\+Speed}} = 800
+\begin{DoxyCompactList}\small\item\em int current speed for target discs \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_shooting_discs_scene_a68acb6a2e2b7620ff7cee112fb97e468}\label{class_shooting_discs_scene_a68acb6a2e2b7620ff7cee112fb97e468}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!ShootingDiscsScene@{ShootingDiscsScene}}
+\index{ShootingDiscsScene@{ShootingDiscsScene}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{ShootingDiscsScene()}{ShootingDiscsScene()}}
+{\footnotesize\ttfamily Shooting\+Discs\+Scene\+::\+Shooting\+Discs\+Scene (\begin{DoxyParamCaption}\item[{QString $\ast$}]{logged\+In\+User = {\ttfamily nullptr},  }\item[{QString\+List $\ast$}]{logged\+In\+User\+Object = {\ttfamily nullptr},  }\item[{QObject $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shooting_discs_scene_a68acb6a2e2b7620ff7cee112fb97e468_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_shooting_discs_scene_ad708d88c69818392324c5a81cd844a16}\label{class_shooting_discs_scene_ad708d88c69818392324c5a81cd844a16}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!addNewBlueDiscTarget@{addNewBlueDiscTarget}}
+\index{addNewBlueDiscTarget@{addNewBlueDiscTarget}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{addNewBlueDiscTarget}{addNewBlueDiscTarget}}
+{\footnotesize\ttfamily void Shooting\+Discs\+Scene\+::add\+New\+Blue\+Disc\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+adds new targets for the blue shooter 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shooting_discs_scene_ad708d88c69818392324c5a81cd844a16_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shooting_discs_scene_ad708d88c69818392324c5a81cd844a16_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_shooting_discs_scene_aa21cf2baad475d2b4c6e3be7ed02fdbf}\label{class_shooting_discs_scene_aa21cf2baad475d2b4c6e3be7ed02fdbf}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!addNewGreenDiscTarget@{addNewGreenDiscTarget}}
+\index{addNewGreenDiscTarget@{addNewGreenDiscTarget}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{addNewGreenDiscTarget}{addNewGreenDiscTarget}}
+{\footnotesize\ttfamily void Shooting\+Discs\+Scene\+::add\+New\+Green\+Disc\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+adds new targets for the green shooter 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shooting_discs_scene_aa21cf2baad475d2b4c6e3be7ed02fdbf_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shooting_discs_scene_aa21cf2baad475d2b4c6e3be7ed02fdbf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_shooting_discs_scene_ac258434909ecdd6ef2335470dd11539c}\label{class_shooting_discs_scene_ac258434909ecdd6ef2335470dd11539c}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!addNewRedDiscTarget@{addNewRedDiscTarget}}
+\index{addNewRedDiscTarget@{addNewRedDiscTarget}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{addNewRedDiscTarget}{addNewRedDiscTarget}}
+{\footnotesize\ttfamily void Shooting\+Discs\+Scene\+::add\+New\+Red\+Disc\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+adds new targets for the red shooter 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shooting_discs_scene_ac258434909ecdd6ef2335470dd11539c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shooting_discs_scene_ac258434909ecdd6ef2335470dd11539c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_shooting_discs_scene_ac8f50bae0a2df07939d9ba004503ae18}\label{class_shooting_discs_scene_ac8f50bae0a2df07939d9ba004503ae18}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!gameOver@{gameOver}}
+\index{gameOver@{gameOver}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{gameOver()}{gameOver()}}
+{\footnotesize\ttfamily void Shooting\+Discs\+Scene\+::game\+Over (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+saves the user\textquotesingle{}s score when the game is over and allows user to go back to home page 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{class_shooting_discs_scene_ac8f50bae0a2df07939d9ba004503ae18_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shooting_discs_scene_ac8f50bae0a2df07939d9ba004503ae18_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_shooting_discs_scene_a40b27c7fc2111b1f40cfa32223231d43}\label{class_shooting_discs_scene_a40b27c7fc2111b1f40cfa32223231d43}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!hideView@{hideView}}
+\index{hideView@{hideView}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{hideView}{hideView}}
+{\footnotesize\ttfamily void Shooting\+Discs\+Scene\+::hide\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shooting_discs_scene_a40b27c7fc2111b1f40cfa32223231d43_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_shooting_discs_scene_a6be88877e65edf9ffdf485b631aae4ca}\label{class_shooting_discs_scene_a6be88877e65edf9ffdf485b631aae4ca}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!onHit@{onHit}}
+\index{onHit@{onHit}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{onHit()}{onHit()}}
+{\footnotesize\ttfamily void Shooting\+Discs\+Scene\+::on\+Hit (\begin{DoxyParamCaption}\item[{char}]{sender }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+modifies the score when a target disc is successfully hit and calls \mbox{\hyperlink{class_shooting_discs_scene_a84fd6b10dde808d8a7584664c06e9fba}{update\+Score()}} and \mbox{\hyperlink{class_shooting_discs_scene_a07c1e235acb8faac6ec357d4a668060f}{update\+Multiplier()}} methods 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & first argument, determines the shooter that hit a target disc \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_shooting_discs_scene_a6be88877e65edf9ffdf485b631aae4ca_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shooting_discs_scene_a6be88877e65edf9ffdf485b631aae4ca_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_shooting_discs_scene_a41ff3723044d6ecac4940a24fd0b8196}\label{class_shooting_discs_scene_a41ff3723044d6ecac4940a24fd0b8196}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!onMissed@{onMissed}}
+\index{onMissed@{onMissed}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{onMissed()}{onMissed()}}
+{\footnotesize\ttfamily void Shooting\+Discs\+Scene\+::on\+Missed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+removes a heart when a target disc is missed. Issues a call to gameover() if no hearts remain 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shooting_discs_scene_a41ff3723044d6ecac4940a24fd0b8196_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shooting_discs_scene_a41ff3723044d6ecac4940a24fd0b8196_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_shooting_discs_scene_a90149257a08cffe5ffd9c99694f4959e}\label{class_shooting_discs_scene_a90149257a08cffe5ffd9c99694f4959e}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!onQuitGameClicked@{onQuitGameClicked}}
+\index{onQuitGameClicked@{onQuitGameClicked}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{onQuitGameClicked}{onQuitGameClicked}}
+{\footnotesize\ttfamily void Shooting\+Discs\+Scene\+::on\+Quit\+Game\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+quits the shooting discs game when Quit button is clicked 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shooting_discs_scene_a90149257a08cffe5ffd9c99694f4959e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_shooting_discs_scene_a5b293bc6b4d4c350a38a2043064fb1b5}\label{class_shooting_discs_scene_a5b293bc6b4d4c350a38a2043064fb1b5}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!onShootBlue@{onShootBlue}}
+\index{onShootBlue@{onShootBlue}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{onShootBlue()}{onShootBlue()}}
+{\footnotesize\ttfamily void Shooting\+Discs\+Scene\+::on\+Shoot\+Blue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+shoots a beam from the blue shooter 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shooting_discs_scene_a5b293bc6b4d4c350a38a2043064fb1b5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_shooting_discs_scene_aaec9f94a04eccbc549a18fb1f767e29e}\label{class_shooting_discs_scene_aaec9f94a04eccbc549a18fb1f767e29e}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!onShootGreen@{onShootGreen}}
+\index{onShootGreen@{onShootGreen}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{onShootGreen()}{onShootGreen()}}
+{\footnotesize\ttfamily void Shooting\+Discs\+Scene\+::on\+Shoot\+Green (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+shoots a beam from the green shooter 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shooting_discs_scene_aaec9f94a04eccbc549a18fb1f767e29e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_shooting_discs_scene_ac99911169b9ffea93653ddff549eb43b}\label{class_shooting_discs_scene_ac99911169b9ffea93653ddff549eb43b}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!onShootRed@{onShootRed}}
+\index{onShootRed@{onShootRed}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{onShootRed()}{onShootRed()}}
+{\footnotesize\ttfamily void Shooting\+Discs\+Scene\+::on\+Shoot\+Red (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+shoots a beam from the red shooter 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shooting_discs_scene_ac99911169b9ffea93653ddff549eb43b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_shooting_discs_scene_a1597eb1bcefba8b026ee7fff49dd78de}\label{class_shooting_discs_scene_a1597eb1bcefba8b026ee7fff49dd78de}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!onStartGameClicked@{onStartGameClicked}}
+\index{onStartGameClicked@{onStartGameClicked}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{onStartGameClicked}{onStartGameClicked}}
+{\footnotesize\ttfamily void Shooting\+Discs\+Scene\+::on\+Start\+Game\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+sets up the actual shooting discs game when Start button is clicked 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shooting_discs_scene_a1597eb1bcefba8b026ee7fff49dd78de_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{class_shooting_discs_scene_a1597eb1bcefba8b026ee7fff49dd78de_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_shooting_discs_scene_a37a5929f61c4a9a3119ca2453ac2bc96}\label{class_shooting_discs_scene_a37a5929f61c4a9a3119ca2453ac2bc96}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!setMenuPageBackground@{setMenuPageBackground}}
+\index{setMenuPageBackground@{setMenuPageBackground}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{setMenuPageBackground()}{setMenuPageBackground()}}
+{\footnotesize\ttfamily void Shooting\+Discs\+Scene\+::set\+Menu\+Page\+Background (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+sets the background for the menu page of shooting discs game 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shooting_discs_scene_a37a5929f61c4a9a3119ca2453ac2bc96_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_shooting_discs_scene_ac1c6bac5cbac824f5ca7844a1d9211f0}\label{class_shooting_discs_scene_ac1c6bac5cbac824f5ca7844a1d9211f0}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!setStartGameBackground@{setStartGameBackground}}
+\index{setStartGameBackground@{setStartGameBackground}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{setStartGameBackground()}{setStartGameBackground()}}
+{\footnotesize\ttfamily void Shooting\+Discs\+Scene\+::set\+Start\+Game\+Background (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_shooting_discs_scene_a07c1e235acb8faac6ec357d4a668060f}\label{class_shooting_discs_scene_a07c1e235acb8faac6ec357d4a668060f}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!updateMultiplier@{updateMultiplier}}
+\index{updateMultiplier@{updateMultiplier}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{updateMultiplier()}{updateMultiplier()}}
+{\footnotesize\ttfamily void Shooting\+Discs\+Scene\+::update\+Multiplier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+updates the multiplier and speed of disc targets based on the current score 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shooting_discs_scene_a07c1e235acb8faac6ec357d4a668060f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_shooting_discs_scene_a84fd6b10dde808d8a7584664c06e9fba}\label{class_shooting_discs_scene_a84fd6b10dde808d8a7584664c06e9fba}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!updateScore@{updateScore}}
+\index{updateScore@{updateScore}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{updateScore()}{updateScore()}}
+{\footnotesize\ttfamily void Shooting\+Discs\+Scene\+::update\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+updates the displayed score on the UI 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shooting_discs_scene_a84fd6b10dde808d8a7584664c06e9fba_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_shooting_discs_scene_a824c7f1b8c0fc8b5a9842767b7311d2a}\label{class_shooting_discs_scene_a824c7f1b8c0fc8b5a9842767b7311d2a}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!backgroundMusic@{backgroundMusic}}
+\index{backgroundMusic@{backgroundMusic}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{backgroundMusic}{backgroundMusic}}
+{\footnotesize\ttfamily QMedia\+Player$\ast$ Shooting\+Discs\+Scene\+::background\+Music\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+background music 
+
+\mbox{\Hypertarget{class_shooting_discs_scene_a504e9f21dcc33ffb59e62f102b7ba4cc}\label{class_shooting_discs_scene_a504e9f21dcc33ffb59e62f102b7ba4cc}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!blueBeam@{blueBeam}}
+\index{blueBeam@{blueBeam}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{blueBeam}{blueBeam}}
+{\footnotesize\ttfamily QGraphics\+Pixmap\+Item$\ast$ Shooting\+Discs\+Scene\+::blue\+Beam\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+blue shooter beam 
+
+\mbox{\Hypertarget{class_shooting_discs_scene_aba715c5dd5b1c48d72c14d2bd09cc56f}\label{class_shooting_discs_scene_aba715c5dd5b1c48d72c14d2bd09cc56f}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!blueDiscTarget@{blueDiscTarget}}
+\index{blueDiscTarget@{blueDiscTarget}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{blueDiscTarget}{blueDiscTarget}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classtarget_disc}{target\+Disc}}$\ast$ Shooting\+Discs\+Scene\+::blue\+Disc\+Target\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+blue disc target object pointer 
+
+\mbox{\Hypertarget{class_shooting_discs_scene_aa9a678b019cc53b6b9d0b57ed3064f19}\label{class_shooting_discs_scene_aa9a678b019cc53b6b9d0b57ed3064f19}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!blueShooter@{blueShooter}}
+\index{blueShooter@{blueShooter}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{blueShooter}{blueShooter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_disc_shooter}{Disc\+Shooter}}$\ast$ Shooting\+Discs\+Scene\+::blue\+Shooter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to blue shooter object 
+
+\mbox{\Hypertarget{class_shooting_discs_scene_a92d5de78cfe3aeda6a918ecf342ede6d}\label{class_shooting_discs_scene_a92d5de78cfe3aeda6a918ecf342ede6d}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!blueShooterTimer@{blueShooterTimer}}
+\index{blueShooterTimer@{blueShooterTimer}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{blueShooterTimer}{blueShooterTimer}}
+{\footnotesize\ttfamily QTimer$\ast$ Shooting\+Discs\+Scene\+::blue\+Shooter\+Timer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+blue shooter timer 
+
+\mbox{\Hypertarget{class_shooting_discs_scene_a65ba947d89e8539f2201f00afbebcaf6}\label{class_shooting_discs_scene_a65ba947d89e8539f2201f00afbebcaf6}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!blueTargetDiscsCreationTimer@{blueTargetDiscsCreationTimer}}
+\index{blueTargetDiscsCreationTimer@{blueTargetDiscsCreationTimer}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{blueTargetDiscsCreationTimer}{blueTargetDiscsCreationTimer}}
+{\footnotesize\ttfamily QTimer$\ast$ Shooting\+Discs\+Scene\+::blue\+Target\+Discs\+Creation\+Timer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+blue target discs creation timer 
+
+\mbox{\Hypertarget{class_shooting_discs_scene_a923d4176e07f49009d538ecff8fd9cc3}\label{class_shooting_discs_scene_a923d4176e07f49009d538ecff8fd9cc3}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!currentSpeed@{currentSpeed}}
+\index{currentSpeed@{currentSpeed}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{currentSpeed}{currentSpeed}}
+{\footnotesize\ttfamily int Shooting\+Discs\+Scene\+::current\+Speed = 800\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+int current speed for target discs 
+
+\mbox{\Hypertarget{class_shooting_discs_scene_a8701b69d40fafb3e60414b6a705feb3e}\label{class_shooting_discs_scene_a8701b69d40fafb3e60414b6a705feb3e}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!greenBeam@{greenBeam}}
+\index{greenBeam@{greenBeam}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{greenBeam}{greenBeam}}
+{\footnotesize\ttfamily QGraphics\+Pixmap\+Item$\ast$ Shooting\+Discs\+Scene\+::green\+Beam\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+green shooter beam 
+
+\mbox{\Hypertarget{class_shooting_discs_scene_a3663fe83187678171e043455c736c61a}\label{class_shooting_discs_scene_a3663fe83187678171e043455c736c61a}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!greenDiscTarget@{greenDiscTarget}}
+\index{greenDiscTarget@{greenDiscTarget}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{greenDiscTarget}{greenDiscTarget}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classtarget_disc}{target\+Disc}}$\ast$ Shooting\+Discs\+Scene\+::green\+Disc\+Target\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+green disc target object pointer 
+
+\mbox{\Hypertarget{class_shooting_discs_scene_acbf2ebf4c83e8836b8931d529fb4f2a4}\label{class_shooting_discs_scene_acbf2ebf4c83e8836b8931d529fb4f2a4}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!greenShooter@{greenShooter}}
+\index{greenShooter@{greenShooter}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{greenShooter}{greenShooter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_disc_shooter}{Disc\+Shooter}}$\ast$ Shooting\+Discs\+Scene\+::green\+Shooter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to green shooter object 
+
+\mbox{\Hypertarget{class_shooting_discs_scene_af961f46120a1672795615dc435c39d8d}\label{class_shooting_discs_scene_af961f46120a1672795615dc435c39d8d}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!greenShooterTimer@{greenShooterTimer}}
+\index{greenShooterTimer@{greenShooterTimer}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{greenShooterTimer}{greenShooterTimer}}
+{\footnotesize\ttfamily QTimer$\ast$ Shooting\+Discs\+Scene\+::green\+Shooter\+Timer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+green shooter timer 
+
+\mbox{\Hypertarget{class_shooting_discs_scene_ac97b88cb1f2d35c2292b7f373b7d113d}\label{class_shooting_discs_scene_ac97b88cb1f2d35c2292b7f373b7d113d}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!greenTargetDiscsCreationTimer@{greenTargetDiscsCreationTimer}}
+\index{greenTargetDiscsCreationTimer@{greenTargetDiscsCreationTimer}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{greenTargetDiscsCreationTimer}{greenTargetDiscsCreationTimer}}
+{\footnotesize\ttfamily QTimer$\ast$ Shooting\+Discs\+Scene\+::green\+Target\+Discs\+Creation\+Timer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+green target discs creation timer 
+
+\mbox{\Hypertarget{class_shooting_discs_scene_a0a5b9fc67fb6036da46f6ade435e28e8}\label{class_shooting_discs_scene_a0a5b9fc67fb6036da46f6ade435e28e8}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!heart1@{heart1}}
+\index{heart1@{heart1}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{heart1}{heart1}}
+{\footnotesize\ttfamily QGraphics\+Pixmap\+Item$\ast$ Shooting\+Discs\+Scene\+::heart1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to heart1 
+
+\mbox{\Hypertarget{class_shooting_discs_scene_a032c616b881a5b11985d08cfd1766384}\label{class_shooting_discs_scene_a032c616b881a5b11985d08cfd1766384}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!heart2@{heart2}}
+\index{heart2@{heart2}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{heart2}{heart2}}
+{\footnotesize\ttfamily QGraphics\+Pixmap\+Item$\ast$ Shooting\+Discs\+Scene\+::heart2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to heart2 
+
+\mbox{\Hypertarget{class_shooting_discs_scene_acacddba7a3db9c645817cfcfd0d093af}\label{class_shooting_discs_scene_acacddba7a3db9c645817cfcfd0d093af}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!heart3@{heart3}}
+\index{heart3@{heart3}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{heart3}{heart3}}
+{\footnotesize\ttfamily QGraphics\+Pixmap\+Item$\ast$ Shooting\+Discs\+Scene\+::heart3\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to heart 3 
+
+\mbox{\Hypertarget{class_shooting_discs_scene_a53ec7da7cc6ee50b3d19f56c2325fd81}\label{class_shooting_discs_scene_a53ec7da7cc6ee50b3d19f56c2325fd81}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!loggedInUser@{loggedInUser}}
+\index{loggedInUser@{loggedInUser}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{loggedInUser}{loggedInUser}}
+{\footnotesize\ttfamily QString$\ast$ Shooting\+Discs\+Scene\+::logged\+In\+User\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to logged in user name 
+
+\mbox{\Hypertarget{class_shooting_discs_scene_ac574b8ea09a7e2fcc27574c547691e2c}\label{class_shooting_discs_scene_ac574b8ea09a7e2fcc27574c547691e2c}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!loggedInUserObject@{loggedInUserObject}}
+\index{loggedInUserObject@{loggedInUserObject}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{loggedInUserObject}{loggedInUserObject}}
+{\footnotesize\ttfamily QString\+List$\ast$ Shooting\+Discs\+Scene\+::logged\+In\+User\+Object\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to currently logged in user object 
+
+\mbox{\Hypertarget{class_shooting_discs_scene_ad369f7b49caba1146524fcf6878a76ec}\label{class_shooting_discs_scene_ad369f7b49caba1146524fcf6878a76ec}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!menuMusic@{menuMusic}}
+\index{menuMusic@{menuMusic}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{menuMusic}{menuMusic}}
+{\footnotesize\ttfamily QMedia\+Player$\ast$ Shooting\+Discs\+Scene\+::menu\+Music\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+background music 
+
+\mbox{\Hypertarget{class_shooting_discs_scene_acb05229559115cbc09e78991f4cb076e}\label{class_shooting_discs_scene_acb05229559115cbc09e78991f4cb076e}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!menuPageBackground@{menuPageBackground}}
+\index{menuPageBackground@{menuPageBackground}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{menuPageBackground}{menuPageBackground}}
+{\footnotesize\ttfamily QGraphics\+Pixmap\+Item$\ast$ Shooting\+Discs\+Scene\+::menu\+Page\+Background\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to menu page background 
+
+\mbox{\Hypertarget{class_shooting_discs_scene_ad528616040ce7e1e142da72a341dfb27}\label{class_shooting_discs_scene_ad528616040ce7e1e142da72a341dfb27}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!multiplier@{multiplier}}
+\index{multiplier@{multiplier}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{multiplier}{multiplier}}
+{\footnotesize\ttfamily QGraphics\+Pixmap\+Item$\ast$ Shooting\+Discs\+Scene\+::multiplier\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+multiplier 
+
+\mbox{\Hypertarget{class_shooting_discs_scene_a32ef156d7808e26922c0d9f33bf24621}\label{class_shooting_discs_scene_a32ef156d7808e26922c0d9f33bf24621}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!quitGame@{quitGame}}
+\index{quitGame@{quitGame}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{quitGame}{quitGame}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_button}{Button}}$\ast$ Shooting\+Discs\+Scene\+::quit\+Game\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to quit game button 
+
+\mbox{\Hypertarget{class_shooting_discs_scene_a692b5e3aa59985ab9f6fe1f51615f36e}\label{class_shooting_discs_scene_a692b5e3aa59985ab9f6fe1f51615f36e}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!redBeam@{redBeam}}
+\index{redBeam@{redBeam}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{redBeam}{redBeam}}
+{\footnotesize\ttfamily QGraphics\+Pixmap\+Item$\ast$ Shooting\+Discs\+Scene\+::red\+Beam\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+red shooter beam 
+
+\mbox{\Hypertarget{class_shooting_discs_scene_ab31d80c280d93d1ca476d4ac25b896ad}\label{class_shooting_discs_scene_ab31d80c280d93d1ca476d4ac25b896ad}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!redDiscTarget@{redDiscTarget}}
+\index{redDiscTarget@{redDiscTarget}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{redDiscTarget}{redDiscTarget}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classtarget_disc}{target\+Disc}}$\ast$ Shooting\+Discs\+Scene\+::red\+Disc\+Target\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+red disc target object pointer 
+
+\mbox{\Hypertarget{class_shooting_discs_scene_afaa1100cc23f381d786091187a06d7f1}\label{class_shooting_discs_scene_afaa1100cc23f381d786091187a06d7f1}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!redShooter@{redShooter}}
+\index{redShooter@{redShooter}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{redShooter}{redShooter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_disc_shooter}{Disc\+Shooter}}$\ast$ Shooting\+Discs\+Scene\+::red\+Shooter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to red shooter object 
+
+\mbox{\Hypertarget{class_shooting_discs_scene_a65c1c5255d557071b69a265fe8a5f2e4}\label{class_shooting_discs_scene_a65c1c5255d557071b69a265fe8a5f2e4}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!redShooterTimer@{redShooterTimer}}
+\index{redShooterTimer@{redShooterTimer}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{redShooterTimer}{redShooterTimer}}
+{\footnotesize\ttfamily QTimer$\ast$ Shooting\+Discs\+Scene\+::red\+Shooter\+Timer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+red shooter timer 
+
+\mbox{\Hypertarget{class_shooting_discs_scene_ac2d8f9ea9ae0f132acf62fb0f51164ef}\label{class_shooting_discs_scene_ac2d8f9ea9ae0f132acf62fb0f51164ef}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!redTargetDiscsCreationTimer@{redTargetDiscsCreationTimer}}
+\index{redTargetDiscsCreationTimer@{redTargetDiscsCreationTimer}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{redTargetDiscsCreationTimer}{redTargetDiscsCreationTimer}}
+{\footnotesize\ttfamily QTimer$\ast$ Shooting\+Discs\+Scene\+::red\+Target\+Discs\+Creation\+Timer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+red target discs creation timer 
+
+\mbox{\Hypertarget{class_shooting_discs_scene_a55e73ff190353e5eea281b3e62d58d8a}\label{class_shooting_discs_scene_a55e73ff190353e5eea281b3e62d58d8a}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!remainingHearts@{remainingHearts}}
+\index{remainingHearts@{remainingHearts}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{remainingHearts}{remainingHearts}}
+{\footnotesize\ttfamily int Shooting\+Discs\+Scene\+::remaining\+Hearts = 3\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+int remaining hearts number 
+
+\mbox{\Hypertarget{class_shooting_discs_scene_a4842a625cac17116411152e33d59d71c}\label{class_shooting_discs_scene_a4842a625cac17116411152e33d59d71c}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!score@{score}}
+\index{score@{score}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily int Shooting\+Discs\+Scene\+::score = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+int score value 
+
+\mbox{\Hypertarget{class_shooting_discs_scene_a9d048b075694b9fa3ac527ab1bada7f5}\label{class_shooting_discs_scene_a9d048b075694b9fa3ac527ab1bada7f5}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!scoreLabel@{scoreLabel}}
+\index{scoreLabel@{scoreLabel}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{scoreLabel}{scoreLabel}}
+{\footnotesize\ttfamily QGraphics\+Text\+Item$\ast$ Shooting\+Discs\+Scene\+::score\+Label\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to score labe 
+
+\mbox{\Hypertarget{class_shooting_discs_scene_a9acf6591bd214b0b7d45322985d1484f}\label{class_shooting_discs_scene_a9acf6591bd214b0b7d45322985d1484f}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!scoreValue@{scoreValue}}
+\index{scoreValue@{scoreValue}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{scoreValue}{scoreValue}}
+{\footnotesize\ttfamily QGraphics\+Text\+Item$\ast$ Shooting\+Discs\+Scene\+::score\+Value\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+score value 
+
+\mbox{\Hypertarget{class_shooting_discs_scene_a8921a03b0d4c0fbd56dce096bdf311ec}\label{class_shooting_discs_scene_a8921a03b0d4c0fbd56dce096bdf311ec}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!shootingSound@{shootingSound}}
+\index{shootingSound@{shootingSound}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{shootingSound}{shootingSound}}
+{\footnotesize\ttfamily QMedia\+Player$\ast$ Shooting\+Discs\+Scene\+::shooting\+Sound\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+shooting sound 
+
+\mbox{\Hypertarget{class_shooting_discs_scene_abb049624f4a984493ed4d7b8639106de}\label{class_shooting_discs_scene_abb049624f4a984493ed4d7b8639106de}} 
+\index{ShootingDiscsScene@{ShootingDiscsScene}!startGame@{startGame}}
+\index{startGame@{startGame}!ShootingDiscsScene@{ShootingDiscsScene}}
+\doxysubsubsection{\texorpdfstring{startGame}{startGame}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_button}{Button}}$\ast$ Shooting\+Discs\+Scene\+::start\+Game\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to start game button 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{shootingdiscsscene_8h}{shootingdiscsscene.\+h}}\item 
+\mbox{\hyperlink{shootingdiscsscene_8cpp}{shootingdiscsscene.\+cpp}}\end{DoxyCompactItemize}

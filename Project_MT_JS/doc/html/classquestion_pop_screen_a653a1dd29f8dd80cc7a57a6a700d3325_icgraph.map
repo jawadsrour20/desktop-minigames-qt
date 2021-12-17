@@ -1,0 +1,7 @@
+<map id="questionPopScreen::selectQuestion" name="questionPopScreen::selectQuestion">
+<area shape="rect" id="node1" title="selects a question randomly from the question list. If the user specifies a topic for the question us..." alt="" coords="847,35,992,76"/>
+<area shape="rect" id="node2" href="$classquestion_pop_screen.html#a1aea0f76fd9ca7bfe2985d3077b135f9" title="Called when user changes the topic of the question. This function calls selectQuestion function after..." alt="" coords="653,5,799,47"/>
+<area shape="rect" id="node4" href="$classquestion_pop_screen.html#a2ffc4602f023d573c2e567ed1bdaa549" title="This function prepares the components of the widget by calling the other functions from this class." alt="" coords="267,35,412,76"/>
+<area shape="rect" id="node3" href="$classquestion_pop_screen.html#a609f55fe667c283394e3ffd1f86437d2" title="Connects the 4 buttons of the answers to their corresponding signals depending on whether the button ..." alt="" coords="460,5,605,47"/>
+<area shape="rect" id="node5" href="$class_gride_square.html#ac6a6fa4b17ac9fad99d13214c677175c" title="Responds to mouse clicks, if the square contains a ship pop&#45;up question will appear...." alt="" coords="5,42,219,69"/>
+</map>

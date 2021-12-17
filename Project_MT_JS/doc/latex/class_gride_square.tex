@@ -1,0 +1,179 @@
+\hypertarget{class_gride_square}{}\doxysection{Gride\+Square Class Reference}
+\label{class_gride_square}\index{GrideSquare@{GrideSquare}}
+
+
+{\ttfamily \#include $<$gridesquare.\+h$>$}
+
+
+
+Inheritance diagram for Gride\+Square\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=257pt]{class_gride_square__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Gride\+Square\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=257pt]{class_gride_square__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_gride_square_aafc5c773364260416489847832a40aca}{Gride\+Square}} (QGraphics\+Item $\ast$parent=NULL)
+\item 
+void \mbox{\hyperlink{class_gride_square_ac6a6fa4b17ac9fad99d13214c677175c}{mouse\+Press\+Event}} (QGraphics\+Scene\+Mouse\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em Responds to mouse clicks, if the square contains a ship pop-\/up question will appear. Number of attempts is deacresed in both cases. When attempts are 0, the function calls game\+Over function from Battleship class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gride_square_a74f4f2569a7dee926d7d662a806df89a}{hover\+Enter\+Event}} (QGraphics\+Scene\+Hover\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em shows an aiming image on the square when a hovering in event occurs \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gride_square_afc573d22d2ef9a97329b338a196d312d}{hover\+Leave\+Event}} (QGraphics\+Scene\+Hover\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em removes aiming image from the square when a hovering out event occurs \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+QGraphics\+Pixmap\+Item $\ast$ \mbox{\hyperlink{class_gride_square_a37f045a607e19e43aecd223cf70dad39}{fire\+Ready}}
+\item 
+QGraphics\+Pixmap\+Item $\ast$ \mbox{\hyperlink{class_gride_square_a903937e1cf9e7c91f224799b80f55383}{miss\+Or\+Hit}}
+\begin{DoxyCompactList}\small\item\em this hold the aming images that appears and disappears which hovering over the rectangle \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_gride_square_a5fb490b77169900a039550238e8ef179}{flag}} =0
+\begin{DoxyCompactList}\small\item\em this holds the one of the images\+: miss if there is no ship in this square, hit id there is a ship. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_gride_square_a94ac34c6e0213ad43923f0a1147a7835}{used}} =0
+\begin{DoxyCompactList}\small\item\em if flag==0 then this rectangle does not contain a ship. If flag==1 then it does. \end{DoxyCompactList}\item 
+QMedia\+Player $\ast$ \mbox{\hyperlink{class_gride_square_ab4845e476f789737d39f2ae9dda1966e}{music}}
+\begin{DoxyCompactList}\small\item\em saves if the rectangle was already fired or not \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_gride_square_aafc5c773364260416489847832a40aca}\label{class_gride_square_aafc5c773364260416489847832a40aca}} 
+\index{GrideSquare@{GrideSquare}!GrideSquare@{GrideSquare}}
+\index{GrideSquare@{GrideSquare}!GrideSquare@{GrideSquare}}
+\doxysubsubsection{\texorpdfstring{GrideSquare()}{GrideSquare()}}
+{\footnotesize\ttfamily Gride\+Square\+::\+Gride\+Square (\begin{DoxyParamCaption}\item[{QGraphics\+Item $\ast$}]{parent = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_gride_square_a74f4f2569a7dee926d7d662a806df89a}\label{class_gride_square_a74f4f2569a7dee926d7d662a806df89a}} 
+\index{GrideSquare@{GrideSquare}!hoverEnterEvent@{hoverEnterEvent}}
+\index{hoverEnterEvent@{hoverEnterEvent}!GrideSquare@{GrideSquare}}
+\doxysubsubsection{\texorpdfstring{hoverEnterEvent()}{hoverEnterEvent()}}
+{\footnotesize\ttfamily void Gride\+Square\+::hover\+Enter\+Event (\begin{DoxyParamCaption}\item[{QGraphics\+Scene\+Hover\+Event $\ast$}]{event }\end{DoxyParamCaption})}
+
+
+
+shows an aiming image on the square when a hovering in event occurs 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event,which} & is the hovering of the mourse over the button \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_gride_square_afc573d22d2ef9a97329b338a196d312d}\label{class_gride_square_afc573d22d2ef9a97329b338a196d312d}} 
+\index{GrideSquare@{GrideSquare}!hoverLeaveEvent@{hoverLeaveEvent}}
+\index{hoverLeaveEvent@{hoverLeaveEvent}!GrideSquare@{GrideSquare}}
+\doxysubsubsection{\texorpdfstring{hoverLeaveEvent()}{hoverLeaveEvent()}}
+{\footnotesize\ttfamily void Gride\+Square\+::hover\+Leave\+Event (\begin{DoxyParamCaption}\item[{QGraphics\+Scene\+Hover\+Event $\ast$}]{event }\end{DoxyParamCaption})}
+
+
+
+removes aiming image from the square when a hovering out event occurs 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event,which} & is the hovering of the mourse away from the button \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_gride_square_ac6a6fa4b17ac9fad99d13214c677175c}\label{class_gride_square_ac6a6fa4b17ac9fad99d13214c677175c}} 
+\index{GrideSquare@{GrideSquare}!mousePressEvent@{mousePressEvent}}
+\index{mousePressEvent@{mousePressEvent}!GrideSquare@{GrideSquare}}
+\doxysubsubsection{\texorpdfstring{mousePressEvent()}{mousePressEvent()}}
+{\footnotesize\ttfamily void Gride\+Square\+::mouse\+Press\+Event (\begin{DoxyParamCaption}\item[{QGraphics\+Scene\+Mouse\+Event $\ast$}]{event }\end{DoxyParamCaption})}
+
+
+
+Responds to mouse clicks, if the square contains a ship pop-\/up question will appear. Number of attempts is deacresed in both cases. When attempts are 0, the function calls game\+Over function from Battleship class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event,which} & is the mourse click on the square \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return value 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_gride_square_ac6a6fa4b17ac9fad99d13214c677175c_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_gride_square_a37f045a607e19e43aecd223cf70dad39}\label{class_gride_square_a37f045a607e19e43aecd223cf70dad39}} 
+\index{GrideSquare@{GrideSquare}!fireReady@{fireReady}}
+\index{fireReady@{fireReady}!GrideSquare@{GrideSquare}}
+\doxysubsubsection{\texorpdfstring{fireReady}{fireReady}}
+{\footnotesize\ttfamily QGraphics\+Pixmap\+Item$\ast$ Gride\+Square\+::fire\+Ready}
+
+\mbox{\Hypertarget{class_gride_square_a5fb490b77169900a039550238e8ef179}\label{class_gride_square_a5fb490b77169900a039550238e8ef179}} 
+\index{GrideSquare@{GrideSquare}!flag@{flag}}
+\index{flag@{flag}!GrideSquare@{GrideSquare}}
+\doxysubsubsection{\texorpdfstring{flag}{flag}}
+{\footnotesize\ttfamily int Gride\+Square\+::flag =0}
+
+
+
+this holds the one of the images\+: miss if there is no ship in this square, hit id there is a ship. 
+
+\mbox{\Hypertarget{class_gride_square_a903937e1cf9e7c91f224799b80f55383}\label{class_gride_square_a903937e1cf9e7c91f224799b80f55383}} 
+\index{GrideSquare@{GrideSquare}!missOrHit@{missOrHit}}
+\index{missOrHit@{missOrHit}!GrideSquare@{GrideSquare}}
+\doxysubsubsection{\texorpdfstring{missOrHit}{missOrHit}}
+{\footnotesize\ttfamily QGraphics\+Pixmap\+Item$\ast$ Gride\+Square\+::miss\+Or\+Hit}
+
+
+
+this hold the aming images that appears and disappears which hovering over the rectangle 
+
+\mbox{\Hypertarget{class_gride_square_ab4845e476f789737d39f2ae9dda1966e}\label{class_gride_square_ab4845e476f789737d39f2ae9dda1966e}} 
+\index{GrideSquare@{GrideSquare}!music@{music}}
+\index{music@{music}!GrideSquare@{GrideSquare}}
+\doxysubsubsection{\texorpdfstring{music}{music}}
+{\footnotesize\ttfamily QMedia\+Player$\ast$ Gride\+Square\+::music}
+
+
+
+saves if the rectangle was already fired or not 
+
+\mbox{\Hypertarget{class_gride_square_a94ac34c6e0213ad43923f0a1147a7835}\label{class_gride_square_a94ac34c6e0213ad43923f0a1147a7835}} 
+\index{GrideSquare@{GrideSquare}!used@{used}}
+\index{used@{used}!GrideSquare@{GrideSquare}}
+\doxysubsubsection{\texorpdfstring{used}{used}}
+{\footnotesize\ttfamily int Gride\+Square\+::used =0}
+
+
+
+if flag==0 then this rectangle does not contain a ship. If flag==1 then it does. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{gridesquare_8h}{gridesquare.\+h}}\item 
+\mbox{\hyperlink{gridesquare_8cpp}{gridesquare.\+cpp}}\end{DoxyCompactItemize}

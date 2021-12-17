@@ -1,0 +1,4 @@
+<map id="ShootingDiscsScene::setMenuPageBackground" name="ShootingDiscsScene::setMenuPageBackground">
+<area shape="rect" id="node1" title="sets the background for the menu page of shooting discs game" alt="" coords="205,5,388,47"/>
+<area shape="rect" id="node2" href="$class_shooting_discs_scene.html#a68acb6a2e2b7620ff7cee112fb97e468" title=" " alt="" coords="5,5,157,47"/>
+</map>

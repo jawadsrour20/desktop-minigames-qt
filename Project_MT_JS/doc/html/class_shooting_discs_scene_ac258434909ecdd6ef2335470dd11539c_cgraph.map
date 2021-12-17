@@ -1,0 +1,9 @@
+<map id="ShootingDiscsScene::addNewRedDiscTarget" name="ShootingDiscsScene::addNewRedDiscTarget">
+<area shape="rect" id="node1" title="adds new targets for the red shooter" alt="" coords="5,104,171,145"/>
+<area shape="rect" id="node2" href="$class_shooting_discs_scene.html#a6be88877e65edf9ffdf485b631aae4ca" title="modifies the score when a target disc is successfully hit and calls updateScore() and updateMultiplie..." alt="" coords="219,71,364,112"/>
+<area shape="rect" id="node5" href="$class_shooting_discs_scene.html#a41ff3723044d6ecac4940a24fd0b8196" title="removes a heart when a target disc is missed. Issues a call to gameover() if no hearts remain" alt="" coords="219,136,364,177"/>
+<area shape="rect" id="node3" href="$class_shooting_discs_scene.html#a07c1e235acb8faac6ec357d4a668060f" title="updates the multiplier and speed of disc targets based on the current score" alt="" coords="412,5,557,47"/>
+<area shape="rect" id="node4" href="$class_shooting_discs_scene.html#a84fd6b10dde808d8a7584664c06e9fba" title="updates the displayed score on the UI" alt="" coords="412,71,557,112"/>
+<area shape="rect" id="node6" href="$class_shooting_discs_scene.html#ac8f50bae0a2df07939d9ba004503ae18" title="saves the user&#39;s score when the game is over and allows user to go back to home page" alt="" coords="412,136,557,177"/>
+<area shape="rect" id="node7" href="$class_shooting_discs_scene.html#a90149257a08cffe5ffd9c99694f4959e" title="quits the shooting discs game when Quit button is clicked" alt="" coords="605,136,755,177"/>
+</map>

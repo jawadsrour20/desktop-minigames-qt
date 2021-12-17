@@ -1,0 +1,13 @@
+<map id="questionPopScreen::prepareScreen" name="questionPopScreen::prepareScreen">
+<area shape="rect" id="node1" title="This function prepares the components of the widget by calling the other functions from this class." alt="" coords="5,132,151,173"/>
+<area shape="rect" id="node2" href="$classquestion_pop_screen.html#a609f55fe667c283394e3ffd1f86437d2" title="Connects the 4 buttons of the answers to their corresponding signals depending on whether the button ..." alt="" coords="199,67,344,108"/>
+<area shape="rect" id="node4" href="$classquestion_pop_screen.html#a653a1dd29f8dd80cc7a57a6a700d3325" title="selects a question randomly from the question list. If the user specifies a topic for the question us..." alt="" coords="601,5,746,47"/>
+<area shape="rect" id="node9" href="$classquestion_pop_screen.html#a216bc0f39294a835c3d4e1f747df309d" title="Disconnects the 4 buttons of the answers from their previous signals to be able to connect them to ne..." alt="" coords="199,132,344,173"/>
+<area shape="rect" id="node10" href="$classquestion_pop_screen.html#afb71a70f95e894079ed35b73237fa3e5" title="Sets the styleSheet from the buttons and text." alt="" coords="199,197,344,239"/>
+<area shape="rect" id="node11" href="$classquestion_pop_screen.html#a53e80779ed2d842e993ce6edab845262" title="Adds all the items to the layout of the widget." alt="" coords="199,263,344,304"/>
+<area shape="rect" id="node3" href="$classquestion_pop_screen.html#a1aea0f76fd9ca7bfe2985d3077b135f9" title="Called when user changes the topic of the question. This function calls selectQuestion function after..." alt="" coords="392,35,537,76"/>
+<area shape="rect" id="node5" href="$classquestion_pop_screen.html#a551a9de8941b15f1a5942c90b4828ec0" title="Called when user selects the right answer, it increases the score, play the firing sound,..." alt="" coords="392,100,537,141"/>
+<area shape="rect" id="node7" href="$classquestion_pop_screen.html#a45588f93dda46171453db623f9902d59" title="topic of the questions" alt="" coords="392,165,537,207"/>
+<area shape="rect" id="node6" href="$class_play_game1.html#abb5f95efbfb85e9dbd3bf06cdc9d6037" title="It is called when the value of score is changed. It displays the new value." alt="" coords="586,107,761,134"/>
+<area shape="rect" id="node8" href="$class_play_game1.html#a281c8c00fa0545811f5e1c11ab996c05" title="This function is called when the player answers the question incorrectly, it allows the enemy to sele..." alt="" coords="585,173,761,199"/>
+</map>

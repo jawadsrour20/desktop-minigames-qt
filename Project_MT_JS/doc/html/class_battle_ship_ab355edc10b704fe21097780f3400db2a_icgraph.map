@@ -1,0 +1,10 @@
+<map id="BattleShip::returnHome" name="BattleShip::returnHome">
+<area shape="rect" id="node1" title="Takes user back to the inital home page (page shown after logging in)" alt="" coords="756,64,916,91"/>
+<area shape="rect" id="node2" href="$class_battle_ship.html#acf5f498271f67b854be831b2b30f38bb" title="Displays the main menu." alt="" coords="515,35,708,61"/>
+<area shape="rect" id="node6" href="$class_battle_ship.html#ae341dd7173c9dd9696f0393291303b5b" title="Display ending page, which shows the score and a button to go back to home page." alt="" coords="539,89,683,116"/>
+<area shape="rect" id="node3" href="$class_battle_ship.html#aff7e0e0b5831fa738904dd244b8ab801" title="Takes user to the page that explains the game." alt="" coords="288,5,445,32"/>
+<area shape="rect" id="node4" href="$class_home.html#ac86d2359d698e192ae190cbf1ef442aa" title="responds to a button clicked signal and navigates the user to the BattleShip game" alt="" coords="267,57,467,98"/>
+<area shape="rect" id="node5" href="$class_home.html#a87ee339c844da110e56195a21a30a581" title=" " alt="" coords="62,64,162,91"/>
+<area shape="rect" id="node7" href="$class_battle_ship.html#af4739106807b42c2fce6a64cb14b0207" title="Prints that the game is over when the number of attempts is 0 or when all player&#39;s ships are destrote..." alt="" coords="291,123,443,149"/>
+<area shape="rect" id="node8" href="$class_gride_square.html#ac6a6fa4b17ac9fad99d13214c677175c" title="Responds to mouse clicks, if the square contains a ship pop&#45;up question will appear...." alt="" coords="5,123,219,149"/>
+</map>

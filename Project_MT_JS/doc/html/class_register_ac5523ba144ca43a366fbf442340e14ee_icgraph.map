@@ -1,0 +1,4 @@
+<map id="Register::onRegisterClicked" name="Register::onRegisterClicked">
+<area shape="rect" id="node1" title="Responds to a click on the Reigster button and validates the provided information If the provided inf..." alt="" coords="183,5,369,32"/>
+<area shape="rect" id="node2" href="$class_register.html#aa7ebd675d2095ba33158136bde80dd49" title=" " alt="" coords="5,5,135,32"/>
+</map>

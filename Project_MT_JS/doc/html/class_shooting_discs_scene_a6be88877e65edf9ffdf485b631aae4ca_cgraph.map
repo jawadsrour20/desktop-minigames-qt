@@ -1,0 +1,5 @@
+<map id="ShootingDiscsScene::onHit" name="ShootingDiscsScene::onHit">
+<area shape="rect" id="node1" title="modifies the score when a target disc is successfully hit and calls updateScore() and updateMultiplie..." alt="" coords="5,39,151,80"/>
+<area shape="rect" id="node2" href="$class_shooting_discs_scene.html#a07c1e235acb8faac6ec357d4a668060f" title="updates the multiplier and speed of disc targets based on the current score" alt="" coords="199,5,344,47"/>
+<area shape="rect" id="node3" href="$class_shooting_discs_scene.html#a84fd6b10dde808d8a7584664c06e9fba" title="updates the displayed score on the UI" alt="" coords="199,71,344,112"/>
+</map>

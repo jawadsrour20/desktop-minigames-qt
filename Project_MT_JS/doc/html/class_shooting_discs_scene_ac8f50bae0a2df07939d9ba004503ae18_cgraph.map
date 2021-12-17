@@ -1,0 +1,4 @@
+<map id="ShootingDiscsScene::gameOver" name="ShootingDiscsScene::gameOver">
+<area shape="rect" id="node1" title="saves the user&#39;s score when the game is over and allows user to go back to home page" alt="" coords="5,5,151,47"/>
+<area shape="rect" id="node2" href="$class_shooting_discs_scene.html#a90149257a08cffe5ffd9c99694f4959e" title="quits the shooting discs game when Quit button is clicked" alt="" coords="199,5,348,47"/>
+</map>

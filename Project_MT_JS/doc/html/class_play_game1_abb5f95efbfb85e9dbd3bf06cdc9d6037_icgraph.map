@@ -1,0 +1,8 @@
+<map id="PlayGame1::updateScore" name="PlayGame1::updateScore">
+<area shape="rect" id="node1" title="It is called when the value of score is changed. It displays the new value." alt="" coords="847,46,1021,73"/>
+<area shape="rect" id="node2" href="$classquestion_pop_screen.html#a551a9de8941b15f1a5942c90b4828ec0" title="Called when user selects the right answer, it increases the score, play the firing sound,..." alt="" coords="653,39,799,80"/>
+<area shape="rect" id="node3" href="$classquestion_pop_screen.html#a609f55fe667c283394e3ffd1f86437d2" title="Connects the 4 buttons of the answers to their corresponding signals depending on whether the button ..." alt="" coords="460,5,605,47"/>
+<area shape="rect" id="node6" href="$classquestion_pop_screen.html#a216bc0f39294a835c3d4e1f747df309d" title="Disconnects the 4 buttons of the answers from their previous signals to be able to connect them to ne..." alt="" coords="460,71,605,112"/>
+<area shape="rect" id="node4" href="$classquestion_pop_screen.html#a2ffc4602f023d573c2e567ed1bdaa549" title="This function prepares the components of the widget by calling the other functions from this class." alt="" coords="267,39,412,80"/>
+<area shape="rect" id="node5" href="$class_gride_square.html#ac6a6fa4b17ac9fad99d13214c677175c" title="Responds to mouse clicks, if the square contains a ship pop&#45;up question will appear...." alt="" coords="5,46,219,73"/>
+</map>

@@ -1,0 +1,334 @@
+\hypertarget{class_battle_ship}{}\doxysection{Battle\+Ship Class Reference}
+\label{class_battle_ship}\index{BattleShip@{BattleShip}}
+
+
+{\ttfamily \#include $<$battleship.\+h$>$}
+
+
+
+Inheritance diagram for Battle\+Ship\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{class_battle_ship__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Battle\+Ship\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_battle_ship__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_battle_ship_ab355edc10b704fe21097780f3400db2a}{return\+Home}} ()
+\begin{DoxyCompactList}\small\item\em Takes user back to the inital home page (page shown after logging in) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_battle_ship_a5ee23766959e20ed88f12156e65bae65}{start\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Prepares the game by calling all the functions responsible of setting the background, drawing the grid, adding ships, displaying initial score and attempts from Play\+Gmae1 class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_battle_ship_ae341dd7173c9dd9696f0393291303b5b}{end\+Page}} ()
+\begin{DoxyCompactList}\small\item\em Display ending page, which shows the score and a button to go back to home page. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_battle_ship_acf5f498271f67b854be831b2b30f38bb}{display\+Main\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Displays the main menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_battle_ship_aff7e0e0b5831fa738904dd244b8ab801}{instructions}} ()
+\begin{DoxyCompactList}\small\item\em Takes user to the page that explains the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_battle_ship_a218e359436db6cac37d4e665d29c07d8}{Battle\+Ship}} (QWidget $\ast$parent=NULL)
+\item 
+void \mbox{\hyperlink{class_battle_ship_af4739106807b42c2fce6a64cb14b0207}{game\+Over}} ()
+\begin{DoxyCompactList}\small\item\em Prints that the game is over when the number of attempts is 0 or when all player\textquotesingle{}s ships are destroted. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_home}{Home}} $\ast$ \mbox{\hyperlink{class_battle_ship_a4ec9e71cb8f16c11fb215d22b2754761}{return\+To}}
+\begin{DoxyCompactList}\small\item\em this attribute saves the home page (the page that shows up after logging in) to be able to return to it after finishing the turn \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_battle_ship_a49ca1b1d9f6321a362e02808c7cc4abc}{player\+Name}}
+\begin{DoxyCompactList}\small\item\em this is to know to which player we should add the score obtained \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_play_game1}{Play\+Game1}} $\ast$ \mbox{\hyperlink{class_battle_ship_a6bbc99135b343646c10a872de72ea7a5}{scene}}
+\begin{DoxyCompactList}\small\item\em this is the scene of the game \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classquestion_pop_screen}{question\+Pop\+Screen}} \mbox{\hyperlink{class_battle_ship_a72ccc592024d475aa16a28046c24eedc}{pop\+Question}}
+\item 
+int \mbox{\hyperlink{class_battle_ship_aac849e5c0d9c453334b468f3aa57ef11}{attempts}} =16
+\begin{DoxyCompactList}\small\item\em this is the pop-\/up screen for the questions \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_battle_ship_af765856f7b411acc0ae0b02d0268e247}{score}} =0
+\begin{DoxyCompactList}\small\item\em score \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_battle_ship_a218e359436db6cac37d4e665d29c07d8}\label{class_battle_ship_a218e359436db6cac37d4e665d29c07d8}} 
+\index{BattleShip@{BattleShip}!BattleShip@{BattleShip}}
+\index{BattleShip@{BattleShip}!BattleShip@{BattleShip}}
+\doxysubsubsection{\texorpdfstring{BattleShip()}{BattleShip()}}
+{\footnotesize\ttfamily Battle\+Ship\+::\+Battle\+Ship (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_battle_ship_acf5f498271f67b854be831b2b30f38bb}\label{class_battle_ship_acf5f498271f67b854be831b2b30f38bb}} 
+\index{BattleShip@{BattleShip}!displayMainMenu@{displayMainMenu}}
+\index{displayMainMenu@{displayMainMenu}!BattleShip@{BattleShip}}
+\doxysubsubsection{\texorpdfstring{displayMainMenu}{displayMainMenu}}
+{\footnotesize\ttfamily void Battle\+Ship\+::display\+Main\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Displays the main menu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & input argument \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return value 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_battle_ship_acf5f498271f67b854be831b2b30f38bb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_battle_ship_acf5f498271f67b854be831b2b30f38bb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_battle_ship_ae341dd7173c9dd9696f0393291303b5b}\label{class_battle_ship_ae341dd7173c9dd9696f0393291303b5b}} 
+\index{BattleShip@{BattleShip}!endPage@{endPage}}
+\index{endPage@{endPage}!BattleShip@{BattleShip}}
+\doxysubsubsection{\texorpdfstring{endPage}{endPage}}
+{\footnotesize\ttfamily void Battle\+Ship\+::end\+Page (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Display ending page, which shows the score and a button to go back to home page. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & input argument \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return value 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{class_battle_ship_ae341dd7173c9dd9696f0393291303b5b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_battle_ship_ae341dd7173c9dd9696f0393291303b5b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_battle_ship_af4739106807b42c2fce6a64cb14b0207}\label{class_battle_ship_af4739106807b42c2fce6a64cb14b0207}} 
+\index{BattleShip@{BattleShip}!gameOver@{gameOver}}
+\index{gameOver@{gameOver}!BattleShip@{BattleShip}}
+\doxysubsubsection{\texorpdfstring{gameOver()}{gameOver()}}
+{\footnotesize\ttfamily void Battle\+Ship\+::game\+Over (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prints that the game is over when the number of attempts is 0 or when all player\textquotesingle{}s ships are destroted. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & input argument \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return value 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_battle_ship_af4739106807b42c2fce6a64cb14b0207_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_battle_ship_af4739106807b42c2fce6a64cb14b0207_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_battle_ship_aff7e0e0b5831fa738904dd244b8ab801}\label{class_battle_ship_aff7e0e0b5831fa738904dd244b8ab801}} 
+\index{BattleShip@{BattleShip}!instructions@{instructions}}
+\index{instructions@{instructions}!BattleShip@{BattleShip}}
+\doxysubsubsection{\texorpdfstring{instructions}{instructions}}
+{\footnotesize\ttfamily void Battle\+Ship\+::instructions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Takes user to the page that explains the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & input argument \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return value 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_battle_ship_aff7e0e0b5831fa738904dd244b8ab801_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_battle_ship_aff7e0e0b5831fa738904dd244b8ab801_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_battle_ship_ab355edc10b704fe21097780f3400db2a}\label{class_battle_ship_ab355edc10b704fe21097780f3400db2a}} 
+\index{BattleShip@{BattleShip}!returnHome@{returnHome}}
+\index{returnHome@{returnHome}!BattleShip@{BattleShip}}
+\doxysubsubsection{\texorpdfstring{returnHome}{returnHome}}
+{\footnotesize\ttfamily void Battle\+Ship\+::return\+Home (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Takes user back to the inital home page (page shown after logging in) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & input argument \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return value 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_battle_ship_ab355edc10b704fe21097780f3400db2a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_battle_ship_a5ee23766959e20ed88f12156e65bae65}\label{class_battle_ship_a5ee23766959e20ed88f12156e65bae65}} 
+\index{BattleShip@{BattleShip}!startGame@{startGame}}
+\index{startGame@{startGame}!BattleShip@{BattleShip}}
+\doxysubsubsection{\texorpdfstring{startGame}{startGame}}
+{\footnotesize\ttfamily void Battle\+Ship\+::start\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Prepares the game by calling all the functions responsible of setting the background, drawing the grid, adding ships, displaying initial score and attempts from Play\+Gmae1 class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & input argument \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return value 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_battle_ship_a5ee23766959e20ed88f12156e65bae65_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_battle_ship_a5ee23766959e20ed88f12156e65bae65_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_battle_ship_aac849e5c0d9c453334b468f3aa57ef11}\label{class_battle_ship_aac849e5c0d9c453334b468f3aa57ef11}} 
+\index{BattleShip@{BattleShip}!attempts@{attempts}}
+\index{attempts@{attempts}!BattleShip@{BattleShip}}
+\doxysubsubsection{\texorpdfstring{attempts}{attempts}}
+{\footnotesize\ttfamily int Battle\+Ship\+::attempts =16}
+
+
+
+this is the pop-\/up screen for the questions 
+
+number of attempts \mbox{\Hypertarget{class_battle_ship_a49ca1b1d9f6321a362e02808c7cc4abc}\label{class_battle_ship_a49ca1b1d9f6321a362e02808c7cc4abc}} 
+\index{BattleShip@{BattleShip}!playerName@{playerName}}
+\index{playerName@{playerName}!BattleShip@{BattleShip}}
+\doxysubsubsection{\texorpdfstring{playerName}{playerName}}
+{\footnotesize\ttfamily string Battle\+Ship\+::player\+Name}
+
+
+
+this is to know to which player we should add the score obtained 
+
+\mbox{\Hypertarget{class_battle_ship_a72ccc592024d475aa16a28046c24eedc}\label{class_battle_ship_a72ccc592024d475aa16a28046c24eedc}} 
+\index{BattleShip@{BattleShip}!popQuestion@{popQuestion}}
+\index{popQuestion@{popQuestion}!BattleShip@{BattleShip}}
+\doxysubsubsection{\texorpdfstring{popQuestion}{popQuestion}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classquestion_pop_screen}{question\+Pop\+Screen}} Battle\+Ship\+::pop\+Question}
+
+\mbox{\Hypertarget{class_battle_ship_a4ec9e71cb8f16c11fb215d22b2754761}\label{class_battle_ship_a4ec9e71cb8f16c11fb215d22b2754761}} 
+\index{BattleShip@{BattleShip}!returnTo@{returnTo}}
+\index{returnTo@{returnTo}!BattleShip@{BattleShip}}
+\doxysubsubsection{\texorpdfstring{returnTo}{returnTo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_home}{Home}}$\ast$ Battle\+Ship\+::return\+To}
+
+
+
+this attribute saves the home page (the page that shows up after logging in) to be able to return to it after finishing the turn 
+
+\mbox{\Hypertarget{class_battle_ship_a6bbc99135b343646c10a872de72ea7a5}\label{class_battle_ship_a6bbc99135b343646c10a872de72ea7a5}} 
+\index{BattleShip@{BattleShip}!scene@{scene}}
+\index{scene@{scene}!BattleShip@{BattleShip}}
+\doxysubsubsection{\texorpdfstring{scene}{scene}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_play_game1}{Play\+Game1}}$\ast$ Battle\+Ship\+::scene}
+
+
+
+this is the scene of the game 
+
+\mbox{\Hypertarget{class_battle_ship_af765856f7b411acc0ae0b02d0268e247}\label{class_battle_ship_af765856f7b411acc0ae0b02d0268e247}} 
+\index{BattleShip@{BattleShip}!score@{score}}
+\index{score@{score}!BattleShip@{BattleShip}}
+\doxysubsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily int Battle\+Ship\+::score =0}
+
+
+
+score 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{battleship_8h}{battleship.\+h}}\item 
+\mbox{\hyperlink{battleship_8cpp}{battleship.\+cpp}}\end{DoxyCompactItemize}

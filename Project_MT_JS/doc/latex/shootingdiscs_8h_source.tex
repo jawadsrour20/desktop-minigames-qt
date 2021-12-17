@@ -1,0 +1,38 @@
+\hypertarget{shootingdiscs_8h_source}{}\doxysection{shootingdiscs.\+h}
+\mbox{\hyperlink{shootingdiscs_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef SHOOTINGDISCS\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define SHOOTINGDISCS\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QGraphicsView>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QObject>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <QWidget>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <QtWidgets>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{shootingdiscsscene_8h}{shootingdiscsscene.h}}"{}}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#define SCREEN\_HEIGHT 800}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#define SCREEN\_WIDTH 600}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{19 \textcolor{keyword}{class }\mbox{\hyperlink{class_shooting_discs}{ShootingDiscs}} : \textcolor{keyword}{public} QGraphicsView}
+\DoxyCodeLine{20 \{}
+\DoxyCodeLine{21     Q\_OBJECT}
+\DoxyCodeLine{22 \textcolor{keyword}{public}:}
+\DoxyCodeLine{23     \textcolor{comment}{// constructor}}
+\DoxyCodeLine{24     \mbox{\hyperlink{class_shooting_discs_a4a42fd481a912c85b05e22913a1ece7a}{ShootingDiscs}}(QString* loggedInUser=\textcolor{keyword}{nullptr}, QStringList* loggedInUserObject=\textcolor{keyword}{nullptr}, QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{28     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting_discs_ad48e38de67ceb74bf449b6d1369529ea}{mousePressEvent}}(QMouseEvent *event);}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 \textcolor{keyword}{private}:}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33     \mbox{\hyperlink{class_shooting_discs_scene}{ShootingDiscsScene}}* \mbox{\hyperlink{class_shooting_discs_a6bd318fbbfcb542ac6ae76fb2e6073ce}{scene}};}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shooting_discs_a229d205a21a2bb0b6a02ea2bbc1b4b30}{scrollContentsBy}}(\textcolor{keywordtype}{int}, \textcolor{keywordtype}{int})\{\}}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 \};}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// SHOOTINGDISCS\_H}}
+
+\end{DoxyCode}

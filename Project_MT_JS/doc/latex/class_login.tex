@@ -1,0 +1,277 @@
+\hypertarget{class_login}{}\doxysection{Login Class Reference}
+\label{class_login}\index{Login@{Login}}
+
+
+{\ttfamily \#include $<$login.\+h$>$}
+
+
+
+Inheritance diagram for Login\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{class_login__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Login\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{class_login__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_login_a5d0ad68bb85df1299c7513e476211c98}{Login}} (QWidget $\ast$parent=nullptr)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_login_a3afd9517052d34568b4532640610f1c9}{on\+Login\+Clicked}} ()
+\begin{DoxyCompactList}\small\item\em Responds to a click on the \mbox{\hyperlink{class_login}{Login}} button and navigates user to the homepage if the login was successful, otherwise displays an error message describing the error. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_login_a0587ec13318125a9c057e720bba36e33}{on\+Register\+Clicked}} ()
+\begin{DoxyCompactList}\small\item\em Responds to a click on the \mbox{\hyperlink{class_register}{Register}} button and navigates user to the registration page. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_login_ac30e38a08f6fddc54f586f67298f10b2}{on\+Play\+As\+Guest\+Clicked}} ()
+\begin{DoxyCompactList}\small\item\em Responds to a click on the Play as Guest button and navigates user to the home page as a guest user. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_login_ae03255a81cf4f934ca90668fc72f9d92}{set\+Grid\+Layout}} ()
+\begin{DoxyCompactList}\small\item\em Sets the Grid\+Layout for the login-\/page. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_login_add341bd446ae0b3bf627921e48af0538}{set\+Colors}} ()
+\begin{DoxyCompactList}\small\item\em Sets the colors for the login-\/page. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+QLabel $\ast$ \mbox{\hyperlink{class_login_a62e6b5053652399a247773d77047907a}{rocket\+Picture}}
+\begin{DoxyCompactList}\small\item\em pointer to rocket picture url string \end{DoxyCompactList}\item 
+QLabel $\ast$ \mbox{\hyperlink{class_login_a87a74d5fbdd10a032f74161700c28c80}{username}}
+\begin{DoxyCompactList}\small\item\em pointer to user name label \end{DoxyCompactList}\item 
+QLabel $\ast$ \mbox{\hyperlink{class_login_ad30e7634d8f576cbd6c6f5a63fb05588}{password}}
+\begin{DoxyCompactList}\small\item\em pointer to password label \end{DoxyCompactList}\item 
+QLine\+Edit $\ast$ \mbox{\hyperlink{class_login_a3e49d1a0db1462a399b397d0ccdaf33f}{username\+Field}}
+\begin{DoxyCompactList}\small\item\em pointer to input user name field \end{DoxyCompactList}\item 
+QLine\+Edit $\ast$ \mbox{\hyperlink{class_login_a0231474e05352d8159f631d096d8686b}{password\+Field}}
+\begin{DoxyCompactList}\small\item\em pointer to input password field \end{DoxyCompactList}\item 
+QPush\+Button $\ast$ \mbox{\hyperlink{class_login_ab27132da6b95740aa22da500c8e7f460}{login\+Button}}
+\begin{DoxyCompactList}\small\item\em pointer to login button \end{DoxyCompactList}\item 
+QPush\+Button $\ast$ \mbox{\hyperlink{class_login_a6cac7f826c2b39d2708f72bdac4fa677}{register\+Button}}
+\begin{DoxyCompactList}\small\item\em pointer to register button \end{DoxyCompactList}\item 
+QPush\+Button $\ast$ \mbox{\hyperlink{class_login_a4dc68e4656209a058a6cc146006484fd}{play\+As\+Guest\+Button}}
+\begin{DoxyCompactList}\small\item\em pointer to play as guest button \end{DoxyCompactList}\item 
+QGrid\+Layout $\ast$ \mbox{\hyperlink{class_login_a799b910fe71662e3c5dcc5208b1526f6}{grid\+Layout}}
+\begin{DoxyCompactList}\small\item\em pointer to grid layout object \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_login_a5d0ad68bb85df1299c7513e476211c98}\label{class_login_a5d0ad68bb85df1299c7513e476211c98}} 
+\index{Login@{Login}!Login@{Login}}
+\index{Login@{Login}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{Login()}{Login()}}
+{\footnotesize\ttfamily Login\+::\+Login (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{class_login_a5d0ad68bb85df1299c7513e476211c98_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_login_a3afd9517052d34568b4532640610f1c9}\label{class_login_a3afd9517052d34568b4532640610f1c9}} 
+\index{Login@{Login}!onLoginClicked@{onLoginClicked}}
+\index{onLoginClicked@{onLoginClicked}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{onLoginClicked}{onLoginClicked}}
+{\footnotesize\ttfamily void Login\+::on\+Login\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Responds to a click on the \mbox{\hyperlink{class_login}{Login}} button and navigates user to the homepage if the login was successful, otherwise displays an error message describing the error. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{class_login_a3afd9517052d34568b4532640610f1c9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_login_ac30e38a08f6fddc54f586f67298f10b2}\label{class_login_ac30e38a08f6fddc54f586f67298f10b2}} 
+\index{Login@{Login}!onPlayAsGuestClicked@{onPlayAsGuestClicked}}
+\index{onPlayAsGuestClicked@{onPlayAsGuestClicked}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{onPlayAsGuestClicked}{onPlayAsGuestClicked}}
+{\footnotesize\ttfamily void Login\+::on\+Play\+As\+Guest\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Responds to a click on the Play as Guest button and navigates user to the home page as a guest user. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{class_login_ac30e38a08f6fddc54f586f67298f10b2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_login_a0587ec13318125a9c057e720bba36e33}\label{class_login_a0587ec13318125a9c057e720bba36e33}} 
+\index{Login@{Login}!onRegisterClicked@{onRegisterClicked}}
+\index{onRegisterClicked@{onRegisterClicked}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{onRegisterClicked}{onRegisterClicked}}
+{\footnotesize\ttfamily void Login\+::on\+Register\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Responds to a click on the \mbox{\hyperlink{class_register}{Register}} button and navigates user to the registration page. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{class_login_a0587ec13318125a9c057e720bba36e33_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_login_add341bd446ae0b3bf627921e48af0538}\label{class_login_add341bd446ae0b3bf627921e48af0538}} 
+\index{Login@{Login}!setColors@{setColors}}
+\index{setColors@{setColors}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{setColors()}{setColors()}}
+{\footnotesize\ttfamily void Login\+::set\+Colors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sets the colors for the login-\/page. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{class_login_add341bd446ae0b3bf627921e48af0538_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_login_ae03255a81cf4f934ca90668fc72f9d92}\label{class_login_ae03255a81cf4f934ca90668fc72f9d92}} 
+\index{Login@{Login}!setGridLayout@{setGridLayout}}
+\index{setGridLayout@{setGridLayout}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{setGridLayout()}{setGridLayout()}}
+{\footnotesize\ttfamily void Login\+::set\+Grid\+Layout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sets the Grid\+Layout for the login-\/page. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{class_login_ae03255a81cf4f934ca90668fc72f9d92_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_login_a799b910fe71662e3c5dcc5208b1526f6}\label{class_login_a799b910fe71662e3c5dcc5208b1526f6}} 
+\index{Login@{Login}!gridLayout@{gridLayout}}
+\index{gridLayout@{gridLayout}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{gridLayout}{gridLayout}}
+{\footnotesize\ttfamily QGrid\+Layout$\ast$ Login\+::grid\+Layout\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to grid layout object 
+
+\mbox{\Hypertarget{class_login_ab27132da6b95740aa22da500c8e7f460}\label{class_login_ab27132da6b95740aa22da500c8e7f460}} 
+\index{Login@{Login}!loginButton@{loginButton}}
+\index{loginButton@{loginButton}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{loginButton}{loginButton}}
+{\footnotesize\ttfamily QPush\+Button$\ast$ Login\+::login\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to login button 
+
+\mbox{\Hypertarget{class_login_ad30e7634d8f576cbd6c6f5a63fb05588}\label{class_login_ad30e7634d8f576cbd6c6f5a63fb05588}} 
+\index{Login@{Login}!password@{password}}
+\index{password@{password}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{password}{password}}
+{\footnotesize\ttfamily QLabel$\ast$ Login\+::password\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to password label 
+
+\mbox{\Hypertarget{class_login_a0231474e05352d8159f631d096d8686b}\label{class_login_a0231474e05352d8159f631d096d8686b}} 
+\index{Login@{Login}!passwordField@{passwordField}}
+\index{passwordField@{passwordField}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{passwordField}{passwordField}}
+{\footnotesize\ttfamily QLine\+Edit$\ast$ Login\+::password\+Field\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to input password field 
+
+\mbox{\Hypertarget{class_login_a4dc68e4656209a058a6cc146006484fd}\label{class_login_a4dc68e4656209a058a6cc146006484fd}} 
+\index{Login@{Login}!playAsGuestButton@{playAsGuestButton}}
+\index{playAsGuestButton@{playAsGuestButton}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{playAsGuestButton}{playAsGuestButton}}
+{\footnotesize\ttfamily QPush\+Button$\ast$ Login\+::play\+As\+Guest\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to play as guest button 
+
+\mbox{\Hypertarget{class_login_a6cac7f826c2b39d2708f72bdac4fa677}\label{class_login_a6cac7f826c2b39d2708f72bdac4fa677}} 
+\index{Login@{Login}!registerButton@{registerButton}}
+\index{registerButton@{registerButton}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{registerButton}{registerButton}}
+{\footnotesize\ttfamily QPush\+Button$\ast$ Login\+::register\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to register button 
+
+\mbox{\Hypertarget{class_login_a62e6b5053652399a247773d77047907a}\label{class_login_a62e6b5053652399a247773d77047907a}} 
+\index{Login@{Login}!rocketPicture@{rocketPicture}}
+\index{rocketPicture@{rocketPicture}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{rocketPicture}{rocketPicture}}
+{\footnotesize\ttfamily QLabel$\ast$ Login\+::rocket\+Picture\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to rocket picture url string 
+
+\mbox{\Hypertarget{class_login_a87a74d5fbdd10a032f74161700c28c80}\label{class_login_a87a74d5fbdd10a032f74161700c28c80}} 
+\index{Login@{Login}!username@{username}}
+\index{username@{username}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{username}{username}}
+{\footnotesize\ttfamily QLabel$\ast$ Login\+::username\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to user name label 
+
+\mbox{\Hypertarget{class_login_a3e49d1a0db1462a399b397d0ccdaf33f}\label{class_login_a3e49d1a0db1462a399b397d0ccdaf33f}} 
+\index{Login@{Login}!usernameField@{usernameField}}
+\index{usernameField@{usernameField}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{usernameField}{usernameField}}
+{\footnotesize\ttfamily QLine\+Edit$\ast$ Login\+::username\+Field\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer to input user name field 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{login_8h}{login.\+h}}\item 
+\mbox{\hyperlink{login_8cpp}{login.\+cpp}}\end{DoxyCompactItemize}

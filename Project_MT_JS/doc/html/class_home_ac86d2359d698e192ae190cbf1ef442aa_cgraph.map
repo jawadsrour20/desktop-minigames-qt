@@ -1,0 +1,13 @@
+<map id="Home::onPlayBattleshipGameClicked" name="Home::onPlayBattleshipGameClicked">
+<area shape="rect" id="node1" title="responds to a button clicked signal and navigates the user to the BattleShip game" alt="" coords="5,49,205,90"/>
+<area shape="rect" id="node2" href="$class_battle_ship.html#acf5f498271f67b854be831b2b30f38bb" title="Displays the main menu." alt="" coords="253,56,447,83"/>
+<area shape="rect" id="node3" href="$class_battle_ship.html#aff7e0e0b5831fa738904dd244b8ab801" title="Takes user to the page that explains the game." alt="" coords="496,31,653,57"/>
+<area shape="rect" id="node4" href="$class_battle_ship.html#ab355edc10b704fe21097780f3400db2a" title="Takes user back to the inital home page (page shown after logging in)" alt="" coords="495,81,655,108"/>
+<area shape="rect" id="node5" href="$class_battle_ship.html#a5ee23766959e20ed88f12156e65bae65" title="Prepares the game by calling all the functions responsible of setting the background,..." alt="" coords="499,132,651,159"/>
+<area shape="rect" id="node6" href="$class_play_game1.html#a191b7fc2437d1c41cdb5ffed90b23610" title="adds the ships of the enemy to the enemy grid in a random way." alt="" coords="703,5,899,32"/>
+<area shape="rect" id="node7" href="$class_play_game1.html#ae61973f59da097f43e6b912f3306f366" title="sets the data attribute flag for each square in the enemy grid to either 0 or 1, o means that there i..." alt="" coords="724,56,877,83"/>
+<area shape="rect" id="node8" href="$class_play_game1.html#a1fdfe38590f3cba6188eba27ee121a20" title="adds the ships of the player to the player grid. The positions are always the same" alt="" coords="705,107,897,133"/>
+<area shape="rect" id="node9" href="$class_play_game1.html#a45baeee33d9030329a325a9c3912c036" title="Displays the initial number of attempts on the screen." alt="" coords="704,157,897,184"/>
+<area shape="rect" id="node10" href="$class_play_game1.html#a73e79e539e71c161c9ba1ddf63b067cd" title="Displays the initial score on the screen." alt="" coords="713,208,889,235"/>
+<area shape="rect" id="node11" href="$class_play_game1.html#a8fa29ae15828fffbd77ce497fe3c8b01" title="Draws the grid by adding instances of GridSquare class in two 4X4 matrices, one for player and one fo..." alt="" coords="724,259,877,285"/>
+</map>

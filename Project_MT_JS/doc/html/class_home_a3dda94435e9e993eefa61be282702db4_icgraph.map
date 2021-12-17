@@ -1,0 +1,4 @@
+<map id="Home::onGuestHistoryClicked" name="Home::onGuestHistoryClicked">
+<area shape="rect" id="node1" title="responds to a history button clicked signalfor a guest user and displays a message for them" alt="" coords="153,5,353,32"/>
+<area shape="rect" id="node2" href="$class_home.html#a87ee339c844da110e56195a21a30a581" title=" " alt="" coords="5,5,105,32"/>
+</map>

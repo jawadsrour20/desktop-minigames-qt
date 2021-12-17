@@ -1,0 +1,10 @@
+<map id="targetdisc.h" name="targetdisc.h">
+<area shape="rect" id="node1" title="targetDisc class For the creation of target discs to be shot by shooters" alt="" coords="260,5,351,32"/>
+<area shape="rect" id="node2" href="$shootingdiscsscene_8h.html" title="ShootingDiscsScene class." alt="" coords="155,80,304,107"/>
+<area shape="rect" id="node8" href="$targetdisc_8cpp.html" title="contains targetDisc implementation defines the target discs to be shot and a timer for their creation" alt="" coords="329,80,434,107"/>
+<area shape="rect" id="node3" href="$shootingdiscs_8h.html" title="ShootingDiscs class. ShootingDiscs GraphicsView which is passed a shooting discs scene for the game." alt="" coords="91,155,205,181"/>
+<area shape="rect" id="node7" href="$shootingdiscsscene_8cpp.html" title="contains ShootingDiscsScene class definition" alt="" coords="229,155,393,181"/>
+<area shape="rect" id="node4" href="$home_8cpp.html" title="contains Home class definition" alt="" coords="5,229,85,256"/>
+<area shape="rect" id="node5" href="$main_8cpp.html" title=" " alt="" coords="110,229,186,256"/>
+<area shape="rect" id="node6" href="$shootingdiscs_8cpp.html" title="contains ShootingDiscs class definition" alt="" coords="211,229,339,256"/>
+</map>

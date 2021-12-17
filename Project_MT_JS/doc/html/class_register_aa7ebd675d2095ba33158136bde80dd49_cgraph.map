@@ -1,0 +1,7 @@
+<map id="Register::Register" name="Register::Register">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,135,108"/>
+<area shape="rect" id="node2" href="$class_register.html#a45db233f0a6ff0c9f1ba4434fb921795" title="Responds to a click on the Back button and navigates user back to the main login page." alt="" coords="193,5,359,32"/>
+<area shape="rect" id="node3" href="$class_register.html#ac5523ba144ca43a366fbf442340e14ee" title="Responds to a click on the Reigster button and validates the provided information If the provided inf..." alt="" coords="183,56,369,83"/>
+<area shape="rect" id="node4" href="$class_register.html#a68ad0323fecccca67e164f1c1a4100d4" title="Sets the colors for the registration page." alt="" coords="208,107,344,133"/>
+<area shape="rect" id="node5" href="$class_register.html#a5557171a603e9cf2e7d6219854bd9a0d" title="Sets the GridLayout for the registration page." alt="" coords="195,157,357,184"/>
+</map>

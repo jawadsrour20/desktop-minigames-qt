@@ -1,0 +1,50 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/Background.jpeg</file>
+        <file>images/Background2.jpeg</file>
+        <file>images/big ship.png</file>
+        <file>images/blue.jpeg</file>
+        <file>images/fire.png</file>
+        <file>images/Medium Ship.png</file>
+        <file>images/small ship.png</file>
+        <file>images/miss.png</file>
+        <file>images/hit.png</file>
+        <file>questions.txt</file>
+        <file>explotion.mp3</file>
+        <file>users_images/CA.png</file>
+        <file>users_images/guest.png</file>
+        <file>users_images/iraq.png</file>
+        <file>users_images/jawad.png</file>
+        <file>users_images/JP.png</file>
+        <file>users_images/LB.png</file>
+        <file>users_images/profile0.png</file>
+        <file>users_images/profile1.png</file>
+        <file>users_images/profile2.png</file>
+        <file>users_images/profile3.png</file>
+        <file>users_images/rocket.png</file>
+        <file>users_images/UAE.png</file>
+        <file>users_images/uk.png</file>
+        <file>battleship_scores.txt</file>
+        <file>shooting_scores.txt</file>
+        <file>users.txt</file>
+        <file>images/mult1x.png</file>
+        <file>images/mult2x.png</file>
+        <file>images/mult4x.png</file>
+        <file>images/mult8x.png</file>
+        <file>images/mult16x.png</file>
+        <file>images/SD_background.jpg</file>
+        <file>images/heart.png</file>
+        <file>images/blue_button.png</file>
+        <file>images/blue_disc.png</file>
+        <file>images/green_disc.png</file>
+        <file>images/green_button.png</file>
+        <file>images/red_button.png</file>
+        <file>images/red_disc.png</file>
+        <file>images/SD_homescreen.jpg</file>
+        <file>images/black_disc.png</file>
+        <file>images/game_grid.png</file>
+        <file>images/beam.png</file>
+        <file>shoot.wav</file>
+        <file>game_bg.mp3</file>
+    </qresource>
+</RCC>

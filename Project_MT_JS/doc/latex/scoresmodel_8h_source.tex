@@ -1,0 +1,35 @@
+\hypertarget{scoresmodel_8h_source}{}\doxysection{scoresmodel.\+h}
+\mbox{\hyperlink{scoresmodel_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef SCORESMODEL\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define SCORESMODEL\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QAbstractTableModel>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QtWidgets>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <QDebug>}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{class_scores_model}{ScoresModel}} : \textcolor{keyword}{public} QAbstractTableModel}
+\DoxyCodeLine{15 \{}
+\DoxyCodeLine{16     Q\_OBJECT}
+\DoxyCodeLine{17 \textcolor{keyword}{public}:}
+\DoxyCodeLine{18     \textcolor{comment}{// constructor}}
+\DoxyCodeLine{19     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_scores_model_a92f5c6fc9012e5eda5f7a5ffdb6ebe81}{ScoresModel}}(QString* username = \textcolor{keyword}{nullptr}, QObject *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{20     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_scores_model_a30930884951e86862b3a8f92a774addb}{rowCount}}(\textcolor{keyword}{const} QModelIndex \&parent = QModelIndex()) \textcolor{keyword}{const override};}
+\DoxyCodeLine{21     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_scores_model_a7080e260875c602f5a6ddd4e7dfee0d2}{columnCount}}(\textcolor{keyword}{const} QModelIndex \&parent = QModelIndex()) \textcolor{keyword}{const override};}
+\DoxyCodeLine{22     QVariant \mbox{\hyperlink{class_scores_model_a513bf3924900ee16cc5b3936ef4d3e42}{data}}(\textcolor{keyword}{const} QModelIndex \&index, \textcolor{keywordtype}{int} role = Qt::DisplayRole) \textcolor{keyword}{const override};}
+\DoxyCodeLine{23     QVariant \mbox{\hyperlink{class_scores_model_a2fdcf21cdda92658d39d5338e4960c6a}{headerData}}(\textcolor{keywordtype}{int} section, Qt::Orientation orientation, \textcolor{keywordtype}{int} role) \textcolor{keyword}{const override};}
+\DoxyCodeLine{24 \textcolor{keyword}{private}:}
+\DoxyCodeLine{25     QString \mbox{\hyperlink{class_scores_model_adf52ec9a6b43f1d4e9cc129d35928b69}{loggedInUser}};}
+\DoxyCodeLine{26     QStringList* \mbox{\hyperlink{class_scores_model_a2307ce3bded4401d7882b40d07c13d8f}{battleshipUserScoresList}};}
+\DoxyCodeLine{27     QStringList* \mbox{\hyperlink{class_scores_model_aa40dec281644a49fe165c632f71a9074}{shootingUserScoresList}};}
+\DoxyCodeLine{28     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_scores_model_adffe63a7b013d1429b132c311cc1d877}{battleshipUserBestScore}};}
+\DoxyCodeLine{29     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_scores_model_aace7d46b09918d4eccb27e6594b3576e}{shootingUserBestScore}};}
+\DoxyCodeLine{30     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_scores_model_a4241524ef3ef9a306627912880f272a1}{battleshipGlobalBestScore}};}
+\DoxyCodeLine{31     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_scores_model_a957364845c2efdf58b276ad83b60986c}{shootingGlobalBestScore}};}
+\DoxyCodeLine{32     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_scores_model_a4f84eff54f1a61ec000b9eb6341d72f6}{rowCounter}};}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 \};}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// SCORESMODEL\_H}}
+
+\end{DoxyCode}

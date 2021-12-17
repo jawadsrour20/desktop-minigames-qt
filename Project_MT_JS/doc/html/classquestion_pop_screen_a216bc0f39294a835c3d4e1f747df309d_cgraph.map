@@ -1,0 +1,7 @@
+<map id="questionPopScreen::disconnectSlots" name="questionPopScreen::disconnectSlots">
+<area shape="rect" id="node1" title="Disconnects the 4 buttons of the answers from their previous signals to be able to connect them to ne..." alt="" coords="5,39,151,80"/>
+<area shape="rect" id="node2" href="$classquestion_pop_screen.html#a551a9de8941b15f1a5942c90b4828ec0" title="Called when user selects the right answer, it increases the score, play the firing sound,..." alt="" coords="199,5,344,47"/>
+<area shape="rect" id="node4" href="$classquestion_pop_screen.html#a45588f93dda46171453db623f9902d59" title="topic of the questions" alt="" coords="199,71,344,112"/>
+<area shape="rect" id="node3" href="$class_play_game1.html#abb5f95efbfb85e9dbd3bf06cdc9d6037" title="It is called when the value of score is changed. It displays the new value." alt="" coords="393,13,567,39"/>
+<area shape="rect" id="node5" href="$class_play_game1.html#a281c8c00fa0545811f5e1c11ab996c05" title="This function is called when the player answers the question incorrectly, it allows the enemy to sele..." alt="" coords="392,78,568,105"/>
+</map>

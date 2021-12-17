@@ -1,0 +1,8 @@
+<map id="shootingdiscsscene.h" name="shootingdiscsscene.h">
+<area shape="rect" id="node1" title="ShootingDiscsScene class." alt="" coords="155,5,304,32"/>
+<area shape="rect" id="node2" href="$shootingdiscs_8h.html" title="ShootingDiscs class. ShootingDiscs GraphicsView which is passed a shooting discs scene for the game." alt="" coords="91,80,205,107"/>
+<area shape="rect" id="node6" href="$shootingdiscsscene_8cpp.html" title="contains ShootingDiscsScene class definition" alt="" coords="229,80,393,107"/>
+<area shape="rect" id="node3" href="$home_8cpp.html" title="contains Home class definition" alt="" coords="5,155,85,181"/>
+<area shape="rect" id="node4" href="$main_8cpp.html" title=" " alt="" coords="110,155,186,181"/>
+<area shape="rect" id="node5" href="$shootingdiscs_8cpp.html" title="contains ShootingDiscs class definition" alt="" coords="211,155,339,181"/>
+</map>

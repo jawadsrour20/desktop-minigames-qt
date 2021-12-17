@@ -1,0 +1,4 @@
+<map id="Login::onPlayAsGuestClicked" name="Login::onPlayAsGuestClicked">
+<area shape="rect" id="node1" title="Responds to a click on the Play as Guest button and navigates user to the home page as a guest user." alt="" coords="148,5,345,32"/>
+<area shape="rect" id="node2" href="$class_login.html#a5d0ad68bb85df1299c7513e476211c98" title=" " alt="" coords="5,5,100,32"/>
+</map>

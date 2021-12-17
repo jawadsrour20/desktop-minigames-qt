@@ -1,0 +1,8 @@
+<map id="PlayGame1::addPlayerShips" name="PlayGame1::addPlayerShips">
+<area shape="rect" id="node1" title="adds the ships of the player to the player grid. The positions are always the same" alt="" coords="843,5,1035,32"/>
+<area shape="rect" id="node2" href="$class_battle_ship.html#a5ee23766959e20ed88f12156e65bae65" title="Prepares the game by calling all the functions responsible of setting the background,..." alt="" coords="643,5,795,32"/>
+<area shape="rect" id="node3" href="$class_battle_ship.html#acf5f498271f67b854be831b2b30f38bb" title="Displays the main menu." alt="" coords="401,5,595,32"/>
+<area shape="rect" id="node4" href="$class_battle_ship.html#aff7e0e0b5831fa738904dd244b8ab801" title="Takes user to the page that explains the game." alt="" coords="175,5,332,32"/>
+<area shape="rect" id="node5" href="$class_home.html#ac86d2359d698e192ae190cbf1ef442aa" title="responds to a button clicked signal and navigates the user to the BattleShip game" alt="" coords="153,57,353,98"/>
+<area shape="rect" id="node6" href="$class_home.html#a87ee339c844da110e56195a21a30a581" title=" " alt="" coords="5,64,105,91"/>
+</map>

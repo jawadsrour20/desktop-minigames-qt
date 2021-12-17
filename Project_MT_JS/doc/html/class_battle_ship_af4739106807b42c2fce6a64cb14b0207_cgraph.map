@@ -1,0 +1,5 @@
+<map id="BattleShip::gameOver" name="BattleShip::gameOver">
+<area shape="rect" id="node1" title="Prints that the game is over when the number of attempts is 0 or when all player&#39;s ships are destrote..." alt="" coords="5,5,157,32"/>
+<area shape="rect" id="node2" href="$class_battle_ship.html#ae341dd7173c9dd9696f0393291303b5b" title="Display ending page, which shows the score and a button to go back to home page." alt="" coords="205,5,349,32"/>
+<area shape="rect" id="node3" href="$class_battle_ship.html#ab355edc10b704fe21097780f3400db2a" title="Takes user back to the inital home page (page shown after logging in)" alt="" coords="397,5,557,32"/>
+</map>

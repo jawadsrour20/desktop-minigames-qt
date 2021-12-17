@@ -1,0 +1,6 @@
+<map id="BattleShip::instructions" name="BattleShip::instructions">
+<area shape="rect" id="node1" title="Takes user to the page that explains the game." alt="" coords="643,13,800,39"/>
+<area shape="rect" id="node2" href="$class_battle_ship.html#acf5f498271f67b854be831b2b30f38bb" title="Displays the main menu." alt="" coords="401,13,595,39"/>
+<area shape="rect" id="node3" href="$class_home.html#ac86d2359d698e192ae190cbf1ef442aa" title="responds to a button clicked signal and navigates the user to the BattleShip game" alt="" coords="153,5,353,47"/>
+<area shape="rect" id="node4" href="$class_home.html#a87ee339c844da110e56195a21a30a581" title=" " alt="" coords="5,13,105,39"/>
+</map>

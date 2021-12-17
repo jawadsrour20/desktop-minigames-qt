@@ -1,0 +1,15 @@
+<map id="button.h" name="button.h">
+<area shape="rect" id="node1" title="Button class." alt="" coords="538,5,609,32"/>
+<area shape="rect" id="node2" href="$battleship_8h.html" title="BattleShip class." alt="" coords="376,155,467,181"/>
+<area shape="rect" id="node9" href="$button_8cpp.html" title="this is the implemetation of the buttons used in the game" alt="" coords="673,80,757,107"/>
+<area shape="rect" id="node10" href="$shootingdiscsscene_8h.html" title="ShootingDiscsScene class." alt="" coords="499,80,648,107"/>
+<area shape="rect" id="node3" href="$battleship_8cpp.html" title="this is the implemetation of the view of the game" alt="" coords="467,229,571,256"/>
+<area shape="rect" id="node4" href="$gridesquare_8cpp.html" title="this is the implemetation of the squares" alt="" coords="5,229,123,256"/>
+<area shape="rect" id="node5" href="$home_8cpp.html" title="contains Home class definition" alt="" coords="696,229,776,256"/>
+<area shape="rect" id="node6" href="$main_8cpp.html" title=" " alt="" coords="595,229,671,256"/>
+<area shape="rect" id="node7" href="$playgame1_8cpp.html" title="this is the implemetation of the scene of the game" alt="" coords="147,229,259,256"/>
+<area shape="rect" id="node8" href="$questionpopscreen_8cpp.html" title="this is the implemetation of the pop&#45;up question widget" alt="" coords="283,229,443,256"/>
+<area shape="rect" id="node11" href="$shootingdiscs_8h.html" title="ShootingDiscs class. ShootingDiscs GraphicsView which is passed a shooting discs scene for the game." alt="" coords="679,155,793,181"/>
+<area shape="rect" id="node13" href="$shootingdiscsscene_8cpp.html" title="contains ShootingDiscsScene class definition" alt="" coords="491,155,655,181"/>
+<area shape="rect" id="node12" href="$shootingdiscs_8cpp.html" title="contains ShootingDiscs class definition" alt="" coords="800,229,928,256"/>
+</map>

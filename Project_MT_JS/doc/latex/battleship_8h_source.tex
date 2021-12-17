@@ -1,0 +1,44 @@
+\hypertarget{battleship_8h_source}{}\doxysection{battleship.\+h}
+\mbox{\hyperlink{battleship_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef BATTLESHIP\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define BATTLESHIP\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <QGraphicsView>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QGraphicsScene>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QGraphicsTextItem>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <QMediaPlayer>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{playgame1_8h}{playgame1.h}}"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{questionpopscreen_8h}{questionpopscreen.h}}"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{button_8h}{button.h}}"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{home_8h}{home.h}}"{}}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{19 \textcolor{keyword}{class }\mbox{\hyperlink{class_battle_ship}{BattleShip}} : \textcolor{keyword}{public} QGraphicsView\{}
+\DoxyCodeLine{20     Q\_OBJECT}
+\DoxyCodeLine{21 \textcolor{keyword}{public}:}
+\DoxyCodeLine{22     \textcolor{comment}{//constructor}}
+\DoxyCodeLine{23     \mbox{\hyperlink{class_battle_ship_a218e359436db6cac37d4e665d29c07d8}{BattleShip}}(QWidget* parent=NULL);}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25     \textcolor{comment}{// public methods}}
+\DoxyCodeLine{26     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_battle_ship_af4739106807b42c2fce6a64cb14b0207}{gameOver}}();}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28     \textcolor{comment}{// public attributes}}
+\DoxyCodeLine{29     \mbox{\hyperlink{class_home}{Home}}* \mbox{\hyperlink{class_battle_ship_a4ec9e71cb8f16c11fb215d22b2754761}{returnTo}}; }
+\DoxyCodeLine{30     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_battle_ship_a49ca1b1d9f6321a362e02808c7cc4abc}{playerName}}; }
+\DoxyCodeLine{31     \mbox{\hyperlink{class_play_game1}{PlayGame1}}*  \mbox{\hyperlink{class_battle_ship_a6bbc99135b343646c10a872de72ea7a5}{scene}}; }
+\DoxyCodeLine{32     \mbox{\hyperlink{classquestion_pop_screen}{questionPopScreen}} \mbox{\hyperlink{class_battle_ship_a72ccc592024d475aa16a28046c24eedc}{popQuestion}}; }
+\DoxyCodeLine{33     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_battle_ship_aac849e5c0d9c453334b468f3aa57ef11}{attempts}}=16; }
+\DoxyCodeLine{34     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_battle_ship_af765856f7b411acc0ae0b02d0268e247}{score}}=0; }
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 \textcolor{keyword}{public} slots:}
+\DoxyCodeLine{38     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_battle_ship_ab355edc10b704fe21097780f3400db2a}{returnHome}}();}
+\DoxyCodeLine{39     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_battle_ship_a5ee23766959e20ed88f12156e65bae65}{startGame}}();}
+\DoxyCodeLine{40     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_battle_ship_ae341dd7173c9dd9696f0393291303b5b}{endPage}}();}
+\DoxyCodeLine{41     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_battle_ship_acf5f498271f67b854be831b2b30f38bb}{displayMainMenu}}();}
+\DoxyCodeLine{42     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_battle_ship_aff7e0e0b5831fa738904dd244b8ab801}{instructions}}();}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 \};}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// BATTLESHIP\_H}}
+
+\end{DoxyCode}

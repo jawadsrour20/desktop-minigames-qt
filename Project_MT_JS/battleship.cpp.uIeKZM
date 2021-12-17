@@ -1,0 +1,198 @@
+#include "battleship.h"
+#include<iostream>
+
+using namespace std;
+
+BattleShip::BattleShip(QWidget *parent) {
+
+    setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+    setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+    setFixedSize(900, 500);
+
+    scene = new PlayGame1();
+    scene->setSceneRect(0,0,900,500);
+    setScene(scene);
+
+}
+
+void BattleShip :: startGame(){
+    // clear the screen
+    scene->clear();
+
+    //setting the scene for the game
+    setBackgroundBrush(QBrush(QImage(":/images/blue.jpeg").scaledToHeight(500).scaledToWidth(900)));
+    scene->drawGrid();
+    scene->addPlayerShips();
+    scene->addEnemyShips();
+    scene->addFlags();
+    scene->displayScore();
+    scene->displayAttempts();
+}
+
+void BattleShip :: displayMainMenu(){
+
+     scene->clear();
+
+    //adding title text
+    QGraphicsTextItem* titleText = new QGraphicsTextItem(QString("Battleship Game"));
+    QFont titleFont("fantasy",30);
+    titleText->setFont(titleFont);
+    QColor titleColor("Blue");
+    titleText->setDefaultTextColor(titleColor);
+    titleText->setPos(550, 100);
+    scene->addItem(titleText);
+
+    //adding buttons
+    Button* playButton = new Button("Play");
+    playButton->setPos(600, 200);
+    connect(playButton,SIGNAL(clicked()),this,SLOT(startGame()));
+    scene->addItem(playButton);
+
+    Button* howToPlayButton = new Button("How To Play");
+    howToPlayButton->setPos(600, 270);
+    scene->addItem(howToPlayButton);
+    connect(howToPlayButton,SIGNAL(clicked()),this,SLOT(instructions()));
+
+    Button* quitButton = new Button("Quit");
+    quitButton->setPos(600, 340);
+    scene->addItem(quitButton);
+    connect(quitButton,SIGNAL(clicked()),this,SLOT(returnHome()));
+
+    //setting the backgroud
+    setBackgroundBrush(QBrush(QImage(":/images/Background2.jpeg").scaledToHeight(512).scaledToWidth(910)));
+    setSceneRect(0, 0, 900, 500);
+}
+
+void BattleShip :: gameOver() {
+
+    QGraphicsTextItem* titleText = new QGraphicsTextItem(QString("GAME OVER"));
+    QFont titleFont("fantasy",80);
+    titleText->setFont(titleFont);
+    QColor titleColor("black");
+    titleText->setDefaultTextColor(titleColor);
+    titleText->setPos(150, 150);
+    scene->addItem(titleText);
+
+    Button* continueButton = new Button("Continue");
+    continueButton->setPos(350, 300);
+    connect(continueButton,SIGNAL(clicked()),this,SLOT(endPage()));
+    scene->addItem(continueButton);
+
+
+}
+
+void BattleShip :: endPage(){
+
+    // clear the screen
+    scene->clear();
+    //setting the scene for the game
+    setBackgroundBrush(QBrush(QImage(":/images/blue.jpeg").scaledToHeight(500).scaledToWidth(900)));
+
+    //add score to history only if the user is registered
+
+    if(playerName!="guest"){
+        cout<<"iiinnnnnnnnnnnn"<<endl;
+        QString line, userName;
+        int posOfSpace;
+
+        QFile newScoresFile(":/new_battleship_scores.txt");
+        newScoresFile.open(QIODevice::ReadOnly);
+        //QTextStream outStream(&newScoresFile);
+
+        QFile scoresFile(":/battleship_scores.txt");
+        if (scoresFile.open(QIODevice::ReadOnly)){
+            QTextStream in(&scoresFile);
+            while (!scoresFile.atEnd()) {
+                line = scoresFile.readLine();
+                posOfSpace= line.indexOf(" ");
+                userName=line.mid(0, posOfSpace);
+                cout<<"honnnnnnnnnnnnnnnnnnnnnnnnnnnn "<<userName.toStdString()<<endl;
+                if(userName.toStdString() == playerName){
+                    line = line +" "+score;
+                }
+                //outStream << line;
+            }
+            //QTextStream in2(&newScoresFile);
+            //QTextStream outStream2(&scoresFile);
+            //while (!newScoresFile.atEnd()) {
+             //   line = newScoresFile.readLine();
+               // outStream2 << line;
+            //}
+
+        }
+        scoresFile.close();
+        newScoresFile.close();
+    }
+
+    QGraphicsTextItem* titleText = new QGraphicsTextItem();
+    QFont titleFont("fantasy",50);
+    QColor titleColor("black");
+
+    if (score>=7){
+        titleText = new QGraphicsTextItem(QString("YOU WON!"));
+        titleText->setFont(titleFont);
+        titleText->setDefaultTextColor(titleColor);
+        titleText->setPos(300, 100);
+        scene->addItem(titleText);
+    }
+
+    else{
+        titleText = new QGraphicsTextItem(QString("you lost"));
+        titleText->setFont(titleFont);
+        titleText->setDefaultTextColor(titleColor);
+        titleText->setPos(300, 100);
+        scene->addItem(titleText);
+    }
+
+    titleText = new QGraphicsTextItem(QString("score = "));
+    titleText->setFont(titleFont);
+    titleText->setDefaultTextColor(titleColor);
+    titleText->setPos(250, 200);
+    scene->addItem(titleText);
+
+    string temp1 = to_string(this->score);
+    QString temp2 = QString::fromStdString(temp1);
+
+    titleText = new QGraphicsTextItem(QString(temp2));
+    titleText->setFont(titleFont);
+    titleText->setDefaultTextColor(titleColor);
+    titleText->setPos(550, 200);
+    scene->addItem(titleText);
+
+    Button* exit = new Button("Quit");
+    exit->setPos(600, 340);
+    connect(exit,SIGNAL(clicked()),this,SLOT(returnHome()));
+    scene->addItem(exit);
+}
+
+void BattleShip::returnHome(){
+
+    returnTo->show();
+    this->hide();
+}
+
+void BattleShip :: instructions(){
+
+    // clear the screen
+    scene->clear();
+
+    //setting the scene for the game
+    setBackgroundBrush(QBrush(QImage(":/images/blue.jpeg").scaledToHeight(500).scaledToWidth(900)));
+
+    QGraphicsTextItem* titleText = new QGraphicsTextItem(QString("How to play: \n 1-Grid on left contains your ships. Grid on right contains enemy ships. "
+                                              "\n 2-Press on a case in enemy grid to fire. \n 3-If you hit, you will have to answer a question so that"
+                                              " you hit takes effect. \n 4-If your answer is wrong, enemy will fire back and your hit won't be considered."
+                                              "\n 5-If you answer correctly, you get one score point. \n 6- In all cases, you lose one attempt."
+                                              "\n 7-Game is over when all attempts are used. You win if you get a score of 7 or more.   "));
+    QFont titleFont("fantasy", 15);
+    titleText->setFont(titleFont);
+    QColor titleColor("black");
+    titleText->setDefaultTextColor(titleColor);
+    titleText->setPos(10, 10);
+    scene->addItem(titleText);
+
+    Button* back = new Button("Back");
+    back->setPos(350, 300);
+    connect(back,SIGNAL(clicked()),this,SLOT(displayMainMenu()));
+    scene->addItem(back);
+}

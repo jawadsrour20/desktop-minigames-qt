@@ -1,0 +1,5 @@
+<map id="ShootingDiscsScene::onShootBlue" name="ShootingDiscsScene::onShootBlue">
+<area shape="rect" id="node1" title="shoots a beam from the blue shooter" alt="" coords="405,5,551,47"/>
+<area shape="rect" id="node2" href="$class_shooting_discs_scene.html#a1597eb1bcefba8b026ee7fff49dd78de" title="sets up the actual shooting discs game when Start button is clicked" alt="" coords="205,5,357,47"/>
+<area shape="rect" id="node3" href="$class_shooting_discs_scene.html#a68acb6a2e2b7620ff7cee112fb97e468" title=" " alt="" coords="5,5,157,47"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="questionPopScreen::connectSlots" name="questionPopScreen::connectSlots">
+<area shape="rect" id="node1" title="Connects the 4 buttons of the answers to their corresponding signals depending on whether the button ..." alt="" coords="5,71,151,112"/>
+<area shape="rect" id="node2" href="$classquestion_pop_screen.html#a1aea0f76fd9ca7bfe2985d3077b135f9" title="Called when user changes the topic of the question. This function calls selectQuestion function after..." alt="" coords="199,5,344,47"/>
+<area shape="rect" id="node4" href="$classquestion_pop_screen.html#a551a9de8941b15f1a5942c90b4828ec0" title="Called when user selects the right answer, it increases the score, play the firing sound,..." alt="" coords="199,71,344,112"/>
+<area shape="rect" id="node6" href="$classquestion_pop_screen.html#a45588f93dda46171453db623f9902d59" title="topic of the questions" alt="" coords="199,136,344,177"/>
+<area shape="rect" id="node3" href="$classquestion_pop_screen.html#a653a1dd29f8dd80cc7a57a6a700d3325" title="selects a question randomly from the question list. If the user specifies a topic for the question us..." alt="" coords="407,5,553,47"/>
+<area shape="rect" id="node5" href="$class_play_game1.html#abb5f95efbfb85e9dbd3bf06cdc9d6037" title="It is called when the value of score is changed. It displays the new value." alt="" coords="393,78,567,105"/>
+<area shape="rect" id="node7" href="$class_play_game1.html#a281c8c00fa0545811f5e1c11ab996c05" title="This function is called when the player answers the question incorrectly, it allows the enemy to sele..." alt="" coords="392,143,568,170"/>
+</map>

@@ -1,0 +1,45 @@
+C++:
+What is GDB?: IDE0, Programming Language0, Degubber1, Testing Tool0.
+What is Valgrind used for?: Memory Debugger1, Syntax Debugger0, Semantics Debugger0, It is not a debugger0.
+Debugging is the process of fixing a ______ in the software: Warning0, Bug1, Exception0, Function0.
+The process of debugging begins as soon as the code of the software is___________: Started0, Completed1, Both0, None0.
+Print debugging also called?: Remote debugging0, Post-mortem debugging0, Static analysis0, Tracing1.
+_________ is debugging of the program after it has already crashed: Post-mortem debugging1, Wolf fence algorithm0, Print debugging0, Remote debugging0.
+Which of the following is written for getting help in GDB?: he0, h1, help -h0, help0.
+Which is not involved in debugging?: Identifying0, Isolating0, Test1, Fixing0.
+Debugging occurs as a consequence of: Successful testing1, Testing failure0, Design issues0, None0.
+Amongst which of the following is/are the debugging strategies: Brute force0, Backtracking0, Both A and B1, None0.
+Examination of the program step by step is called: Controlling0, Tracing0, Stepping1, Testing0.
+A freeware GNU Debugger is: GDB1, GNB0, FDB0, FNB0.
+Which of the following does not affects the execution of the program?: Arguments0, Environment0, Control1, I/O0.
+OOP:	
+Which of following is shared structure of a set of similar objects: Encapsulation0, Class1, Inheritance0, None of Above0.
+Which of following does not have a body: Interface0, Class0, Abstract Method1, none of above0.
+Which of following is pure object oriented programming language?: Java0, SmallTalk1, C++0, Kotlin0.
+In oops public, private & protected are: Classes0, Access Modifiers1, Interfaces0, Method signature0.
+Which of the following is an abstract data type?: Double0, String0, Int0, Class1.
+We can not create instance of: Anonymous class0, Nested class0, Parent class0, Abstract class1.
+Which Feature of OOP encourges the code reusability?: Polymorphism0, Inheritance1, Abstraction0, Encapsulation0.
+Which of the following is not the member of class?: Static function1, Friend function0, Const function0, Virtual function0.
+... violates the definition of encapsulation: Public variables0, Local variables0, Array variables0, Global variables1.
+Which feature of OOPS derives the class from another class?: Inheritance1, Data hiding0, Encapsulation0, Polymorphism0.
+What is the extra feature in classes which was not in the structures?: Member functions1, Data members0, Public access specifier0, Static Data allowed0.
+Which of the following feature is also known as run-time binding or late binding?: Dynamic typing0, Dynamic loading0, Dynamic binding1, Data hiding0.
+Which of the following class is known as the generic class?: Final class0, Template class1, Abstract class0, Efficient code0.
+Which member of the superclass is never accessible to the subclass?: Public member0, Protected member0, Private member1, All of the mentioned0.
+The concept of encapsulation helps in writing which type of classes in the Java programming language?: Abstract classes0, Wrapper classes0, Mutable classes0, Immutable classes1.
+version control:
+How do you stage your changes?: git push0, git add1, git commit0, git pull0.
+How can we start a new repository in Git?: git start <rep name>0, git init1, git begin0, git create0.
+Which is not a git command?: git push0, git add0, git commit0, git start1.
+How do we store our changes on the side if we want to switch branches?: git stash1, git store0, git save0, We can't do that0.
+Git can be used with which programming languages?: Python0, C++0, Java0, All projects1.
+What is the main default branch in git called?: main0, first0, master1, dev0.
+Which of the following is the correct way to write a message when commiting changes?: git add . "mssg"0, git commit -m "mssg"1, git push master "mssg"0, none0.
+How do we get the latest changes locally from the repository?: re-clone repo 0, from the browser0, git pull1, none0.
+How can we check the history of a repository?: git clone0, git reset0, git log1, git history0.
+How can we undo local changes to the state of a git repository?: git undo0, git remove0, git reset1, git fetch0.
+What is an alternative to merging in git?: Basing0, Rebasing1, Both 1 and 20, None0.
+Which of the following Git repository hosting functions?: Gitlab0, Github0, Bitbucket0, All of the above1.
+Which of the following isn't a Git configuration scope?: User0, System1, Local0, Global0.
+Which of the following shortcut to staging all the changes you have?: git push -am "Message"0, git add1, git commit0, git commit add0.

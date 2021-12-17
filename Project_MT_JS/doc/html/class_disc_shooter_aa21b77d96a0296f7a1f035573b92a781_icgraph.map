@@ -1,0 +1,6 @@
+<map id="DiscShooter::shoot" name="DiscShooter::shoot">
+<area shape="rect" id="node1" title=" " alt="" coords="444,35,579,61"/>
+<area shape="rect" id="node2" href="$class_disc_shooter.html#ae84db8592993a1c9f567b010c16f2d06" title="emits a signal for the disc shooter based on which key was pressed. Left key for the red shooter,..." alt="" coords="205,5,396,32"/>
+<area shape="rect" id="node3" href="$class_shooting_discs_scene.html#a1597eb1bcefba8b026ee7fff49dd78de" title="sets up the actual shooting discs game when Start button is clicked" alt="" coords="225,57,377,98"/>
+<area shape="rect" id="node4" href="$class_shooting_discs_scene.html#a68acb6a2e2b7620ff7cee112fb97e468" title=" " alt="" coords="5,57,157,98"/>
+</map>
